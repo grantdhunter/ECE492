@@ -5,7 +5,7 @@
  *      Author: gdhunter
  */
 
-#include "transmitterInterface.h"
+#include "TransmitterInterface.h"
 #include "altera_avalon_pio_regs.h"
 
 
@@ -14,7 +14,7 @@
  * for GPIO pins that are connected to a transmitter.
  * TODO correct the Base address names and types
  */
-transmitterInterface::transmitterInterface(int* addrForward,int* addrBack,int* addrRight,int* addrLeft) {
+TransmitterInterface::TransmitterInterface(int* addrForward,int* addrBack,int* addrRight,int* addrLeft) {
 	// TODO Auto-generated constructor stub
 	forwardPin = addrForward;
 	backwardPin = addrBack;
@@ -25,62 +25,62 @@ transmitterInterface::transmitterInterface(int* addrForward,int* addrBack,int* a
 /**
  *
  */
-transmitterInterface::~transmitterInterface() {
+TransmitterInterface::~TransmitterInterface() {
 	// TODO Auto-generated destructor stub
 }
 
 /**
  *
  */
-void transmitterInterface::turnLeftOn() {
+void TransmitterInterface::turnLeftOn() {
 	 IOWR_ALTERA_AVALON_PIO_DIRECTION(leftPin, ON);
 }
 
 /**
  *
  */
-void transmitterInterface::turnRightOn() {
+void TransmitterInterface::turnRightOn() {
 	IOWR_ALTERA_AVALON_PIO_DIRECTION(rightPin, ON);
 }
 
 /**
  *
  */
-void transmitterInterface::moveForwardOn() {
+void TransmitterInterface::moveForwardOn() {
 	IOWR_ALTERA_AVALON_PIO_DIRECTION(forwardPin, ON);
 }
 
 /**
  *
  */
-void transmitterInterface::moveBackwardOn() {
+void TransmitterInterface::moveBackwardOn() {
 	IOWR_ALTERA_AVALON_PIO_DIRECTION(backwardPin, ON);
 }
 
 /**
  *
  */
-void transmitterInterface::turnLeftOff() {
+void TransmitterInterface::turnLeftOff() {
 	 IOWR_ALTERA_AVALON_PIO_DIRECTION(leftPin, OFF);
 }
 
 /**
  *
  */
-void transmitterInterface::turnRightOff() {
+void TransmitterInterface::turnRightOff() {
 	IOWR_ALTERA_AVALON_PIO_DIRECTION(rightPin, OFF);
 }
 
 /**
  *
  */
-void transmitterInterface::moveForwardOff() {
+void TransmitterInterface::moveForwardOff() {
 	IOWR_ALTERA_AVALON_PIO_DIRECTION(forwardPin, OFF);
 }
 
 /**
  *
  */
-void transmitterInterface::moveBackwardOff() {
+void TransmitterInterface::moveBackwardOff() {
 	IOWR_ALTERA_AVALON_PIO_DIRECTION(backwardPin, OFF);
 }

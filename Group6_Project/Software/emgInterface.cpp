@@ -5,14 +5,14 @@
  *      Author: gdhunter
  */
 
-#include "emgInterface.h"
+#include "EmgInterface.h"
 #include "altera_avalon_pio_regs.h"
 
 /*
  * EMG sensor software interface constructor. Takes the base address of the
  * pin that the EMG sensor is connected to.
  */
-emgInterface::emgInterface(int* baseAddr) {
+EmgInterface::EmgInterface(int* baseAddr) {
 	BaseAddress = baseAddr;
 
 }
@@ -20,14 +20,14 @@ emgInterface::emgInterface(int* baseAddr) {
 /*
  * Destructor for the emgIterface object
  */
-emgInterface::~emgInterface() {
+EmgInterface::~EmgInterface() {
 
 }
 
 /*
  * Read data from the EMG sensor.
  */
-long emgInterface::rawRead() {
+long EmgInterface::rawRead() {
 	volatile long rawData;
 	rawData = *IORD_ALTERA_AVALON_PIO_DIRECTION(BaseAddress);
 	return rawData;
@@ -37,7 +37,7 @@ long emgInterface::rawRead() {
  * Determing if data from the EMG sensor is greater than a set threshold.
  * Takes the threshold value and the raw EMG data.
  */
-bool emgInterface::isOverThreshold(long threshold, int rawData) {
+bool EmgInterface::isOverThreshold(long threshold, int rawData) {
 	if (threshold < rawData) {
 		return true;
 	} else {
