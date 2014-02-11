@@ -5,7 +5,7 @@
  *      Author: gdhunter
  */
 
-#include "transmitterInterface.h"
+#include "TransmitterInterface.h"
 #include "altera_avalon_pio_regs.h"
 
 
@@ -14,76 +14,77 @@
  * for GPIO pins that are connected to a transmitter.
  * TODO correct the Base address names and types
  */
-transmitterInterface::transmitterInterface(int* addrForward,int* addrBack,int* addrRight,int* addrLeft) {
-	// TODO Auto-generated constructor stub
-	forwardPin = addrForward;
-	backwardPin = addrBack;
-	leftPin = addrLeft;
-	rightPin = addrRight;
-
-}
-/**
- *
- */
-transmitterInterface::~transmitterInterface() {
-	// TODO Auto-generated destructor stub
+TransmitterInterface::TransmitterInterface(int* addrForward,int* addrBack,int* addrRight,int* addrLeft) {
+ // TODO Auto-generated constructor stub
+ forwardPin = addrForward;
+ backwardPin = addrBack;
+ leftPin = addrLeft;
+ rightPin = addrRight;
 }
 
-/**
- *
+/*
+ * Destructor for the transmitterInterface object.
  */
-void transmitterInterface::turnLeftOn() {
-	 IOWR_ALTERA_AVALON_PIO_DIRECTION(leftPin, ON);
+TransmitterInterface::~TransmitterInterface() {
+ // TODO Auto-generated destructor stub
 }
 
-/**
- *
- */
-void transmitterInterface::turnRightOn() {
-	IOWR_ALTERA_AVALON_PIO_DIRECTION(rightPin, ON);
+/*
+ * Send turn left signal to transmitter.
+ */ 
+void TransmitterInterface::turnLeftOn() {
+  IOWR_ALTERA_AVALON_PIO_DIRECTION(leftPin, ON);
 }
 
 /**
- *
+ *  Send turn right signal to transmitter.
  */
-void transmitterInterface::moveForwardOn() {
-	IOWR_ALTERA_AVALON_PIO_DIRECTION(forwardPin, ON);
+void TransmitterInterface::turnRightOn() {
+ IOWR_ALTERA_AVALON_PIO_DIRECTION(rightPin, ON);
 }
 
 /**
- *
+ * Send forward signal to transmitter.
  */
-void transmitterInterface::moveBackwardOn() {
-	IOWR_ALTERA_AVALON_PIO_DIRECTION(backwardPin, ON);
+void TransmitterInterface::moveForwardOn() {
+ IOWR_ALTERA_AVALON_PIO_DIRECTION(forwardPin, ON);
 }
 
 /**
- *
+ * Send reverse signal to transmitter.
  */
-void transmitterInterface::turnLeftOff() {
-	 IOWR_ALTERA_AVALON_PIO_DIRECTION(leftPin, OFF);
+void TransmitterInterface::moveBackwardOn() {
+ IOWR_ALTERA_AVALON_PIO_DIRECTION(backwardPin, ON);
 }
 
 /**
- *
+ * Send stop turning left signal to transmitter.
  */
-void transmitterInterface::turnRightOff() {
-	IOWR_ALTERA_AVALON_PIO_DIRECTION(rightPin, OFF);
+void TransmitterInterface::turnLeftOff() {
+  IOWR_ALTERA_AVALON_PIO_DIRECTION(leftPin, OFF);
 }
 
 /**
- *
+ * Send stop turning right signal to transmitter.
  */
-void transmitterInterface::moveForwardOff() {
-	IOWR_ALTERA_AVALON_PIO_DIRECTION(forwardPin, OFF);
+void TransmitterInterface::turnRightOff() {
+ IOWR_ALTERA_AVALON_PIO_DIRECTION(rightPin, OFF);
 }
 
 /**
- *
+ * Send stop moving forwards signal to transmitter.
  */
-void transmitterInterface::moveBackwardOff() {
-	IOWR_ALTERA_AVALON_PIO_DIRECTION(backwardPin, OFF);
+void TransmitterInterface::moveForwardOff() {
+ IOWR_ALTERA_AVALON_PIO_DIRECTION(forwardPin, OFF);
 }
+
+/**
+ * Send stop moving backwards signal to transmitter.
+ */
+void TransmitterInterface::moveBackwardOff() {
+ IOWR_ALTERA_AVALON_PIO_DIRECTION(backwardPin, OFF);
+}
+
 //The MIT License (MIT)
 //
 //Copyright (c) 2014 Grant Hunter

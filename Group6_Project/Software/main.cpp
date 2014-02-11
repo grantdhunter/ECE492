@@ -11,14 +11,14 @@ OS_STK  tast_gyro_stk[TASK_STACKSIZE];
 #define  TASK_EMG_PRIORITY 1
 #define  TASK_GYRO_PRIORITY 2
 
-emgInterface emg;
-transmitterInterface transmitter;
+EmgInterface emg;
+TransmitterInterface transmitter;
 void init()
 {
   //Intialize the emg and transmitter for use.
   //TODO get correct address variable names.
-  (EMG_BASE_ADDRESS);
-  (TRANSMITTER_BASE_ADRRESS);
+  emg = new EmgInterface(EMG_BASE_ADDRESS);
+  transmitter = new TranmitterInterface(TRANSMITTER_BASE_ADRRESS);
 
   //Initialize the Gyorscope, MPU6050
   MPU6050 gyro();

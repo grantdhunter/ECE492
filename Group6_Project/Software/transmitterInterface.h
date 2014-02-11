@@ -1,5 +1,5 @@
 /*
- * transmitterInterface.h
+ * TransmitterInterface.h
  *
  *  Created on: 2014-01-28
  *      Author: gdhunter
@@ -9,7 +9,7 @@
 #define TRANSMITTERINTERFACE_H_
 #define ON 1;
 #define OFF 0;
-class transmitterInterface {
+class TransmitterInterface {
 
 	int* forwardPin;
 	int* backwardPin;
@@ -21,12 +21,12 @@ public:
 	 * Constructor which takes the base address to the four pins that lead to
 	 * the transmitter. One pin for each left turn, right turn, forward and backwards
 	 */
-	transmitterInterface(int*, int*, int*, int*);
+	TransmitterInterface(int*, int*, int*, int*);
 
 	/*
 	 * Destructor for the transmitterInterface object.
 	 */
-	virtual ~transmitterInterface();
+	virtual ~TransmitterInterface();
 
 	/**
 	 * Send turn left signal to transmitter.
