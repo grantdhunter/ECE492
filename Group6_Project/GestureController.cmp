@@ -1,8 +1,16 @@
 	component GestureController is
 		port (
-			clk_clk                          : in  std_logic                    := 'X'; -- clk
-			pio_1_external_connection_export : out std_logic_vector(7 downto 0);        -- export
-			pio_0_external_connection_export : in  std_logic                    := 'X'  -- export
+			leds_external_connection_export : out   std_logic;                                        -- export
+			sdram_addr                      : out   std_logic_vector(11 downto 0);                    -- addr
+			sdram_ba                        : out   std_logic_vector(1 downto 0);                     -- ba
+			sdram_cas_n                     : out   std_logic;                                        -- cas_n
+			sdram_cke                       : out   std_logic;                                        -- cke
+			sdram_cs_n                      : out   std_logic;                                        -- cs_n
+			sdram_dq                        : inout std_logic_vector(15 downto 0) := (others => 'X'); -- dq
+			sdram_dqm                       : out   std_logic_vector(1 downto 0);                     -- dqm
+			sdram_ras_n                     : out   std_logic;                                        -- ras_n
+			sdram_we_n                      : out   std_logic;                                        -- we_n
+			clk_in_clk                      : in    std_logic                     := 'X'              -- clk
 		);
 	end component GestureController;
 
