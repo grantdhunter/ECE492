@@ -36,7 +36,15 @@ void taskEmg(void* pdata)
 {
   long emgData;
 
-  emgData = emg.
+  //Read analogue data from EMG sensor
+
+  //Convert data to usable information
+
+  //Compare EMG to threshold value. Either raw signal or frequency.
+
+  //Send the appropriate signal determined by the threshold.
+  //Signal could be Forward or Reverse.
+  //Otherwise do nothing
 
 }
 
@@ -44,6 +52,13 @@ void taskEmg(void* pdata)
 /*Task that polls Gyro Sensor, processes the information and relays it to the transmitter*/
 void taskGyro(void* pdata)
 {
+   //Read digital data from the IMU. Data has already been processed
+
+   //Compare gyroscope values to thresholds
+
+  //Send the appropriate signal determined by the threshold.
+  //Signal could be left or right.
+  //Otherwise do nothing
 
 
 }
