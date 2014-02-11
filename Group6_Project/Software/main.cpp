@@ -7,12 +7,15 @@ OS_STK  task_emg_stk[TASK_STACKSIZE];
 OS_STK  tast_gyro_stk[TASK_STACKSIZE];
 
 /*Definition of Task priorities*/
-
 #define  TASK_EMG_PRIORITY 1
 #define  TASK_GYRO_PRIORITY 2
 
+
+
 EmgInterface emg;
 TransmitterInterface transmitter;
+
+
 void init()
 {
   //Intialize the emg and transmitter for use.
@@ -67,5 +70,30 @@ void taskGyro(void* pdata)
 int main(void)
 {
 
+//Start EMG Task
+    OSTaskCreateExt(taskEmg,
+		NULL,
+		(void *)&task_emg_stk[TASK_STACKSIZE-1],
+		TASK_EMG_PRIORITY,
+		TASK_EMG_PRIORITY,
+		task_emg_stk,
+		TASK_STACKSIZE,
+		NULL,
+		0);
+
+//Start Gyro Task   
+   OSTaskCreateExt(taskGyro,
+		NULL,
+		(void *)&task_gryo_stk[TASK_STACKSIZE-1],
+		TASK_GYRO_PRIORITY,
+		TASK_GRYO_PRIORITY,
+		task_gryo_stk,
+		TASK_STACKSIZE,
+		NULL,
+		0);
+
+
+	OSStart();
+	return 0;
 
 }
