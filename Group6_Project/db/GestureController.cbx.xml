@@ -7,6 +7,6 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|GestureController|niosII_system:u0|niosII_system_nios2_qsys_0:nios2_qsys_0|niosII_system_nios2_qsys_0_register_bank_a_module:niosII_system_nios2_qsys_0_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_hlh1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|GestureController|niosII_system:u0|niosII_system_nios2_qsys_0:nios2_qsys_0|niosII_system_nios2_qsys_0_register_bank_b_module:niosII_system_nios2_qsys_0_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_ilh1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|GestureController|niosII_system:u0|niosII_system_jtag_uart_0:jtag_uart_0|niosII_system_jtag_uart_0_scfifo_r:the_niosII_system_jtag_uart_0_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_dr21.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|GestureController|niosII_system:u0|niosII_system_onchip_memory2_0:onchip_memory2_0|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_9od1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|GestureController|niosII_system:u0|niosII_system_onchip_memory2_0:onchip_memory2_0|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_cod1.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

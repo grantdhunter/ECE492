@@ -1,14 +1,14 @@
-Fitter Status : Successful - Tue Feb 11 16:49:20 2014
+Fitter Status : Successful - Wed Feb 12 12:10:12 2014
 Quartus II 64-Bit Version : 12.1 Build 243 01/31/2013 SP 1.33 SJ Full Version
 Revision Name : GestureController
 Top-level Entity Name : GestureController
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 2,867 / 22,320 ( 13 % )
-    Total combinational functions : 2,309 / 22,320 ( 10 % )
-    Dedicated logic registers : 2,003 / 22,320 ( 9 % )
-Total registers : 2071
+Total logic elements : 2,929 / 22,320 ( 13 % )
+    Total combinational functions : 2,371 / 22,320 ( 11 % )
+    Dedicated logic registers : 2,036 / 22,320 ( 9 % )
+Total registers : 2104
 Total pins : 46 / 154 ( 30 % )
 Total virtual pins : 0
 Total memory bits : 141,824 / 608,256 ( 23 % )

@@ -1,5 +1,5 @@
 Flow report for GestureController
-Tue Feb 11 16:49:29 2014
+Wed Feb 12 12:10:21 2014
 Quartus II 64-Bit Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
 
 
@@ -38,17 +38,17 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------------+
 ; Flow Summary                                                                           ;
 +------------------------------------+---------------------------------------------------+
-; Flow Status                        ; Successful - Tue Feb 11 16:49:24 2014             ;
+; Flow Status                        ; Successful - Wed Feb 12 12:10:16 2014             ;
 ; Quartus II 64-Bit Version          ; 12.1 Build 243 01/31/2013 SP 1.33 SJ Full Version ;
 ; Revision Name                      ; GestureController                                 ;
 ; Top-level Entity Name              ; GestureController                                 ;
 ; Family                             ; Cyclone IV E                                      ;
 ; Device                             ; EP4CE22F17C6                                      ;
 ; Timing Models                      ; Final                                             ;
-; Total logic elements               ; 2,867 / 22,320 ( 13 % )                           ;
-;     Total combinational functions  ; 2,309 / 22,320 ( 10 % )                           ;
-;     Dedicated logic registers      ; 2,003 / 22,320 ( 9 % )                            ;
-; Total registers                    ; 2071                                              ;
+; Total logic elements               ; 2,929 / 22,320 ( 13 % )                           ;
+;     Total combinational functions  ; 2,371 / 22,320 ( 11 % )                           ;
+;     Dedicated logic registers      ; 2,036 / 22,320 ( 9 % )                            ;
+; Total registers                    ; 2104                                              ;
 ; Total pins                         ; 46 / 154 ( 30 % )                                 ;
 ; Total virtual pins                 ; 0                                                 ;
 ; Total memory bits                  ; 141,824 / 608,256 ( 23 % )                        ;
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/11/2014 16:48:03 ;
+; Start date & time ; 02/12/2014 12:08:46 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; GestureController   ;
 +-------------------+---------------------+
@@ -73,7 +73,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+---------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 116530612650.139216248303264          ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 116530612650.139223212600136          ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top        ;
@@ -89,11 +89,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:52     ; 1.0                     ; 622 MB              ; 00:00:30                           ;
-; Fitter                    ; 00:00:23     ; 1.5                     ; 999 MB              ; 00:00:26                           ;
+; Analysis & Synthesis      ; 00:00:58     ; 1.0                     ; 611 MB              ; 00:00:29                           ;
+; Fitter                    ; 00:00:25     ; 1.0                     ; 1002 MB             ; 00:00:24                           ;
 ; Assembler                 ; 00:00:02     ; 1.0                     ; 431 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 546 MB              ; 00:00:03                           ;
-; Total                     ; 00:01:21     ; --                      ; --                  ; 00:01:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 542 MB              ; 00:00:03                           ;
+; Total                     ; 00:01:29     ; --                      ; --                  ; 00:00:58                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

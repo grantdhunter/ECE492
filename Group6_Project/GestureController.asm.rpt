@@ -1,5 +1,5 @@
 Assembler report for GestureController
-Tue Feb 11 16:49:24 2014
+Wed Feb 12 12:10:16 2014
 Quartus II 64-Bit Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Feb 11 16:49:24 2014 ;
+; Assembler Status      ; Successful - Wed Feb 12 12:10:16 2014 ;
 ; Revision Name         ; GestureController                     ;
 ; Top-level Entity Name ; GestureController                     ;
 ; Family                ; Cyclone IV E                          ;
@@ -104,7 +104,7 @@ applicable agreement for further details.
 +----------------+-------------------------------------------------------------------------------+
 ; Device         ; EP4CE22F17C6                                                                  ;
 ; JTAG usercode  ; 0xFFFFFFFF                                                                    ;
-; Checksum       ; 0x003210E1                                                                    ;
+; Checksum       ; 0x00329C28                                                                    ;
 +----------------+-------------------------------------------------------------------------------+
 
 
@@ -114,14 +114,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Full Version
-    Info: Processing started: Tue Feb 11 16:49:22 2014
+    Info: Processing started: Wed Feb 12 12:10:14 2014
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off GestureController -c GestureController
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 431 megabytes
-    Info: Processing ended: Tue Feb 11 16:49:24 2014
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Wed Feb 12 12:10:17 2014
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

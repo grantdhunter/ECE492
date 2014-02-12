@@ -19,6 +19,11 @@
          value = "1";
          type = "int";
       }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
    }
    element jtag_uart_0.avalon_jtag_slave
    {
@@ -29,7 +34,7 @@
       }
       datum baseAddress
       {
-         value = "16812112";
+         value = "8425552";
          type = "String";
       }
    }
@@ -53,7 +58,7 @@
    {
       datum baseAddress
       {
-         value = "16812120";
+         value = "8425560";
          type = "String";
       }
    }
@@ -61,7 +66,7 @@
    {
       datum baseAddress
       {
-         value = "16809984";
+         value = "8423424";
          type = "String";
       }
    }
@@ -69,7 +74,7 @@
    {
       datum _sortIndex
       {
-         value = "7";
+         value = "8";
          type = "int";
       }
    }
@@ -77,8 +82,13 @@
    {
       datum _sortIndex
       {
-         value = "3";
+         value = "4";
          type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
       }
    }
    element nios2_qsys_0
@@ -88,36 +98,30 @@
          value = "2";
          type = "int";
       }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
    }
    element onchip_memory2_0
    {
       datum _sortIndex
       {
-         value = "8";
+         value = "3";
          type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
       }
    }
    element altpll_0.pll_slave
    {
       datum baseAddress
       {
-         value = "16812080";
-         type = "String";
-      }
-   }
-   element timer_0.s1
-   {
-      datum baseAddress
-      {
-         value = "16812032";
-         type = "String";
-      }
-   }
-   element onchip_memory2_0.s1
-   {
-      datum baseAddress
-      {
-         value = "16793600";
+         value = "8425536";
          type = "String";
       }
    }
@@ -125,7 +129,15 @@
    {
       datum baseAddress
       {
-         value = "8388608";
+         value = "0";
+         type = "String";
+      }
+   }
+   element onchip_memory2_0.s1
+   {
+      datum baseAddress
+      {
+         value = "8404992";
          type = "String";
       }
    }
@@ -133,7 +145,15 @@
    {
       datum baseAddress
       {
-         value = "16812096";
+         value = "8425520";
+         type = "String";
+      }
+   }
+   element timer_0.s1
+   {
+      datum baseAddress
+      {
+         value = "8425472";
          type = "String";
       }
    }
@@ -141,13 +161,18 @@
    {
       datum _sortIndex
       {
-         value = "4";
+         value = "5";
          type = "int";
       }
       datum megawizard_uipreferences
       {
          value = "{}";
          type = "String";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
       }
    }
    element sysid_qsys_0
@@ -157,13 +182,23 @@
          value = "6";
          type = "int";
       }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
+      }
    }
    element timer_0
    {
       datum _sortIndex
       {
-         value = "5";
+         value = "7";
          type = "int";
+      }
+      datum sopceditor_expanded
+      {
+         value = "1";
+         type = "boolean";
       }
    }
 }
@@ -181,7 +216,7 @@
  <parameter name="projectName">GestureController.qpf</parameter>
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1392154386135" />
+ <parameter name="timeStamp" value="1392231624210" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface
@@ -191,6 +226,8 @@
    dir="end" />
  <interface name="sdram" internal="sdram_0.wire" type="conduit" dir="end" />
  <interface name="clk_in" internal="clk_0.clk_in" type="clock" dir="end" />
+ <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
+ <interface name="altpll_0_c0" internal="altpll_0.c0" type="clock" dir="start" />
  <module kind="clock_source" version="12.1" enabled="1" name="clk_0">
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="clockFrequencyKnown" value="true" />
@@ -286,8 +323,8 @@
   <parameter name="regfile_ramBlockType" value="Automatic" />
   <parameter name="mmu_ramBlockType" value="Automatic" />
   <parameter name="bht_ramBlockType" value="Automatic" />
-  <parameter name="instAddrWidth" value="25" />
-  <parameter name="dataAddrWidth" value="25" />
+  <parameter name="instAddrWidth" value="24" />
+  <parameter name="dataAddrWidth" value="24" />
   <parameter name="tightlyCoupledDataMaster0AddrWidth" value="1" />
   <parameter name="tightlyCoupledDataMaster1AddrWidth" value="1" />
   <parameter name="tightlyCoupledDataMaster2AddrWidth" value="1" />
@@ -296,8 +333,8 @@
   <parameter name="tightlyCoupledInstructionMaster1AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster2AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster3AddrWidth" value="1" />
-  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='sdram_0.s1' start='0x800000' end='0x1000000' /><slave name='onchip_memory2_0.s1' start='0x1004000' end='0x1008000' /><slave name='nios2_qsys_0.jtag_debug_module' start='0x1008000' end='0x1008800' /><slave name='leds.s1' start='0x1008840' end='0x1008850' /></address-map>]]></parameter>
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sdram_0.s1' start='0x800000' end='0x1000000' /><slave name='onchip_memory2_0.s1' start='0x1004000' end='0x1008000' /><slave name='timer_0.s1' start='0x1008800' end='0x1008820' /><slave name='altpll_0.pll_slave' start='0x1008830' end='0x1008840' /><slave name='leds.s1' start='0x1008840' end='0x1008850' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x1008850' end='0x1008858' /><slave name='sysid_qsys_0.control_slave' start='0x1008858' end='0x1008860' /></address-map>]]></parameter>
+  <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='onchip_memory2_0.s1' start='0x804000' end='0x808000' /><slave name='nios2_qsys_0.jtag_debug_module' start='0x808800' end='0x809000' /><slave name='leds.s1' start='0x809030' end='0x809040' /></address-map>]]></parameter>
+  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sdram_0.s1' start='0x0' end='0x800000' /><slave name='onchip_memory2_0.s1' start='0x804000' end='0x808000' /><slave name='nios2_qsys_0.jtag_debug_module' start='0x808800' end='0x809000' /><slave name='timer_0.s1' start='0x809000' end='0x809020' /><slave name='leds.s1' start='0x809030' end='0x809040' /><slave name='altpll_0.pll_slave' start='0x809040' end='0x809050' /><slave name='jtag_uart_0.avalon_jtag_slave' start='0x809050' end='0x809058' /><slave name='sysid_qsys_0.control_slave' start='0x809058' end='0x809060' /></address-map>]]></parameter>
   <parameter name="clockFrequency" value="50000000" />
   <parameter name="deviceFamilyName" value="Cyclone IV E" />
   <parameter name="internalIrqMaskSystemInfo" value="3" />
@@ -324,7 +361,7 @@
   <parameter name="resetValue" value="0" />
   <parameter name="simDoTestBenchWiring" value="false" />
   <parameter name="simDrivenValue" value="0" />
-  <parameter name="width" value="1" />
+  <parameter name="width" value="8" />
  </module>
  <module
    kind="altera_avalon_new_sdram_controller"
@@ -521,18 +558,6 @@
   <parameter name="AUTO_INCLK_INTERFACE_CLOCK_RATE" value="50000000" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
  </module>
- <module kind="altera_avalon_timer" version="12.1" enabled="1" name="timer_0">
-  <parameter name="alwaysRun" value="false" />
-  <parameter name="counterSize" value="32" />
-  <parameter name="fixedPeriod" value="false" />
-  <parameter name="period" value="1" />
-  <parameter name="periodUnits" value="USEC" />
-  <parameter name="resetOutput" value="false" />
-  <parameter name="snapshot" value="true" />
-  <parameter name="systemFrequency" value="50000000" />
-  <parameter name="timeoutPulseOutput" value="false" />
-  <parameter name="timerPreset" value="CUSTOM" />
- </module>
  <module
    kind="altera_avalon_sysid_qsys"
    version="12.1"
@@ -542,24 +567,6 @@
   <parameter name="timestamp" value="0" />
   <parameter name="AUTO_CLK_CLOCK_RATE" value="50000000" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
- </module>
- <module
-   kind="altera_avalon_jtag_uart"
-   version="12.1"
-   enabled="1"
-   name="jtag_uart_0">
-  <parameter name="allowMultipleConnections" value="false" />
-  <parameter name="avalonSpec" value="2.0" />
-  <parameter name="hubInstanceID" value="0" />
-  <parameter name="readBufferDepth" value="32" />
-  <parameter name="readIRQThreshold" value="8" />
-  <parameter name="simInputCharacterStream" value="" />
-  <parameter name="simInteractiveOptions">INTERACTIVE_INPUT_OUTPUT</parameter>
-  <parameter name="useRegistersForReadBuffer" value="false" />
-  <parameter name="useRegistersForWriteBuffer" value="false" />
-  <parameter name="useRelativePathForSimFile" value="false" />
-  <parameter name="writeBufferDepth" value="32" />
-  <parameter name="writeIRQThreshold" value="8" />
  </module>
  <module
    kind="altera_avalon_onchip_memory2"
@@ -586,166 +593,42 @@
   <parameter name="useShallowMemBlocks" value="false" />
   <parameter name="writable" value="true" />
  </module>
- <connection
-   kind="reset"
+ <module kind="altera_avalon_timer" version="12.1" enabled="1" name="timer_0">
+  <parameter name="alwaysRun" value="false" />
+  <parameter name="counterSize" value="32" />
+  <parameter name="fixedPeriod" value="false" />
+  <parameter name="period" value="1" />
+  <parameter name="periodUnits" value="MSEC" />
+  <parameter name="resetOutput" value="false" />
+  <parameter name="snapshot" value="true" />
+  <parameter name="systemFrequency" value="50000000" />
+  <parameter name="timeoutPulseOutput" value="false" />
+  <parameter name="timerPreset" value="CUSTOM" />
+ </module>
+ <module
+   kind="altera_avalon_jtag_uart"
    version="12.1"
-   start="clk_0.clk_reset"
-   end="nios2_qsys_0.reset_n" />
- <connection
-   kind="reset"
-   version="12.1"
-   start="nios2_qsys_0.jtag_debug_module_reset"
-   end="nios2_qsys_0.reset_n" />
- <connection kind="reset" version="12.1" start="clk_0.clk_reset" end="leds.reset" />
- <connection
-   kind="reset"
-   version="12.1"
-   start="nios2_qsys_0.jtag_debug_module_reset"
-   end="leds.reset" />
- <connection
-   kind="reset"
-   version="12.1"
-   start="clk_0.clk_reset"
-   end="sdram_0.reset" />
- <connection
-   kind="reset"
-   version="12.1"
-   start="nios2_qsys_0.jtag_debug_module_reset"
-   end="sdram_0.reset" />
- <connection
-   kind="reset"
-   version="12.1"
-   start="clk_0.clk_reset"
-   end="altpll_0.inclk_interface_reset" />
- <connection
-   kind="reset"
-   version="12.1"
-   start="nios2_qsys_0.jtag_debug_module_reset"
-   end="altpll_0.inclk_interface_reset" />
- <connection
-   kind="clock"
-   version="12.1"
-   start="altpll_0.c1"
-   end="nios2_qsys_0.clk" />
- <connection kind="clock" version="12.1" start="altpll_0.c1" end="leds.clk" />
- <connection kind="clock" version="12.1" start="altpll_0.c1" end="sdram_0.clk" />
- <connection
-   kind="avalon"
-   version="12.1"
-   start="nios2_qsys_0.data_master"
-   end="leds.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01008840" />
- </connection>
- <connection
-   kind="avalon"
-   version="12.1"
-   start="nios2_qsys_0.data_master"
-   end="sdram_0.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00800000" />
- </connection>
- <connection
-   kind="avalon"
-   version="12.1"
-   start="nios2_qsys_0.instruction_master"
-   end="leds.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01008840" />
- </connection>
- <connection
-   kind="avalon"
-   version="12.1"
-   start="nios2_qsys_0.instruction_master"
-   end="sdram_0.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x00800000" />
- </connection>
- <connection
-   kind="avalon"
-   version="12.1"
-   start="nios2_qsys_0.instruction_master"
-   end="nios2_qsys_0.jtag_debug_module">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01008000" />
- </connection>
- <connection
-   kind="reset"
-   version="12.1"
-   start="clk_0.clk_reset"
-   end="timer_0.reset" />
- <connection
-   kind="reset"
-   version="12.1"
-   start="nios2_qsys_0.jtag_debug_module_reset"
-   end="timer_0.reset" />
- <connection kind="clock" version="12.1" start="altpll_0.c0" end="timer_0.clk" />
+   enabled="1"
+   name="jtag_uart_0">
+  <parameter name="allowMultipleConnections" value="false" />
+  <parameter name="avalonSpec" value="2.0" />
+  <parameter name="hubInstanceID" value="0" />
+  <parameter name="readBufferDepth" value="64" />
+  <parameter name="readIRQThreshold" value="8" />
+  <parameter name="simInputCharacterStream" value="" />
+  <parameter name="simInteractiveOptions">INTERACTIVE_INPUT_OUTPUT</parameter>
+  <parameter name="useRegistersForReadBuffer" value="false" />
+  <parameter name="useRegistersForWriteBuffer" value="false" />
+  <parameter name="useRelativePathForSimFile" value="false" />
+  <parameter name="writeBufferDepth" value="64" />
+  <parameter name="writeIRQThreshold" value="8" />
+ </module>
  <connection
    kind="interrupt"
    version="12.1"
    start="nios2_qsys_0.d_irq"
    end="timer_0.irq">
   <parameter name="irqNumber" value="0" />
- </connection>
- <connection
-   kind="avalon"
-   version="12.1"
-   start="nios2_qsys_0.data_master"
-   end="sysid_qsys_0.control_slave">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01008858" />
- </connection>
- <connection
-   kind="reset"
-   version="12.1"
-   start="nios2_qsys_0.jtag_debug_module_reset"
-   end="sysid_qsys_0.reset" />
- <connection
-   kind="clock"
-   version="12.1"
-   start="altpll_0.c0"
-   end="sysid_qsys_0.clk" />
- <connection
-   kind="reset"
-   version="12.1"
-   start="clk_0.clk_reset"
-   end="sysid_qsys_0.reset" />
- <connection
-   kind="reset"
-   version="12.1"
-   start="nios2_qsys_0.jtag_debug_module_reset"
-   end="clk_0.clk_in_reset" />
- <connection
-   kind="clock"
-   version="12.1"
-   start="clk_0.clk"
-   end="altpll_0.inclk_interface" />
- <connection
-   kind="avalon"
-   version="12.1"
-   start="nios2_qsys_0.data_master"
-   end="altpll_0.pll_slave">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01008830" />
- </connection>
- <connection kind="clock" version="12.1" start="altpll_0.c0" end="jtag_uart_0.clk" />
- <connection
-   kind="reset"
-   version="12.1"
-   start="clk_0.clk_reset"
-   end="jtag_uart_0.reset" />
- <connection
-   kind="reset"
-   version="12.1"
-   start="nios2_qsys_0.jtag_debug_module_reset"
-   end="jtag_uart_0.reset" />
- <connection
-   kind="avalon"
-   version="12.1"
-   start="nios2_qsys_0.data_master"
-   end="jtag_uart_0.avalon_jtag_slave">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01008850" />
  </connection>
  <connection
    kind="interrupt"
@@ -755,30 +638,176 @@
   <parameter name="irqNumber" value="1" />
  </connection>
  <connection
-   kind="avalon"
+   kind="clock"
    version="12.1"
-   start="nios2_qsys_0.data_master"
-   end="timer_0.s1">
-  <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01008800" />
- </connection>
+   start="clk_0.clk"
+   end="altpll_0.inclk_interface" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="clk_0.clk_reset"
+   end="altpll_0.inclk_interface_reset" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="clk_0.clk_reset"
+   end="nios2_qsys_0.reset_n" />
  <connection
    kind="reset"
    version="12.1"
    start="clk_0.clk_reset"
    end="onchip_memory2_0.reset1" />
+ <connection kind="reset" version="12.1" start="clk_0.clk_reset" end="leds.reset" />
  <connection
-   kind="clock"
+   kind="reset"
    version="12.1"
-   start="altpll_0.c0"
-   end="onchip_memory2_0.clk1" />
+   start="clk_0.clk_reset"
+   end="sdram_0.reset" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="clk_0.clk_reset"
+   end="sysid_qsys_0.reset" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="clk_0.clk_reset"
+   end="timer_0.reset" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="clk_0.clk_reset"
+   end="jtag_uart_0.reset" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="nios2_qsys_0.data_master"
+   end="altpll_0.pll_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00809040" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="nios2_qsys_0.data_master"
+   end="nios2_qsys_0.jtag_debug_module">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00808800" />
+ </connection>
  <connection
    kind="avalon"
    version="12.1"
    start="nios2_qsys_0.data_master"
    end="onchip_memory2_0.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01004000" />
+  <parameter name="baseAddress" value="0x00804000" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="nios2_qsys_0.data_master"
+   end="leds.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00809030" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="nios2_qsys_0.data_master"
+   end="sdram_0.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="nios2_qsys_0.data_master"
+   end="sysid_qsys_0.control_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00809058" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="nios2_qsys_0.data_master"
+   end="timer_0.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00809000" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="nios2_qsys_0.data_master"
+   end="jtag_uart_0.avalon_jtag_slave">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00809050" />
+ </connection>
+ <connection
+   kind="clock"
+   version="12.1"
+   start="altpll_0.c1"
+   end="nios2_qsys_0.clk" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="altpll_0.c1"
+   end="onchip_memory2_0.clk1" />
+ <connection kind="clock" version="12.1" start="altpll_0.c1" end="leds.clk" />
+ <connection kind="clock" version="12.1" start="altpll_0.c1" end="sdram_0.clk" />
+ <connection
+   kind="clock"
+   version="12.1"
+   start="altpll_0.c1"
+   end="sysid_qsys_0.clk" />
+ <connection kind="clock" version="12.1" start="altpll_0.c1" end="timer_0.clk" />
+ <connection kind="clock" version="12.1" start="altpll_0.c1" end="jtag_uart_0.clk" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="nios2_qsys_0.jtag_debug_module_reset"
+   end="altpll_0.inclk_interface_reset" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="nios2_qsys_0.jtag_debug_module_reset"
+   end="nios2_qsys_0.reset_n" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="nios2_qsys_0.jtag_debug_module_reset"
+   end="onchip_memory2_0.reset1" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="nios2_qsys_0.jtag_debug_module_reset"
+   end="leds.reset" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="nios2_qsys_0.jtag_debug_module_reset"
+   end="sdram_0.reset" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="nios2_qsys_0.jtag_debug_module_reset"
+   end="sysid_qsys_0.reset" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="nios2_qsys_0.jtag_debug_module_reset"
+   end="timer_0.reset" />
+ <connection
+   kind="reset"
+   version="12.1"
+   start="nios2_qsys_0.jtag_debug_module_reset"
+   end="jtag_uart_0.reset" />
+ <connection
+   kind="avalon"
+   version="12.1"
+   start="nios2_qsys_0.instruction_master"
+   end="nios2_qsys_0.jtag_debug_module">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00808800" />
  </connection>
  <connection
    kind="avalon"
@@ -786,11 +815,14 @@
    start="nios2_qsys_0.instruction_master"
    end="onchip_memory2_0.s1">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x01004000" />
+  <parameter name="baseAddress" value="0x00804000" />
  </connection>
  <connection
-   kind="reset"
+   kind="avalon"
    version="12.1"
-   start="nios2_qsys_0.jtag_debug_module_reset"
-   end="onchip_memory2_0.reset1" />
+   start="nios2_qsys_0.instruction_master"
+   end="leds.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x00809030" />
+ </connection>
 </system>

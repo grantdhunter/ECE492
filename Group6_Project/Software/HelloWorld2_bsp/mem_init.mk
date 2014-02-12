@@ -174,7 +174,7 @@ HDL_SIM_INSTALL_FILES += $(HDL_SIM_INSTALL_DIR)/$(MEM_0).sym
 $(MEM_0)_START := 0x01004000
 $(MEM_0)_END := 0x01007fff
 $(MEM_0)_HIERARCHICAL_PATH := onchip_memory2_0
-$(MEM_0)_WIDTH := 32
+$(MEM_0)_WIDTH := 16
 $(MEM_0)_ENDIANNESS := --little-endian-mem
 $(MEM_0)_CREATE_LANES := 0
 

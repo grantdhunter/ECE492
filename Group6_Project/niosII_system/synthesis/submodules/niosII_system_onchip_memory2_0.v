@@ -37,17 +37,17 @@ module niosII_system_onchip_memory2_0 (
   parameter INIT_FILE = "../niosII_system_onchip_memory2_0.hex";
 
 
-  output  [ 31: 0] readdata;
-  input   [ 11: 0] address;
-  input   [  3: 0] byteenable;
+  output  [ 15: 0] readdata;
+  input   [ 12: 0] address;
+  input   [  1: 0] byteenable;
   input            chipselect;
   input            clk;
   input            clken;
   input            reset;
   input            write;
-  input   [ 31: 0] writedata;
+  input   [ 15: 0] writedata;
 
-  wire    [ 31: 0] readdata;
+  wire    [ 15: 0] readdata;
   wire             wren;
   assign wren = chipselect & write;
   //s1, which is an e_avalon_slave
@@ -69,15 +69,15 @@ module niosII_system_onchip_memory2_0 (
   defparam the_altsyncram.byte_size = 8,
            the_altsyncram.init_file = INIT_FILE,
            the_altsyncram.lpm_type = "altsyncram",
-           the_altsyncram.maximum_depth = 4096,
-           the_altsyncram.numwords_a = 4096,
+           the_altsyncram.maximum_depth = 8192,
+           the_altsyncram.numwords_a = 8192,
            the_altsyncram.operation_mode = "SINGLE_PORT",
            the_altsyncram.outdata_reg_a = "UNREGISTERED",
            the_altsyncram.ram_block_type = "AUTO",
            the_altsyncram.read_during_write_mode_mixed_ports = "DONT_CARE",
-           the_altsyncram.width_a = 32,
-           the_altsyncram.width_byteena_a = 4,
-           the_altsyncram.widthad_a = 12;
+           the_altsyncram.width_a = 16,
+           the_altsyncram.width_byteena_a = 2,
+           the_altsyncram.widthad_a = 13;
 
 
 //////////////// END SIMULATION-ONLY CONTENTS
@@ -98,15 +98,15 @@ module niosII_system_onchip_memory2_0 (
 //  defparam the_altsyncram.byte_size = 8,
 //           the_altsyncram.init_file = "niosII_system_onchip_memory2_0.hex",
 //           the_altsyncram.lpm_type = "altsyncram",
-//           the_altsyncram.maximum_depth = 4096,
-//           the_altsyncram.numwords_a = 4096,
+//           the_altsyncram.maximum_depth = 8192,
+//           the_altsyncram.numwords_a = 8192,
 //           the_altsyncram.operation_mode = "SINGLE_PORT",
 //           the_altsyncram.outdata_reg_a = "UNREGISTERED",
 //           the_altsyncram.ram_block_type = "AUTO",
 //           the_altsyncram.read_during_write_mode_mixed_ports = "DONT_CARE",
-//           the_altsyncram.width_a = 32,
-//           the_altsyncram.width_byteena_a = 4,
-//           the_altsyncram.widthad_a = 12;
+//           the_altsyncram.width_a = 16,
+//           the_altsyncram.width_byteena_a = 2,
+//           the_altsyncram.widthad_a = 13;
 //
 //synthesis read_comments_as_HDL off
 

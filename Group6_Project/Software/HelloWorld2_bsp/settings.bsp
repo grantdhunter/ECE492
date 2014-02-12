@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>ucosii</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>11-Feb-2014 4:50:05 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1392162605072</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>12-Feb-2014 12:14:13 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1392232453712</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\grgomez\Desktop\ECE492\Group6_Project\Software\HelloWorld2_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\grgomez\Desktop\ECE492\Group6_Project\niosII_system.sopcinfo</SopcDesignFile>
