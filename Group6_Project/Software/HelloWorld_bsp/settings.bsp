@@ -2,10 +2,10 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>ucosii</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>11-Feb-2014 4:30:55 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1392161455898</BspGeneratedUnixTimeStamp>
-        <BspGeneratedLocation>C:\Users\grgomez\Desktop\ECE492\Group6_Project\Software\HelloWorld_bsp</BspGeneratedLocation>
-        <BspSettingsFile>settings.bsp</BspSettingsFile>
+        <BspGeneratedTimeStamp>13-Feb-2014 10:42:17 AM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1392313337886</BspGeneratedUnixTimeStamp>
+        <BspGeneratedLocation>C:\Users\grgomez\Desktop\ECE492\Group6_Project\software\HelloWorld_bsp</BspGeneratedLocation>
+        <BspSettingsFile>.\settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\grgomez\Desktop\ECE492\Group6_Project\niosII_system.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>nios2_qsys_0</Cpu>
@@ -14,7 +14,7 @@
                 <SettingName>hal.sys_clk_timer</SettingName>
                 <Identifier>ALT_SYS_CLK</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>none</Value>
+                <Value>timer_0</Value>
                 <DefaultValue>none</DefaultValue>
                 <DestinationFile>system_h_define</DestinationFile>
                 <Description>Slave descriptor of the system clock timer device. This device provides a periodic interrupt ("tick") and is typically required for RTOS use. This setting defines the value of ALT_SYS_CLK in system.h.</Description>
@@ -110,7 +110,7 @@
                 <SettingName>hal.linker.enable_alt_load_copy_exceptions</SettingName>
                 <Identifier>NONE</Identifier>
                 <Type>Boolean</Type>
-                <Value>0</Value>
+                <Value>1</Value>
                 <DefaultValue>0</DefaultValue>
                 <DestinationFile>none</DestinationFile>
                 <Description>Causes the alt_load() facility to copy the .exceptions section. If true, this setting defines the macro ALT_LOAD_COPY_EXCEPTIONS in linker.h.</Description>
@@ -1697,32 +1697,38 @@
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>onchip_memory2_0</slaveDescriptor>
+                <addressRange>0x01004000 - 0x01007FFF</addressRange>
+                <addressSpan>16384</addressSpan>
+                <attributes>memory</attributes>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>timer_0</slaveDescriptor>
-                <addressRange>0x01000800 - 0x0100081F</addressRange>
+                <addressRange>0x01009020 - 0x0100903F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>altpll_0</slaveDescriptor>
-                <addressRange>0x01000830 - 0x0100083F</addressRange>
+                <slaveDescriptor>leds</slaveDescriptor>
+                <addressRange>0x01009060 - 0x0100906F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>leds</slaveDescriptor>
-                <addressRange>0x01000840 - 0x0100084F</addressRange>
+                <slaveDescriptor>altpll_0</slaveDescriptor>
+                <addressRange>0x01009070 - 0x0100907F</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart_0</slaveDescriptor>
-                <addressRange>0x01000850 - 0x01000857</addressRange>
+                <addressRange>0x01009088 - 0x0100908F</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sysid_qsys_0</slaveDescriptor>
-                <addressRange>0x01000858 - 0x0100085F</addressRange>
+                <addressRange>0x01009090 - 0x01009097</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>

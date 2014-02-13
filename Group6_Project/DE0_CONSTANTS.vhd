@@ -13,7 +13,7 @@ use ieee.VITAL_Primitives.all;
 
 package DE0_CONSTANTS is	
 	
-	type DE0_SDRAM_ADDR_BUS is array(11 downto 0) of std_logic;
+	type DE0_SDRAM_ADDR_BUS  is array(12 downto 0) of std_logic;
 	type DE0_SDRAM_DATA_BUS is array(15 downto 0) of std_logic;
 	
 	type DE0_LED_GREEN		is array(7 downto 0)  of std_logic;

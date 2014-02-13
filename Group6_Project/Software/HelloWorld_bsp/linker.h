@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_qsys_0' in SOPC Builder design 'niosII_system'
  * SOPC Builder design path: C:/Users/grgomez/Desktop/ECE492/Group6_Project/niosII_system.sopcinfo
  *
- * Generated: Tue Feb 11 16:14:31 MST 2014
+ * Generated: Thu Feb 13 10:42:18 MST 2014
  */
 
 /*
@@ -65,10 +65,12 @@
  *
  */
 
-#define RESET_REGION_BASE 0x800000
+#define ONCHIP_MEMORY2_0_REGION_BASE 0x1004020
+#define ONCHIP_MEMORY2_0_REGION_SPAN 16352
+#define RESET_REGION_BASE 0x1004000
 #define RESET_REGION_SPAN 32
-#define SDRAM_0_REGION_BASE 0x800020
-#define SDRAM_0_REGION_SPAN 8388576
+#define SDRAM_0_REGION_BASE 0x800000
+#define SDRAM_0_REGION_SPAN 8388608
 
 
 /*
@@ -76,8 +78,8 @@
  *
  */
 
-#define ALT_EXCEPTIONS_DEVICE SDRAM_0
-#define ALT_RESET_DEVICE SDRAM_0
+#define ALT_EXCEPTIONS_DEVICE ONCHIP_MEMORY2_0
+#define ALT_RESET_DEVICE ONCHIP_MEMORY2_0
 #define ALT_RODATA_DEVICE SDRAM_0
 #define ALT_RWDATA_DEVICE SDRAM_0
 #define ALT_TEXT_DEVICE SDRAM_0
@@ -96,6 +98,7 @@
  *
  */
 
+#define ALT_LOAD_COPY_EXCEPTIONS
 #define ALT_LOAD_COPY_RWDATA
 
 #endif /* __LINKER_H_ */

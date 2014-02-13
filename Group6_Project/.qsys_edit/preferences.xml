@@ -3,20 +3,19 @@
  <debug showDebugMenu="0" />
  <systemtable>
   <columns>
-   <connections preferredWidth="159" />
-   <irq preferredWidth="34" />
+   <connections preferredWidth="127" />
+   <irq preferredWidth="63" />
   </columns>
  </systemtable>
  <clocktable>
   <columns>
-   <clockname preferredWidth="388" />
-   <clocksource preferredWidth="387" />
-   <frequency preferredWidth="369" />
+   <clockname preferredWidth="348" />
+   <clocksource preferredWidth="347" />
+   <frequency preferredWidth="331" />
   </columns>
  </clocktable>
- <library
-   expandedCategories="Project,Library,Library/Peripherals/Microcontroller Peripherals,Library/Peripherals" />
- <window width="1456" height="876" x="-8" y="-8" />
+ <library expandedCategories="Library,Project,Library/PLL" />
+ <window width="1440" height="860" x="0" y="0" />
  <hdlexample language="VHDL" />
  <generation simulation="NONE" />
 </preferences>

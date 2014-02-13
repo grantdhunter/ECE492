@@ -4,7 +4,7 @@
  * Machine generated for CPU 'nios2_qsys_0' in SOPC Builder design 'niosII_system'
  * SOPC Builder design path: C:/Users/grgomez/Desktop/ECE492/Group6_Project/niosII_system.sopcinfo
  *
- * Generated: Tue Feb 11 16:14:31 MST 2014
+ * Generated: Thu Feb 13 10:42:18 MST 2014
  */
 
 /*
@@ -50,12 +50,14 @@
 
 MEMORY
 {
-    reset : ORIGIN = 0x800000, LENGTH = 32
-    sdram_0 : ORIGIN = 0x800020, LENGTH = 8388576
+    sdram_0 : ORIGIN = 0x800000, LENGTH = 8388608
+    reset : ORIGIN = 0x1004000, LENGTH = 32
+    onchip_memory2_0 : ORIGIN = 0x1004020, LENGTH = 16352
 }
 
 /* Define symbols for each memory base-address */
 __alt_mem_sdram_0 = 0x800000;
+__alt_mem_onchip_memory2_0 = 0x1004000;
 
 OUTPUT_FORMAT( "elf32-littlenios2",
                "elf32-littlenios2",
@@ -84,7 +86,14 @@ SECTIONS
         KEEP (*(.entry))
     } > reset
 
-    .exceptions :
+    /*
+     *
+     * This section's LMA is set to the .text region.
+     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
+     *
+     */
+
+    .exceptions : AT ( 0x800000 )
     {
         PROVIDE (__ram_exceptions_start = ABSOLUTE(.));
         . = ALIGN(0x20);
@@ -110,11 +119,18 @@ SECTIONS
         KEEP (*(.exceptions.exit));
         KEEP (*(.exceptions));
         PROVIDE (__ram_exceptions_end = ABSOLUTE(.));
-    } > sdram_0
+    } > onchip_memory2_0
 
     PROVIDE (__flash_exceptions_start = LOADADDR(.exceptions));
 
-    .text :
+    /*
+     *
+     * This section's LMA is set to the .text region.
+     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
+     *
+     */
+
+    .text LOADADDR (.exceptions) + SIZEOF (.exceptions) : AT ( LOADADDR (.exceptions) + SIZEOF (.exceptions) )
     {
         /*
          * All code sections are merged into the text output section, along with
@@ -208,7 +224,14 @@ SECTIONS
         . = ALIGN(4);
     } > sdram_0 = 0x3a880100 /* Nios II NOP instruction */
 
-    .rodata :
+    /*
+     *
+     * This section's LMA is set to the .text region.
+     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
+     *
+     */
+
+    .rodata LOADADDR (.text) + SIZEOF (.text) : AT ( LOADADDR (.text) + SIZEOF (.text) )
     {
         PROVIDE (__ram_rodata_start = ABSOLUTE(.));
         . = ALIGN(4);
@@ -318,6 +341,23 @@ SECTIONS
     } > sdram_0
 
     PROVIDE (_alt_partition_sdram_0_load_addr = LOADADDR(.sdram_0));
+
+    /*
+     *
+     * This section's LMA is set to the .text region.
+     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
+     *
+     */
+
+    .onchip_memory2_0 : AT ( LOADADDR (.sdram_0) + SIZEOF (.sdram_0) )
+    {
+        PROVIDE (_alt_partition_onchip_memory2_0_start = ABSOLUTE(.));
+        *(.onchip_memory2_0. onchip_memory2_0.*)
+        . = ALIGN(4);
+        PROVIDE (_alt_partition_onchip_memory2_0_end = ABSOLUTE(.));
+    } > onchip_memory2_0
+
+    PROVIDE (_alt_partition_onchip_memory2_0_load_addr = LOADADDR(.onchip_memory2_0));
 
     /*
      * Stabs debugging sections.
