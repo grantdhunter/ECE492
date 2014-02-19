@@ -25,13 +25,13 @@ public:
 	/*
 	 * Read data from the EMG sensor.
 	 */
-	long EmgInterface::rawRead();
+	long rawRead();
 
 	/*
 	 * Determing if data from the EMG sensor is greater than a set threshold.
 	 * Takes the threshold value and the raw EMG data.
 	 */
-	bool EmgInterface::isOverThreshold(long, long);
+	bool isOverThreshold(long, long);
 };
 
 #endif /* EMGINTERFACE_H_ */
