@@ -1,9 +1,12 @@
 .metadata
 .cproject
 .project
+
 *.o
-/output_files/
-/incremental_db/
-/greybox_tmp/
-/db/
-/.qsys_edit
+
+/de0_nano/output_files/
+/de0_nano/incremental_db/
+/de0_nano/greybox_tmp/
+/de0_nano/db/
+/de0_nano/system/
+/de0_nano/.qsys_edit
