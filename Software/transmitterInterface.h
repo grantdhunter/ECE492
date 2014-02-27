@@ -7,26 +7,28 @@
 
 #ifndef TRANSMITTERINTERFACE_H_
 #define TRANSMITTERINTERFACE_H_
-#define ON 1;
-#define OFF 0;
 
+
+#define FORWARD_CMD 0x1000;
+#define REVERSE_CMD 0x0100;
+#define LEFT_CMD 	0x0010;
+#define RIGHT_CMD	0x0001;
+#define OFF_CMD 	0x0000;
+#define CLEAR_TURN  0x1100;
+#define CLEAR_MOVE  0x0011;
+
+typedef void* Addr;
+typedef unsigned char Byte;
 class TransmitterInterface {
 
-		int* forwardPin;
-		int* backwardPin;
-		int* leftPin;
-		int* rightPin;
+	Addr baseAddress;
+
 public:
 	
 	/*
 	 * Constructor for if the addresses are adjacent to each other
 	 */
-	TransmitterInterface(int*);
-	/*
-	 * Constructor which takes the base address to the four pins that lead to
-	 * the transmitter. One pin for each left turn, right turn, forward and backwards
-	 */
-	TransmitterInterface(int*, int*, int*, int*);
+	TransmitterInterface(Addr);
 
 	/*
 	 * Destructor for the transmitterInterface object.
@@ -36,36 +38,41 @@ public:
 	/**
 	 * Send turn left signal to transmitter.
 	 */
-	void turnLeftOn();
+	void turnLeft();
 	/**
 	 * Send turn right signal to transmitter.
 	 */
-	void turnRightOn();
+	void turnRight();
 	/**
 	 * Send go forward signal to transmitter.
 	 */
-	void moveForwardOn();
+	void moveForward();
 	/**
 	 * Send reverse signal to transmitter.
 	 */
-	void moveBackwardOn();
+	void moveReverse();
 	/**
-	 * Send stop turning left signal to transmitter.
+	 * Send stop turning signal to transmitter.
 	 */
-	void turnLeftOff();
-	/**
-	 * Send stop turning right signal to transmitter.
+	void turnOff();
+	/*
+	 * Send stop moving  signal to transmitter.
 	 */
-	void turnRightOff();
-	/**
-	 * Send stop moving forwards signal to transmitter.
+	void moveOff();
+	
+private:
+	/*
+	 *Check the register to see what the previous command is and compare to the 
+	 *new command to ensure no illogical commands get sent to the transmitter.
+	 *i.e turn left and right
 	 */
-	void moveForwardOff();
-	/**
-	 * Send stop moving backwards signal to transmitter.
+	Byte validateTurn(Byte, Byte);
+	/*
+	 *Check the register to see what the previous command is and compare to the 
+	 *new command to ensure no illogical commands get sent to the transmitter.
+	 *i.e move forward and reverse
 	 */
-	void moveBackwardOff();
-
+	Byte validateMove( Byte, Byte);
 
 };
 

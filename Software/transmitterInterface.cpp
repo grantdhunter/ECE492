@@ -6,96 +6,166 @@
  */
 
 #include "transmitterInterface.h"
-#include "altera_avalon_pio_regs.h"
 
-
-/*
- * Transmitter interface object constructor. Takes four base address
- * for GPIO pins that are connected to a transmitter.
- * TODO correct the Base address names and types
- */
-TransmitterInterface::TransmitterInterface(int* baseAddr) {
- // TODO Auto-generated constructor stub
- forwardPin = baseAddr;
- backwardPin = baseAddr+1;
- leftPin = baseAddr+2;
- rightPin = baseAddr+3;
+extern "C" {
+	#include "altera_avalon_pio_regs.h"
 }
 
+/********Public Functions*************/
+
 /*
  * Transmitter interface object constructor. Takes four base address
  * for GPIO pins that are connected to a transmitter.
  * TODO correct the Base address names and types
  */
-TransmitterInterface::TransmitterInterface(int* addrForward,int* addrBack,int* addrRight,int* addrLeft) {
- // TODO Auto-generated constructor stub
- forwardPin = addrForward;
- backwardPin = addrBack;
- leftPin = addrLeft;
- rightPin = addrRight;
+TransmitterInterface::TransmitterInterface(Addr baseAddr) {
+	
+	baseAddress = baseAddr;
 }
 
 /*
  * Destructor for the transmitterInterface object.
  */
 TransmitterInterface::~TransmitterInterface() {
- // TODO Auto-generated destructor stub
+	// TODO Auto-generated destructor stub
 }
 
 /*
  * Send turn left signal to transmitter.
- */ 
-void TransmitterInterface::turnLeftOn() {
-  IOWR_ALTERA_AVALON_PIO_DIRECTION(leftPin, ON);
+ */
+void TransmitterInterface::turnLeft() {
+	Byte oldReg = 0;
+	Byte newReg = 0;
+	
+	//Read current status of the register
+	oldReg = IORD_ALTERA_AVALON_PIO_DATA(baseAdress);
+	
+	//Create new valid turn command with out changing the other movement
+	newReg = validateTurn(transReg,LEFT_CMD);
+	
+	//Write the new command to the register
+	IOWR_ALTERA_AVALON_PIO_DATA(baseAddress, newReg);
 }
 
 /**
  *  Send turn right signal to transmitter.
  */
-void TransmitterInterface::turnRightOn() {
- IOWR_ALTERA_AVALON_PIO_DIRECTION(rightPin, ON);
+void TransmitterInterface::turnRight() {
+	Byte oldReg = 0;
+	Byte newReg = 0;
+	
+	//Read current status of the register
+	oldReg = IORD_ALTERA_AVALON_PIO_DATA(baseAdress);
+	
+	//Create new valid turn command with out changing the other movement
+	newReg = validateTurn(transReg,RIGHT_CMD);
+	
+	//Write the new command to the register
+	IOWR_ALTERA_AVALON_PIO_DATA(baseAddress, newReg);
 }
 
 /**
  * Send forward signal to transmitter.
  */
-void TransmitterInterface::moveForwardOn() {
- IOWR_ALTERA_AVALON_PIO_DIRECTION(forwardPin, ON);
+void TransmitterInterface::moveForward() {
+	Byte oldReg = 0;
+	Byte newReg = 0;
+	
+	//Read current status of the register
+	oldReg = IORD_ALTERA_AVALON_PIO_DATA(baseAdress);
+	
+	//Create new valid movement command with out changing the turning property
+	newReg = validateMove(transReg,FORWARD_CMD);
+	
+	//Write the new command to the register
+	IOWR_ALTERA_AVALON_PIO_DATA(baseAddress, newReg);
 }
 
 /**
  * Send reverse signal to transmitter.
  */
-void TransmitterInterface::moveBackwardOn() {
- IOWR_ALTERA_AVALON_PIO_DIRECTION(backwardPin, ON);
+void TransmitterInterface::moveReverse() {
+	Byte oldReg = 0;
+	Byte newReg = 0;
+	
+	//Read current status of the register
+	oldReg = IORD_ALTERA_AVALON_PIO_DATA(baseAdress);
+	
+	//Create new valid movement command with out changing the turning property
+	newReg = validateMove(transReg,REVERSE_CMD);
+	
+	//Write the new command to the register
+	IOWR_ALTERA_AVALON_PIO_DATA(baseAddress, newReg);
 }
 
 /**
- * Send stop turning left signal to transmitter.
+ * Send stop turning signal to transmitter.
  */
-void TransmitterInterface::turnLeftOff() {
-  IOWR_ALTERA_AVALON_PIO_DIRECTION(leftPin, OFF);
+void TransmitterInterface::turnOff() {
+	Byte oldReg = 0;
+	Byte newReg = 0;
+	
+	//Read current status of the register
+	oldReg = IORD_ALTERA_AVALON_PIO_DATA(baseAdress);
+	
+	//Create new valid turn command with out changing the other movement
+	newReg = validateTurn(transReg,OFF_CMD);
+	
+	//Write the new command to the register
+	IOWR_ALTERA_AVALON_PIO_DATA(baseAddress, newReg);
 }
 
-/**
- * Send stop turning right signal to transmitter.
- */
-void TransmitterInterface::turnRightOff() {
- IOWR_ALTERA_AVALON_PIO_DIRECTION(rightPin, OFF);
-}
 
 /**
  * Send stop moving forwards signal to transmitter.
  */
-void TransmitterInterface::moveForwardOff() {
- IOWR_ALTERA_AVALON_PIO_DIRECTION(forwardPin, OFF);
+void TransmitterInterface::moveOff() {
+	Byte oldReg = 0;
+	Byte newReg = 0;
+	
+	//Read current status of the register
+	oldReg = IORD_ALTERA_AVALON_PIO_DATA(baseAdress);
+	
+	//Create new valid movement command with out changing the turning property
+	newReg = validateMove(transReg,OFF_CMD);
+	
+	//Write the new command to the register
+	IOWR_ALTERA_AVALON_PIO_DATA(baseAddress, newReg);
 }
 
-/**
- * Send stop moving backwards signal to transmitter.
+
+
+/********Private Functions*************/
+
+/*
+ *Check the register to see what the previous command is and compare to the 
+ *new command to ensure no illogical commands get sent to the transmitter.
+ *i.e turn left and right
  */
-void TransmitterInterface::moveBackwardOff() {
- IOWR_ALTERA_AVALON_PIO_DIRECTION(backwardPin, OFF);
+Byte validateTurn( Byte currentReg, Byte command) {
+	
+	//Clear previous turn commands.
+	Byte newReg = currentReg & CLEAR_TURN;
+	
+	//Set the new turn command.
+	newReg = newReg | command;
+	
+	return newReg;
+}
+/*
+ *Check the register to see what the previous command is and compare to the 
+ *new command to ensure no illogical commands get sent to the transmitter.
+ *i.e move forward and reverse
+ */
+Byte validateMove( Byte currentReg, Byte command) {
+	
+	//Clear previous movement commands.
+	Byte newReg = currentReg & CLEAR_MOVE;
+	
+	//Set the new movement command.
+	newReg = newReg | command;
+	
+	return newReg;
 }
 
 //The MIT License (MIT)
