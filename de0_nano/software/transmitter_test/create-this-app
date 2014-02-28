@@ -3,9 +3,9 @@
 # This script creates the hello_ucosii application in this directory.
 
 
-BSP_DIR=../transmitterTest_bsp
+BSP_DIR=../transmitter_test_bsp
 QUARTUS_PROJECT_DIR=../../
-NIOS2_APP_GEN_ARGS="--elf-name transmitterTest.elf --set OBJDUMP_INCLUDE_SOURCE 1 --src-files hello_ucosii.c"
+NIOS2_APP_GEN_ARGS="--elf-name transmitter_test.elf --set OBJDUMP_INCLUDE_SOURCE 1 --src-files hello_ucosii.c"
 
 
 # First, check to see if $SOPC_KIT_NIOS2 environmental variable is set.

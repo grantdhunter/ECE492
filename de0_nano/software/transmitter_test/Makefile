@@ -139,11 +139,11 @@ ACDS_VERSION := 12.1sp1
 # Define path to the application ELF. 
 # It may be used by the makefile fragments so is defined before including them. 
 # 
-ELF := transmitterTest.elf
+ELF := transmitter_test.elf
 
 # Paths to C, C++, and assembly source files.
 C_SRCS :=
-CXX_SRCS += hello_ucosii.cpp
+CXX_SRCS += transmitter_test.cpp
 CXX_SRCS += transmitterInterface.cpp
 ASM_SRCS :=
 
@@ -178,7 +178,7 @@ CRT0 :=
 SYS_LIB :=
 
 # Define path to the root of the BSP.
-BSP_ROOT_DIR := ../transmitterTest_bsp/
+BSP_ROOT_DIR := ../transmitter_test_bsp/
 
 # List of application specific include directories, library directories and library names
 APP_INCLUDE_DIRS :=

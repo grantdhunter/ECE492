@@ -8,17 +8,18 @@
 #ifndef TRANSMITTERINTERFACE_H_
 #define TRANSMITTERINTERFACE_H_
 
-
-#define FORWARD_CMD 0x1000;
-#define REVERSE_CMD 0x0100;
-#define LEFT_CMD 	0x0010;
-#define RIGHT_CMD	0x0001;
-#define OFF_CMD 	0x0000;
-#define CLEAR_TURN  0x1100;
-#define CLEAR_MOVE  0x0011;
-
 typedef void* Addr;
 typedef unsigned char Byte;
+
+const Byte FORWARD_CMD = 0x8;
+const Byte REVERSE_CMD = 0x4;
+const Byte LEFT_CMD =	 0x2;
+const Byte RIGHT_CMD =	 0x1;
+const Byte OFF_CMD =	 0x0;
+const Byte CLEAR_TURN =  0xC;
+const Byte CLEAR_MOVE =  0x3;
+
+
 class TransmitterInterface {
 
 	Addr baseAddress;

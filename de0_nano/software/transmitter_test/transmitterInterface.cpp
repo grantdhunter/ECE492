@@ -5,12 +5,12 @@
  *      Author: gdhunter
  */
 
-#include "transmitterInterface.h"
+#include "transmitterInterface"
 
-extern "C" {
-	#include "altera_avalon_pio_regs.h"
-}
 
+#include "altera_avalon_pio_regs.h"
+
+typedef unsigned char Byte;
 /********Public Functions*************/
 
 /*

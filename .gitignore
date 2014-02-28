@@ -1,6 +1,7 @@
 .metadata
 .cproject
 .project
+.force_relink
 
 *.o
 
