@@ -29,7 +29,7 @@ EmgInterface::~EmgInterface() {
  */
 long EmgInterface::rawRead() {
 	volatile long rawData;
-	rawData = *IORD_ALTERA_AVALON_PIO_DIRECTION(BaseAddress);
+	rawData = IORD_ALTERA_AVALON_PIO_DATA(BaseAddress);
 	return rawData;
 }
 
