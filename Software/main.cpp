@@ -17,33 +17,39 @@ OS_STK  tast_gyro_stk[TASK_STACKSIZE];
 #define EMG_THRESHOLD_TOP 
 #define EMG_THRESHOLD_BOTTOM
 
+EmgInterface emg(EMG_BASE_ADDRESS);
 
+TransmitterInterface transmitter(TRANSMITTER_BASE_ADDRESS);
 
+MPU6050 imu(IMU_BASE_ADDRESS);
 
 /*Task that polls EMG Sensor, processes the information and relays it to the transmitter*/
 void taskEmg(void* pdata)
 {
-    EmgInterface emg = new EmgInterface(EMG_BASE_ADDRESS);
-    TransmitterInterface transmitter = new TransmitterInterface(TRANSMITTER_BASE_ADDRESS);
+    
+    
     long emgData;
-    while(1){           
+    while(1){  
+         
         //Read analogue data from EMG sensor
         emgData = emg.readData();
+
         //Convert data to usable information
-        SmoothEMGData(&emgData);
+       	//SmoothEMGData(&emgData);
+
         //Compare EMG to threshold value. Either raw signal or frequency.
         //Send the appropriate signal determined by the threshold.
         //Signal could be Forward or Reverse.
         //Otherwise do nothing
+
         if (emgData > EMG_THRESHOLD_TOP )
         {
-            transmitter.setForwardOn();
+            transmitter.moveForward();
         } else if ( emgData < EMG_THRESHOLD_BOTTOM)
         {
-            transmitter.setReverseOn();
+            transmitter.moveReverse();
         } else {
-            transmitter.setForwardOff();
-            transmitter.setReverseOff();
+            transmitter.moveOff();
         }
 
     }
@@ -53,7 +59,7 @@ void taskEmg(void* pdata)
 /*Task that polls Gyro Sensor, processes the information and relays it to the transmitter*/
 void taskGyro(void* pdata)
 {
-    MPU6050 imu = new MPU6050(IMU_BASE_ADDRESS);
+   
     TransmitterInterface transmitter = nwe TransmitterInterface(TRANSMITTER_BASE_ADDRESS);
     long gyroAngle;
 
@@ -90,15 +96,15 @@ void taskGyro(void* pdata)
         //Send the appropriate signal determined by the threshold.
         //Signal could be left or right.
         //Otherwise do nothing
-        if (gyroAngle > LEFT_ANGLE_THRESHOLD )
+       
+	if (gyroAngle > LEFT_ANGLE_THRESHOLD )
         {
-            transmitter.turnLeftOn();
+            transmitter.turnLeft();
         } else if ( emgData < RIGHT_ANGLE_THRESHOLD)
         {
-            transmitter.turnRightOn();
+            transmitter.turnRight();
         } else {
-            transmitter.turnLeftOff();
-            transmitter.turnRightOff();
+            transmitter.turnOff();
         }
 
     }
