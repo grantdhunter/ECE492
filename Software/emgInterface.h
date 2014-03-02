@@ -8,6 +8,8 @@
 #ifndef EMGINTERFACE_H_
 #define EMGINTERFACE_H_
 
+Typedef void * Addr
+
 class EmgInterface {
 	int* BaseAddress;
 public:
@@ -15,7 +17,7 @@ public:
 	 * EMG sensor software interface constructor. Takes the base address of the
 	 * pin that the EMG sensor is connected to.
 	 */
-	EmgInterface(int*);
+	EmgInterface(Addr);
 
 	/*
 	 * Destructor for the emgIterface object

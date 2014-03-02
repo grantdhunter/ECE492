@@ -12,7 +12,7 @@
  * EMG sensor software interface constructor. Takes the base address of the
  * pin that the EMG sensor is connected to.
  */
-EmgInterface::EmgInterface(int* baseAddr) {
+EmgInterface::EmgInterface(Addr baseAddr) {
 	BaseAddress = baseAddr;
 
 }
