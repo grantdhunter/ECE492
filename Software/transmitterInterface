@@ -8,8 +8,12 @@
 #ifndef TRANSMITTERINTERFACE_H_
 #define TRANSMITTERINTERFACE_H_
 
+#include <utils.h>
+
 typedef void* Addr;
 typedef unsigned char Byte;
+
+OS_SEM transmitter_lock;
 
 const Byte FORWARD_CMD = 0x8;
 const Byte REVERSE_CMD = 0x4;

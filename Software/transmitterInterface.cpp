@@ -6,9 +6,8 @@
  */
 
 #include "transmitterInterface"
-
-
 #include "altera_avalon_pio_regs.h"
+#include <utils.h>
 
 typedef unsigned char Byte;
 /********Public Functions*************/
@@ -21,6 +20,7 @@ typedef unsigned char Byte;
 TransmitterInterface::TransmitterInterface(Addr baseAddr) {
 	
 	baseAddress = baseAddr;
+    OSSemInit(&transmitter_lock)
 }
 
 /*
@@ -37,6 +37,7 @@ void TransmitterInterface::turnLeft() {
 	Byte oldReg = 0;
 	Byte newReg = 0;
 	
+    OSSemPend(&transmitter_lock);
 	//Read current status of the register
 	oldReg = IORD_ALTERA_AVALON_PIO_DATA(baseAddress);
 	
@@ -45,6 +46,7 @@ void TransmitterInterface::turnLeft() {
 	
 	//Write the new command to the register
 	IOWR_ALTERA_AVALON_PIO_DATA(baseAddress, newReg);
+    OSSemPost(&transmitter_lock);
 }
 
 /**
@@ -54,6 +56,7 @@ void TransmitterInterface::turnRight() {
 	Byte oldReg = 0;
 	Byte newReg = 0;
 	
+    OSSemPend(&transmitter_lock);
 	//Read current status of the register
 	oldReg = IORD_ALTERA_AVALON_PIO_DATA(baseAddress);
 	
@@ -62,6 +65,7 @@ void TransmitterInterface::turnRight() {
 	
 	//Write the new command to the register
 	IOWR_ALTERA_AVALON_PIO_DATA(baseAddress, newReg);
+    OSSemPost(&transmitter_lock);
 }
 
 /**
@@ -71,6 +75,7 @@ void TransmitterInterface::moveForward() {
 	Byte oldReg = 0;
 	Byte newReg = 0;
 	
+    OSSemPend(&transmitter_lock);
 	//Read current status of the register
 	oldReg = IORD_ALTERA_AVALON_PIO_DATA(baseAddress);
 	
@@ -79,6 +84,7 @@ void TransmitterInterface::moveForward() {
 	
 	//Write the new command to the register
 	IOWR_ALTERA_AVALON_PIO_DATA(baseAddress, newReg);
+    OSSemPost(&transmitter_lock);
 }
 
 /**
@@ -88,6 +94,7 @@ void TransmitterInterface::moveReverse() {
 	Byte oldReg = 0;
 	Byte newReg = 0;
 	
+    OSSemPend(&transmitter_lock);
 	//Read current status of the register
 	oldReg = IORD_ALTERA_AVALON_PIO_DATA(baseAddress);
 	
@@ -96,6 +103,7 @@ void TransmitterInterface::moveReverse() {
 	
 	//Write the new command to the register
 	IOWR_ALTERA_AVALON_PIO_DATA(baseAddress, newReg);
+    OSSemPost(&transmitter_lock);
 }
 
 /**
@@ -105,6 +113,7 @@ void TransmitterInterface::turnOff() {
 	Byte oldReg = 0;
 	Byte newReg = 0;
 	
+    OSSemPend(&transmitter_lock);
 	//Read current status of the register
 	oldReg = IORD_ALTERA_AVALON_PIO_DATA(baseAddress);
 	
@@ -113,6 +122,7 @@ void TransmitterInterface::turnOff() {
 	
 	//Write the new command to the register
 	IOWR_ALTERA_AVALON_PIO_DATA(baseAddress, newReg);
+    OSSemPost(&transmitter_lock);
 }
 
 
@@ -123,6 +133,7 @@ void TransmitterInterface::moveOff() {
 	Byte oldReg = 0;
 	Byte newReg = 0;
 	
+    OSSemPend(&transmitter_lock);
 	//Read current status of the register
 	oldReg = IORD_ALTERA_AVALON_PIO_DATA(baseAddress);
 	
@@ -131,6 +142,7 @@ void TransmitterInterface::moveOff() {
 	
 	//Write the new command to the register
 	IOWR_ALTERA_AVALON_PIO_DATA(baseAddress, newReg);
+    OSSemPost(&transmitter_lock);
 }
 
 
@@ -143,7 +155,7 @@ void TransmitterInterface::moveOff() {
  *i.e turn left and right
  */
 Byte validateTurn( Byte currentReg, Byte command) {
-	
+	  
 	//Clear previous turn commands.
 	Byte newReg = currentReg & CLEAR_TURN;
 	
