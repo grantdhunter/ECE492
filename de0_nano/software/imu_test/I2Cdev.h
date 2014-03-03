@@ -68,21 +68,18 @@ THE SOFTWARE.
 // -----------------------------------------------------------------------------
 //#define I2CDEV_SERIAL_DEBUG
 
-#ifdef ARDUINO
-    #if ARDUINO < 100
-        #include "WProgram.h"
-    #else
-        #include "Arduino.h"
-    #endif
-    #if I2CDEV_IMPLEMENTATION == I2CDEV_ARDUINO_WIRE
-        #include <Wire.h>
-    #endif
-#else
-    #include "ArduinoWrapper.h"
-#endif
+
 
 // 1000ms default read timeout (modify with "I2Cdev::readTimeout = [ms];")
 #define I2CDEV_DEFAULT_READ_TIMEOUT     0
+typedef signed char int8_t;
+typedef unsigned char uint8_t;
+typedef signed int int16_t;
+typedef unsigned int uint16_t;
+typedef signed long  int32_t;
+typedef unsigned long uint32_t;
+typedef signed long long int64_t;
+typedef unsigned long long uint64_t;
 
 class I2Cdev {
     public:

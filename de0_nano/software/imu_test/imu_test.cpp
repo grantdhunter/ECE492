@@ -13,9 +13,10 @@
 #include <stdio.h>
 #include "includes.h"
 #include "system.h"
+#include <ctype.h>
 
 #include "MPU6050_6Axis_MotionApps20.h"
-#include "I2Cdev.h"
+//#include "I2Cdev.h"
 
 /* Definition of Task Stacks */
 #define   TASK_STACKSIZE       2048
@@ -25,7 +26,8 @@ OS_STK task1_stk[TASK_STACKSIZE];
 
 #define TASK1_PRIORITY      1
 
-MPU6050 imu(IMU_BASE_ADDRESS);
+//MPU6050 imu(IMU_BASE_ADDRESS);
+MPU6050 imu();
 
 /* Prints "Hello World" and sleeps for three seconds */
 void task1(void* pdata) {
