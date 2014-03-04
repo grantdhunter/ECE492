@@ -87,10 +87,18 @@ entity de0_nano_system is
          LED_HEARTBEAT : out   std_logic;
         
 			-- TRANSMITTER
-			GPIO_0 	: out std_logic_vector(3 downto 0)
+			GPIO_0 	: out std_logic_vector(3 downto 0);
   
+			--I2C
+			GPIO_1 : inout std_logic;
+			GPIO_2 : inout std_logic;
 			
- 
+			--ADC
+			ADC_CS_N  : out std_logic;
+			ADC_SADDR  : in std_logic;
+			ADC_SCLK  : out std_logic;
+			ADC_SDAT  : out std_logic
+	
           
        );
 end entity de0_nano_system;
@@ -218,13 +226,13 @@ begin
                
 					  transmitter_export => GPIO_0,
 					  
-					  adc_sclk             => CONNECTED_TO_adc_sclk,             --           adc.sclk
-					  adc_cs_n             => CONNECTED_TO_adc_cs_n,             --              .cs_n
-					  adc_dout             => CONNECTED_TO_adc_dout,             --              .dout
-					  adc_din              => CONNECTED_TO_adc_din,              --              .din
+					  adc_sclk             => ADC_SCLK,             --           adc.sclk
+					  adc_cs_n             => ADC_CS_N,             --              .cs_n
+					  adc_dout             => ADC_SDAT,             --              .dout
+					  adc_din              => ADC_SADDR,              --              .din
 					
-					  i2c_scl_pad_io       => GPIO_2,       --           i2c.scl_pad_io
-					  i2c_sda_pad_io       => GPIO_3        --              .sda_pad_io
+					  i2c_scl_pad_io       => GPIO_1,       --           i2c.scl_pad_io
+					  i2c_sda_pad_io       => GPIO_2        --              .sda_pad_io
 					  
                );  
             
