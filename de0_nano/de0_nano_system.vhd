@@ -95,9 +95,9 @@ entity de0_nano_system is
 			
 			--ADC
 			ADC_CS_N  : out std_logic;
-			ADC_SADDR  : in std_logic;
+			ADC_SADDR  : out std_logic;
 			ADC_SCLK  : out std_logic;
-			ADC_SDAT  : out std_logic
+			ADC_SDAT  : in std_logic
 	
           
        );

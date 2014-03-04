@@ -1,6 +1,6 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="d6c4476410265e168978"/>
+    <hash md5_digest_80b="e2e74890c3badc7ddca1"/>
   </project>
   <file_info/>
   <hub_info ir_width="2" node_count="2"/>
@@ -139,12 +139,4 @@
       </outputs>
     </node>
   </node_info>
-  <sld_infos>
-    <sld_info hpath="system:inst_cpu" name="inst_cpu">
-      <assignment_values>
-        <assignment_value text="QSYS_NAME system HAS_SOPCINFO 1 GENERATION_ID 1393017366"/>
-      </assignment_values>
-      <parameters/>
-    </sld_info>
-  </sld_infos>
 </sld_project_info>
