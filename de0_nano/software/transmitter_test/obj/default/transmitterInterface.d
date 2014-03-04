@@ -13,7 +13,7 @@ obj/default/transmitterInterface.o: transmitterInterface.cpp \
   ../transmitter_test_bsp/system.h \
   ../transmitter_test_bsp//drivers/inc/altera_avalon_pio_regs.h \
   ../transmitter_test_bsp//HAL/inc/io.h \
-  ../transmitter_test_bsp//HAL/inc/alt_types.h
+  ../transmitter_test_bsp//HAL/inc/alt_types.h dataType.h
 
 transmitterInterface:
 
@@ -48,3 +48,5 @@ transmitterInterface:
 ../transmitter_test_bsp//HAL/inc/io.h:
 
 ../transmitter_test_bsp//HAL/inc/alt_types.h:
+
+dataType.h:

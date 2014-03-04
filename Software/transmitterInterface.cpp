@@ -5,13 +5,11 @@
  *      Author: gdhunter
  */
 
-#import "transmitterInterface"
-#include "altera_avalon_pio_regs.h"
+#include "transmitterInterface"
 
-#include "ucos_ii.h"
-#include <ctype.h>
 
-typedef unsigned char Byte;
+
+
 /********Public Functions*************/
 
 /*
@@ -36,8 +34,8 @@ TransmitterInterface::~TransmitterInterface() {
  * Send turn left signal to transmitter.
  */
 void TransmitterInterface::turnLeft() {
-	Byte oldReg = 0;
-	Byte newReg = 0;
+	int8_t oldReg = 0;
+	int8_t newReg = 0;
 	
     OSSemPend(transmitter_lock,0,&err);
 	//Read current status of the register
@@ -55,8 +53,8 @@ void TransmitterInterface::turnLeft() {
  *  Send turn right signal to transmitter.
  */
 void TransmitterInterface::turnRight() {
-	Byte oldReg = 0;
-	Byte newReg = 0;
+	int8_t oldReg = 0;
+	int8_t newReg = 0;
 	
 	 OSSemPend(transmitter_lock,0,&err);
 	//Read current status of the register
@@ -74,8 +72,8 @@ void TransmitterInterface::turnRight() {
  * Send forward signal to transmitter.
  */
 void TransmitterInterface::moveForward() {
-	Byte oldReg = 0;
-	Byte newReg = 0;
+	int8_t oldReg = 0;
+	int8_t newReg = 0;
 	
 	 OSSemPend(transmitter_lock,0,&err);
 	//Read current status of the register
@@ -93,8 +91,8 @@ void TransmitterInterface::moveForward() {
  * Send reverse signal to transmitter.
  */
 void TransmitterInterface::moveReverse() {
-	Byte oldReg = 0;
-	Byte newReg = 0;
+	int8_t oldReg = 0;
+	int8_t newReg = 0;
 	
 	OSSemPend(transmitter_lock,0,&err);
 	//Read current status of the register
@@ -112,8 +110,8 @@ void TransmitterInterface::moveReverse() {
  * Send stop turning signal to transmitter.
  */
 void TransmitterInterface::turnOff() {
-	Byte oldReg = 0;
-	Byte newReg = 0;
+	int8_t oldReg = 0;
+	int8_t newReg = 0;
 	
 	 OSSemPend(transmitter_lock,0,&err);
 	//Read current status of the register
@@ -132,8 +130,8 @@ void TransmitterInterface::turnOff() {
  * Send stop moving forwards signal to transmitter.
  */
 void TransmitterInterface::moveOff() {
-	Byte oldReg = 0;
-	Byte newReg = 0;
+	int8_t oldReg = 0;
+	int8_t newReg = 0;
 	
 	OSSemPend(transmitter_lock,0,&err);
 	//Read current status of the register
@@ -156,10 +154,10 @@ void TransmitterInterface::moveOff() {
  *new command to ensure no illogical commands get sent to the transmitter.
  *i.e turn left and right
  */
-Byte TransmitterInterface::validateTurn( Byte currentReg, Byte command) {
+int8_t TransmitterInterface::validateTurn( int8_t currentReg, int8_t command) {
 	  
 	//Clear previous turn commands.
-	Byte newReg = currentReg & CLEAR_TURN;
+	int8_t newReg = currentReg & CLEAR_TURN;
 	
 	//Set the new turn command.
 	newReg = newReg | command;
@@ -171,10 +169,10 @@ Byte TransmitterInterface::validateTurn( Byte currentReg, Byte command) {
  *new command to ensure no illogical commands get sent to the transmitter.
  *i.e move forward and reverse
  */
-Byte TransmitterInterface::validateMove( Byte currentReg, Byte command) {
+int8_t TransmitterInterface::validateMove( int8_t currentReg, int8_t command) {
 	
 	//Clear previous movement commands.
-	Byte newReg = currentReg & CLEAR_MOVE;
+	int8_t newReg = currentReg & CLEAR_MOVE;
 	
 	//Set the new movement command.
 	newReg = newReg | command;

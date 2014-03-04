@@ -144,7 +144,6 @@ ELF := imu_test.elf
 # Paths to C, C++, and assembly source files.
 C_SRCS :=
 CXX_SRCS += imu_test.cpp
-CXX_SRCS += I2Cdev.cpp
 CXX_SRCS += MPU6050.cpp
 ASM_SRCS :=
 

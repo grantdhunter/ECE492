@@ -13,9 +13,9 @@
 #include <stdio.h>
 #include "includes.h"
 #include "system.h"
-#include <ctype.h>
+#include <stdint.h>
 
-#include "MPU6050_6Axis_MotionApps20.h"
+#include "MPU6050.h"
 //#include "I2Cdev.h"
 
 /* Definition of Task Stacks */

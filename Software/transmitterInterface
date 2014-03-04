@@ -10,20 +10,20 @@
 #include "ucos_ii.h"
 #include "altera_avalon_pio_regs.h"
 #include <ctype.h>
-
-
-typedef void* Addr;
-typedef unsigned char Byte;
+#include "dataType.h"
 
 
 
-const Byte FORWARD_CMD = 0x8;
-const Byte REVERSE_CMD = 0x4;
-const Byte LEFT_CMD =	 0x2;
-const Byte RIGHT_CMD =	 0x1;
-const Byte OFF_CMD =	 0x0;
-const Byte CLEAR_TURN =  0xC;
-const Byte CLEAR_MOVE =  0x3;
+
+
+
+const int8_t FORWARD_CMD = 0x8;
+const int8_t REVERSE_CMD = 0x4;
+const int8_t LEFT_CMD =	 0x2;
+const int8_t RIGHT_CMD =	 0x1;
+const int8_t OFF_CMD =	 0x0;
+const int8_t CLEAR_TURN =  0xC;
+const int8_t CLEAR_MOVE =  0x3;
 
 
 class TransmitterInterface {
@@ -77,13 +77,13 @@ private:
 	 *new command to ensure no illogical commands get sent to the transmitter.
 	 *i.e turn left and right
 	 */
-	Byte validateTurn(Byte, Byte);
+	int8_t validateTurn(int8_t, int8_t);
 	/*
 	 *Check the register to see what the previous command is and compare to the 
 	 *new command to ensure no illogical commands get sent to the transmitter.
 	 *i.e move forward and reverse
 	 */
-	Byte validateMove( Byte, Byte);
+	int8_t validateMove( int8_t, int8_t);
 
 };
 

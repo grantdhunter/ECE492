@@ -18,7 +18,7 @@ obj/default/transmitter_test.o: transmitter_test.cpp \
   ../transmitter_test_bsp//UCOSII/inc/ucos_ii.h \
   ../transmitter_test_bsp//drivers/inc/altera_avalon_pio_regs.h \
   ../transmitter_test_bsp//HAL/inc/io.h \
-  ../transmitter_test_bsp//HAL/inc/alt_types.h
+  ../transmitter_test_bsp//HAL/inc/alt_types.h dataType.h
 
 ../transmitter_test_bsp//HAL/inc/includes.h:
 
@@ -63,3 +63,5 @@ transmitterInterface:
 ../transmitter_test_bsp//HAL/inc/io.h:
 
 ../transmitter_test_bsp//HAL/inc/alt_types.h:
+
+dataType.h:
