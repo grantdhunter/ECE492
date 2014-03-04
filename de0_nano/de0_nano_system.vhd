@@ -89,7 +89,7 @@ entity de0_nano_system is
 			-- TRANSMITTER
 			GPIO_0 	: out std_logic_vector(3 downto 0)
   
-         
+			
  
           
        );
@@ -129,7 +129,8 @@ architecture syn of de0_nano_system is
       port (
             clk_clk              : in    std_logic                     := 'X';             -- clk
             reset_reset_n        : in    std_logic                     := 'X';             -- reset_n
-            sdram_addr           : out   std_logic_vector(12 downto 0);                    -- addr
+            
+				sdram_addr           : out   std_logic_vector(12 downto 0);                    -- addr
             sdram_ba             : out   std_logic_vector(1 downto 0);                     -- ba
             sdram_cas_n          : out   std_logic;                                        -- cas_n
             sdram_cke            : out   std_logic;                                        -- cke
@@ -138,13 +139,27 @@ architecture syn of de0_nano_system is
             sdram_dqm            : out   std_logic_vector(1 downto 0);                     -- dqm
             sdram_ras_n          : out   std_logic;                                        -- ras_n
             sdram_we_n           : out   std_logic;                                        -- we_n
-            transmitter_export   : out   std_logic_vector(3 downto 0);                     -- export
-            epcs_dclk            : out   std_logic;                                        -- dclk
+            
+				transmitter_export   : out   std_logic_vector(3 downto 0);                     -- export
+				
+				epcs_dclk            : out   std_logic;                                        -- dclk
             epcs_sce             : out   std_logic;                                        -- sce
             epcs_sdo             : out   std_logic;                                        -- sdo
             epcs_data0           : in    std_logic                     := 'X';             -- data0
-            pio_led_green_export : out   std_logic_vector(6 downto 0)                      -- export
+           
+			   pio_led_green_export : out   std_logic_vector(6 downto 0);                      -- export
  
+				--ADC
+				adc_sclk             : out   std_logic;                                        -- sclk
+				adc_cs_n             : out   std_logic;                                        -- cs_n
+				adc_dout             : in    std_logic                     := 'X';             -- dout
+				adc_din              : out   std_logic;                                        -- din
+				
+				--I2C
+				i2c_scl_pad_io       : inout std_logic                     := 'X';             -- scl_pad_io
+				i2c_sda_pad_io       : inout std_logic                     := 'X'              -- sda_pad_io
+        
+				
            );
    end component system;
    
@@ -201,7 +216,16 @@ begin
                  
                  pio_led_green_export => LED_GREEN,
                
-					  transmitter_export => GPIO_0
+					  transmitter_export => GPIO_0,
+					  
+					  adc_sclk             => CONNECTED_TO_adc_sclk,             --           adc.sclk
+					  adc_cs_n             => CONNECTED_TO_adc_cs_n,             --              .cs_n
+					  adc_dout             => CONNECTED_TO_adc_dout,             --              .dout
+					  adc_din              => CONNECTED_TO_adc_din,              --              .din
+					
+					  i2c_scl_pad_io       => GPIO_2,       --           i2c.scl_pad_io
+					  i2c_sda_pad_io       => GPIO_3        --              .sda_pad_io
+					  
                );  
             
    SDRAM_BA_1 <= sdram_ba(1);

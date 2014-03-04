@@ -16,7 +16,13 @@
 			epcs_sce             : out   std_logic;                                        -- sce
 			epcs_sdo             : out   std_logic;                                        -- sdo
 			epcs_data0           : in    std_logic                     := 'X';             -- data0
-			pio_led_green_export : out   std_logic_vector(6 downto 0)                      -- export
+			pio_led_green_export : out   std_logic_vector(6 downto 0);                     -- export
+			adc_sclk             : out   std_logic;                                        -- sclk
+			adc_cs_n             : out   std_logic;                                        -- cs_n
+			adc_dout             : in    std_logic                     := 'X';             -- dout
+			adc_din              : out   std_logic;                                        -- din
+			i2c_scl_pad_io       : inout std_logic                     := 'X';             -- scl_pad_io
+			i2c_sda_pad_io       : inout std_logic                     := 'X'              -- sda_pad_io
 		);
 	end component system;
 
