@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'system'
  * SOPC Builder design path: C:/Users/gdhunter/Documents/Capstone/ECE492/de0_nano/system.sopcinfo
  *
- * Generated: Fri Feb 28 15:47:05 MST 2014
+ * Generated: Thu Mar 06 13:30:44 MST 2014
  */
 
 /*
@@ -63,6 +63,7 @@
 #include "altera_avalon_jtag_uart.h"
 #include "altera_avalon_sysid_qsys.h"
 #include "altera_avalon_timer.h"
+#include "altera_up_avalon_de0_nano_adc.h"
 
 /*
  * Allocate the device storage
@@ -73,6 +74,7 @@ ALTERA_AVALON_EPCS_FLASH_CONTROLLER_INSTANCE ( EPCS_FLASH_CONTROLLER, epcs_flash
 ALTERA_AVALON_JTAG_UART_INSTANCE ( JTAG_UART, jtag_uart);
 ALTERA_AVALON_SYSID_QSYS_INSTANCE ( SYSID, sysid);
 ALTERA_AVALON_TIMER_INSTANCE ( SYS_CLK_TIMER, sys_clk_timer);
+ALTERA_UP_AVALON_DE0_NANO_ADC_INSTANCE ( DE0_NANO_ADC_0, de0_nano_adc_0);
 
 /*
  * Initialize the interrupt controller devices
@@ -99,4 +101,5 @@ void alt_sys_init( void )
     ALTERA_AVALON_EPCS_FLASH_CONTROLLER_INIT ( EPCS_FLASH_CONTROLLER, epcs_flash_controller);
     ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART, jtag_uart);
     ALTERA_AVALON_SYSID_QSYS_INIT ( SYSID, sysid);
+    ALTERA_UP_AVALON_DE0_NANO_ADC_INIT ( DE0_NANO_ADC_0, de0_nano_adc_0);
 }

@@ -1,0 +1,87 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/Users/gdhunter/Documents/Capstone/ECE492/de0_nano/ --output-directory=C:/Users/gdhunter/Documents/Capstone/ECE492/de0_nano/system/ --report-file=bsf:C:/Users/gdhunter/Documents/Capstone/ECE492/de0_nano/system.bsf --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE22F17C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:/Users/gdhunter/Documents/Capstone/ECE492/de0_nano/system.qsys
+Progress: Loading de0_nano/system.qsys
+Progress: Reading input file
+Progress: Adding clk_sys [clock_source 12.1]
+Progress: Parameterizing module clk_sys
+Progress: Adding cpu [altera_nios2_qsys 12.1]
+Progress: Parameterizing module cpu
+Progress: Adding sysid [altera_avalon_sysid_qsys 12.1]
+Progress: Parameterizing module sysid
+Progress: Adding sdram [altera_avalon_new_sdram_controller 12.1]
+Progress: Parameterizing module sdram
+Progress: Adding epcs_flash_controller [altera_avalon_epcs_flash_controller 12.1]
+Progress: Parameterizing module epcs_flash_controller
+Progress: Adding sys_clk_timer [altera_avalon_timer 12.1]
+Progress: Parameterizing module sys_clk_timer
+Progress: Adding transmitter [altera_avalon_pio 12.1]
+Progress: Parameterizing module transmitter
+Progress: Adding pio_led_green [altera_avalon_pio 12.1]
+Progress: Parameterizing module pio_led_green
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 12.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding de0_nano_adc_0 [altera_up_avalon_de0_nano_adc 12.0]
+Progress: Parameterizing module de0_nano_adc_0
+Progress: Adding i2c_opencores_0 [i2c_opencores 1.0]
+Progress: Parameterizing module i2c_opencores_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: system.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: system.sysid: Time stamp will be automatically updated when this component is generated.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/Users/gdhunter/Documents/Capstone/ECE492/de0_nano/ --output-directory=C:/Users/gdhunter/Documents/Capstone/ECE492/de0_nano/system/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/Users/gdhunter/Documents/Capstone/ECE492/de0_nano/system.sopcinfo --report-file=html:C:/Users/gdhunter/Documents/Capstone/ECE492/de0_nano/system.html --report-file=qip:C:/Users/gdhunter/Documents/Capstone/ECE492/de0_nano/system/synthesis/system.qip --report-file=cmp:C:/Users/gdhunter/Documents/Capstone/ECE492/de0_nano/system.cmp --system-info=DEVICE_FAMILY="Cyclone IV E" --system-info=DEVICE=EP4CE22F17C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:/Users/gdhunter/Documents/Capstone/ECE492/de0_nano/system.qsys
+Progress: Loading de0_nano/system.qsys
+Progress: Reading input file
+Progress: Adding clk_sys [clock_source 12.1]
+Progress: Parameterizing module clk_sys
+Progress: Adding cpu [altera_nios2_qsys 12.1]
+Progress: Parameterizing module cpu
+Progress: Adding sysid [altera_avalon_sysid_qsys 12.1]
+Progress: Parameterizing module sysid
+Progress: Adding sdram [altera_avalon_new_sdram_controller 12.1]
+Progress: Parameterizing module sdram
+Progress: Adding epcs_flash_controller [altera_avalon_epcs_flash_controller 12.1]
+Progress: Parameterizing module epcs_flash_controller
+Progress: Adding sys_clk_timer [altera_avalon_timer 12.1]
+Progress: Parameterizing module sys_clk_timer
+Progress: Adding transmitter [altera_avalon_pio 12.1]
+Progress: Parameterizing module transmitter
+Progress: Adding pio_led_green [altera_avalon_pio 12.1]
+Progress: Parameterizing module pio_led_green
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 12.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding de0_nano_adc_0 [altera_up_avalon_de0_nano_adc 12.0]
+Progress: Parameterizing module de0_nano_adc_0
+Progress: Adding i2c_opencores_0 [i2c_opencores 1.0]
+Progress: Parameterizing module i2c_opencores_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: system.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: system.sysid: Time stamp will be automatically updated when this component is generated.
+Info: system: Generating system "system" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 11 modules, 46 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 23 modules, 94 connections
+Info: merlin_domain_transform: After transform: 46 modules, 250 connections
+Info: merlin_router_transform: After transform: 58 modules, 298 connections
+Info: merlin_traffic_limiter_transform: After transform: 60 modules, 308 connections
+Info: merlin_burst_transform: After transform: 62 modules, 316 connections
+Info: reset_adaptation_transform: After transform: 63 modules, 247 connections
+Info: merlin_network_to_switch_transform: After transform: 86 modules, 295 connections
+Info: merlin_width_transform: After transform: 90 modules, 307 connections
+Info: limiter_update_transform: After transform: 90 modules, 309 connections
+Info: merlin_interrupt_mapper_transform: After transform: 91 modules, 312 connections
+Warning: system: "No matching role found for epcs_flash_controller:epcs_control_port:endofpacket (endofpacket)"
+Warning: system: "No matching role found for epcs_flash_controller:epcs_control_port:dataavailable (dataavailable)"
+Warning: system: "No matching role found for epcs_flash_controller:epcs_control_port:readyfordata (readyfordata)"
+Error: Generation stopped, 82 or more modules remaining
+Info: system: Done system" with 34 modules, 1 files, 442252 bytes
+Error: ip-generate failed with exit code 1: 1 Error, 3 Warnings
+Info: Stopping: Create HDL design files for synthesis

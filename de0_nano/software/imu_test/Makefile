@@ -142,9 +142,11 @@ ACDS_VERSION := 12.1sp1
 ELF := imu_test.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS :=
+C_SRCS += i2c_opencores.c
+C_SRCS += I2C_tests.c
 CXX_SRCS += imu_test.cpp
 CXX_SRCS += MPU6050.cpp
+CXX_SRCS += I2Cdev.cpp
 ASM_SRCS :=
 
 

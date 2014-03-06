@@ -2,10 +2,10 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>ucosii</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>28-Feb-2014 3:09:34 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1393625374374</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Mar 6, 2014 1:30:30 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1394137830788</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\gdhunter\Documents\Capstone\ECE492\de0_nano\software\transmitter_test_bsp</BspGeneratedLocation>
-        <BspSettingsFile>.\settings.bsp</BspSettingsFile>
+        <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\gdhunter\Documents\Capstone\ECE492\de0_nano\system.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
         <Cpu>cpu</Cpu>
@@ -1703,32 +1703,44 @@
                 <attributes>flash, memory, non-volatile</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>pio_led_green</slaveDescriptor>
+                <slaveDescriptor>de0_nano_adc_0</slaveDescriptor>
                 <addressRange>0x04001800 - 0x0400181F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>transmitter</slaveDescriptor>
+                <slaveDescriptor>pio_led_green</slaveDescriptor>
                 <addressRange>0x04001820 - 0x0400183F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>sys_clk_timer</slaveDescriptor>
+                <slaveDescriptor>transmitter</slaveDescriptor>
                 <addressRange>0x04001840 - 0x0400185F</addressRange>
+                <addressSpan>32</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
+                <slaveDescriptor>sys_clk_timer</slaveDescriptor>
+                <addressRange>0x04001860 - 0x0400187F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>i2c_opencores_0</slaveDescriptor>
+                <addressRange>0x04001880 - 0x04001887</addressRange>
+                <addressSpan>8</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>jtag_uart</slaveDescriptor>
-                <addressRange>0x04001860 - 0x04001867</addressRange>
+                <addressRange>0x04001888 - 0x0400188F</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sysid</slaveDescriptor>
-                <addressRange>0x04001868 - 0x0400186F</addressRange>
+                <addressRange>0x04001890 - 0x04001897</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
