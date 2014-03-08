@@ -56,8 +56,7 @@ THE SOFTWARE.
 // but want the compiler to shut up about it
 #define I2CDEV_IMPLEMENTATION_WARNINGS
 
-#define CLOCK_FREQ
-#define SPEED
+
 
 
 // 1000ms default read timeout (modify with "I2Cdev::readTimeout = [ms];")
