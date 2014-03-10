@@ -48,7 +48,7 @@ void task1(void* pdata)
 {
 	EmgInterface emg((char*)DE0_NANO_ADC_0_BASE);
 
-	uint16_t data = 0;
+	volatile uint16_t data = 0;
 
   while (1)
   { 
@@ -56,7 +56,7 @@ void task1(void* pdata)
 
 	  printf("EMG READS: %u\n", data);
 
-    //OSTimeDlyHMSM(0, 0, 0, 50);
+    OSTimeDlyHMSM(0, 0, 0, 50);
   }
 }
 

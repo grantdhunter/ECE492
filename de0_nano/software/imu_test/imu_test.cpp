@@ -35,13 +35,12 @@ MPU6050 imu(I2C_OPENCORES_0_BASE);
 /* Prints "Hello World" and sleeps for three seconds */
 void task1(void* pdata) {
 
-	uint8_t packetSize = 0;
-	uint16_t fifocount = 0;
-	uint8_t imuIntStatus;
-	uint8_t data[64];
-	Quaternion quat;
-	VectorFloat gravity;
-	float ypr[3];
+
+	int16_t roll = 0;
+	int16_t pitch = 0;
+	int16_t yaw = 0;
+
+
 
 	imu.initialize();
 	//True if every thing is good
@@ -55,40 +54,20 @@ void task1(void* pdata) {
 	} else {
 		//Error
 		//TODO handle error
+		printf("ERROR: No Connection\n");
+
 	}
 
-	//Zero id everything is good
-	if (imu.dmpInitialize() == 0) {
-		imu.setDMPEnabled(true);
 
-		imuIntStatus = imu.getIntStatus();
-
-		packetSize = imu.dmpGetFIFOPacketSize();
-	} else {
-		//Error
-		//TODO handle
-	}
 
 	while (1) {
-		fifocount = imu.getFIFOCount();
+		roll = imu.getRotationX();
+		pitch = imu.getRotationY();
+		yaw = imu.getRotationZ();
 
-		if (imuIntStatus & 0x10 || fifocount == 1024) {
-			//overflow
-			//TODO handle error
-		} else if (imuIntStatus & 0x02) {
-			while (fifocount < packetSize) {
-				fifocount = imu.getFIFOCount();
-			}
-
-			imu.getFIFOByte(data, packetSize);
-			fifocount -= packetSize;
-
-			imu.dmpGetQuaternion(&quat, data);
-			imu.dmpGetGravity(&gravity, &quat);
-			imu.dmp.GetYawPitchRoll(ypr, &quat, &gravity);
-		}
-
-		printf("IMU: %d\n", data);
+		printf("Roll: %d\n",roll);
+		printf("Pitch: %d\n",pitch);
+		printf("Yaw: %d\n",yaw);
 		OSTimeDlyHMSM(0, 0, 3, 0);
 	}
 }

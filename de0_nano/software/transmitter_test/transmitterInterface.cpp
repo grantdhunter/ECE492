@@ -39,13 +39,13 @@ void TransmitterInterface::turnLeft() {
 	
     OSSemPend(transmitter_lock,0,&err);
 	//Read current status of the register
-	oldReg = IORD_ALTERA_AVALON_PIO_DATA(baseAddress);
+	oldReg = *(baseAddress);
 	
 	//Create new valid turn command with out changing the other movement
 	newReg = validateTurn(oldReg,LEFT_CMD);
 	
 	//Write the new command to the register
-	IOWR_ALTERA_AVALON_PIO_DATA(baseAddress, newReg);
+	*(baseAddress) = newReg;
     OSSemPost(transmitter_lock);
 }
 
@@ -58,14 +58,14 @@ void TransmitterInterface::turnRight() {
 	
 	 OSSemPend(transmitter_lock,0,&err);
 	//Read current status of the register
-	oldReg = IORD_ALTERA_AVALON_PIO_DATA(baseAddress);
+	oldReg = *(baseAddress);
 	
 	//Create new valid turn command with out changing the other movement
 	newReg = validateTurn(oldReg,RIGHT_CMD);
 	
 	//Write the new command to the register
-	IOWR_ALTERA_AVALON_PIO_DATA(baseAddress, newReg);
-
+	*(baseAddress) = newReg;
+	OSSemPost(transmitter_lock);
 }
 
 /**
@@ -77,13 +77,13 @@ void TransmitterInterface::moveForward() {
 	
 	 OSSemPend(transmitter_lock,0,&err);
 	//Read current status of the register
-	oldReg = IORD_ALTERA_AVALON_PIO_DATA(baseAddress);
+	oldReg = *(baseAddress);
 	
 	//Create new valid movement command with out changing the turning property
 	newReg = validateMove(oldReg,FORWARD_CMD);
 	
 	//Write the new command to the register
-	IOWR_ALTERA_AVALON_PIO_DATA(baseAddress, newReg);
+	*(baseAddress) = newReg;
     OSSemPost(transmitter_lock);
 }
 
@@ -96,13 +96,13 @@ void TransmitterInterface::moveReverse() {
 	
 	OSSemPend(transmitter_lock,0,&err);
 	//Read current status of the register
-	oldReg = IORD_ALTERA_AVALON_PIO_DATA(baseAddress);
+	oldReg = *(baseAddress);
 	
 	//Create new valid movement command with out changing the turning property
 	newReg = validateMove(oldReg,REVERSE_CMD);
 	
 	//Write the new command to the register
-	IOWR_ALTERA_AVALON_PIO_DATA(baseAddress, newReg);
+	*(baseAddress) =newReg;
     OSSemPost(transmitter_lock);
 }
 
@@ -115,13 +115,13 @@ void TransmitterInterface::turnOff() {
 	
 	 OSSemPend(transmitter_lock,0,&err);
 	//Read current status of the register
-	oldReg = IORD_ALTERA_AVALON_PIO_DATA(baseAddress);
+	oldReg = *(baseAddress);
 	
 	//Create new valid turn command with out changing the other movement
 	newReg = validateTurn(oldReg,OFF_CMD);
 	
 	//Write the new command to the register
-	IOWR_ALTERA_AVALON_PIO_DATA(baseAddress, newReg);
+	*(baseAddress) = newReg;
     OSSemPost(transmitter_lock);
 }
 
@@ -135,13 +135,13 @@ void TransmitterInterface::moveOff() {
 	
 	OSSemPend(transmitter_lock,0,&err);
 	//Read current status of the register
-	oldReg = IORD_ALTERA_AVALON_PIO_DATA(baseAddress);
+	oldReg = *(baseAddress);
 	
 	//Create new valid movement command with out changing the turning property
 	newReg = validateMove(oldReg,OFF_CMD);
 	
 	//Write the new command to the register
-	IOWR_ALTERA_AVALON_PIO_DATA(baseAddress, newReg);
+	*(baseAddress) = newReg;
     OSSemPost(transmitter_lock);
 }
 

@@ -49,7 +49,7 @@ MPU6050::MPU6050() {
  * @see MPU6050_ADDRESS_AD0_LOW
  * @see MPU6050_ADDRESS_AD0_HIGH
  */
-MPU6050::MPU6050(uint8_t address) {
+MPU6050::MPU6050(uint16_t address) {
     devAddr = address;
 }
 
