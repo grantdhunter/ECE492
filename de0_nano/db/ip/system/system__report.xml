@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2014.03.10.14:35:30"
+ date="2014.03.12.18:48:53"
  outputDirectory="C:/Users/gdhunter/Documents/Capstone/ECE492/de0_nano/db/ip/system/">
  <perimeter>
   <parameter
@@ -108,7 +108,7 @@
  </perimeter>
  <entity
    path=""
-   parameterizationKey="system:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=EP4CE22F17C6,AUTO_DEVICE_FAMILY=Cyclone IV E,AUTO_GENERATION_ID=1394483680,AUTO_UNIQUE_ID=(clock_source:12.1:clockFrequency=100000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(altera_nios2_qsys:12.1:bht_ramBlockType=Automatic,breakAbsoluteAddr=67112992,breakOffset=32,breakSlave=cpu.jtag_debug_module,clockFrequency=100000000,cpuID=0,cpuID_stored=0,cpuReset=false,customInstSlavesSystemInfo=&lt;info/&gt;,dataAddrWidth=27,dataSlaveMapParam=&lt;address-map&gt;&lt;slave name=&apos;sdram.s1&apos; start=&apos;0x2000000&apos; end=&apos;0x4000000&apos; /&gt;&lt;slave name=&apos;epcs_flash_controller.epcs_control_port&apos; start=&apos;0x4000800&apos; end=&apos;0x4001000&apos; /&gt;&lt;slave name=&apos;cpu.jtag_debug_module&apos; start=&apos;0x4001000&apos; end=&apos;0x4001800&apos; /&gt;&lt;slave name=&apos;de0_nano_adc_0.adc_slave&apos; start=&apos;0x4001800&apos; end=&apos;0x4001820&apos; /&gt;&lt;slave name=&apos;pio_led_green.s1&apos; start=&apos;0x4001820&apos; end=&apos;0x4001840&apos; /&gt;&lt;slave name=&apos;transmitter.s1&apos; start=&apos;0x4001840&apos; end=&apos;0x4001860&apos; /&gt;&lt;slave name=&apos;sys_clk_timer.s1&apos; start=&apos;0x4001860&apos; end=&apos;0x4001880&apos; /&gt;&lt;slave name=&apos;i2c_opencores_0.avalon_slave_0&apos; start=&apos;0x4001880&apos; end=&apos;0x4001888&apos; /&gt;&lt;slave name=&apos;jtag_uart.avalon_jtag_slave&apos; start=&apos;0x4001888&apos; end=&apos;0x4001890&apos; /&gt;&lt;slave name=&apos;sysid.control_slave&apos; start=&apos;0x4001890&apos; end=&apos;0x4001898&apos; /&gt;&lt;/address-map&gt;,dcache_bursts=false,dcache_lineSize=32,dcache_numTCDM=0,dcache_omitDataMaster=false,dcache_ramBlockType=Automatic,dcache_size=4096,debug_OCIOnchipTrace=_128,debug_assignJtagInstanceID=false,debug_debugReqSignals=false,debug_embeddedPLL=true,debug_jtagInstanceID=0,debug_level=Level1,debug_triggerArming=true,deviceFamilyName=Cyclone IV E,deviceFeaturesSystemInfo=NOT_LISTED 0 INSTALLED 1 IS_DEFAULT_FAMILY 0 ADDRESS_STALL 1 CELL_LEVEL_BACK_ANNOTATION_DISABLED 0 COMPILER_SUPPORT 1 DSP 0 DSP_SHIFTER_BLOCK 0 DUMP_ASM_LAB_BITS_FOR_POWER 1 EMUL 1 ENABLE_ADVANCED_IO_ANALYSIS_GUI_FEATURES 1 EPCS 1 ESB 0 FAKE1 0 FAKE2 0 FAKE3 0 FITTER_USE_FALLING_EDGE_DELAY 0 GENERATE_DC_ON_CURRENT_WARNING_FOR_INTERNAL_CLAMPING_DIODE 0 HARDCOPY 0 HAS_18_BIT_MULTS 0 HAS_ACE_SUPPORT 1 HAS_ADJUSTABLE_OUTPUT_IO_TIMING_MEAS_POINT 0 HAS_ADVANCED_IO_INVERTED_CORNER 0 HAS_ADVANCED_IO_POWER_SUPPORT 1 HAS_ADVANCED_IO_TIMING_SUPPORT 1 HAS_ALM_SUPPORT 0 HAS_ATOM_AND_ROUTING_POWER_MODELED_TOGETHER 0 HAS_AUTO_DERIVE_CLOCK_UNCERTAINTY_SUPPORT 0 HAS_AUTO_FIT_SUPPORT 1 HAS_BALANCED_OPT_TECHNIQUE_SUPPORT 1 HAS_BENEFICIAL_SKEW_SUPPORT 1 HAS_BITLEVEL_DRIVE_STRENGTH_CONTROL 1 HAS_BSDL_FILE_GENERATION 1 HAS_CGA_SUPPORT 1 HAS_CHECK_NETLIST_SUPPORT 0 HAS_CLOCK_REGION_CHECKER_ENABLED 1 HAS_CORE_JUNCTION_TEMP_DERATING 0 HAS_CROSSTALK_SUPPORT 0 HAS_CUSTOM_REGION_SUPPORT 1 HAS_DAP_JTAG_FROM_HPS 0 HAS_DATA_DRIVEN_ACVQ_HSSI_SUPPORT 0 HAS_DDB_FDI_SUPPORT 0 HAS_DESIGN_ANALYZER_SUPPORT 1 HAS_DETAILED_IO_RAIL_POWER_MODEL 1 HAS_DETAILED_LEIM_STATIC_POWER_MODEL 1 HAS_DETAILED_LE_POWER_MODEL 1 HAS_DETAILED_ROUTING_MUX_STATIC_POWER_MODEL 1 HAS_DETAILED_THERMAL_CIRCUIT_PARAMETER_SUPPORT 1 HAS_DEVICE_MIGRATION_SUPPORT 1 HAS_DIAGONAL_MIGRATION_SUPPORT 0 HAS_EMIF_TOOLKIT_SUPPORT 0 HAS_ERROR_DETECTION_SUPPORT 0 HAS_FAMILY_VARIANT_MIGRATION_SUPPORT 0 HAS_FANOUT_FREE_NODE_SUPPORT 1 HAS_FAST_FIT_SUPPORT 1 HAS_FITTER_EARLY_TIMING_ESTIMATE_SUPPORT 1 HAS_FITTER_ECO_SUPPORT 1 HAS_FIT_NETLIST_OPT_RETIME_SUPPORT 1 HAS_FIT_NETLIST_OPT_SUPPORT 1 HAS_FORMAL_VERIFICATION_SUPPORT 1 HAS_FPGA_XCHANGE_SUPPORT 1 HAS_FSAC_LUTRAM_REGISTER_PACKING_SUPPORT 0 HAS_FULL_DAT_MIN_TIMING_SUPPORT 1 HAS_FULL_INCREMENTAL_DESIGN_SUPPORT 1 HAS_FUNCTIONAL_SIMULATION_SUPPORT 1 HAS_FUNCTIONAL_VERILOG_SIMULATION_SUPPORT 0 HAS_FUNCTIONAL_VHDL_SIMULATION_SUPPORT 0 HAS_GLITCH_FILTERING_SUPPORT 1 HAS_HC_READY_SUPPORT 0 HAS_HIGH_SPEED_LOW_POWER_TILE_SUPPORT 0 HAS_HOLD_TIME_AVOIDANCE_ACROSS_CLOCK_SPINE_SUPPORT 1 HAS_HSPICE_WRITER_SUPPORT 1 HAS_HSSI_POWER_CALCULATOR 0 HAS_IBISO_WRITER_SUPPORT 0 HAS_INCREMENTAL_DAT_SUPPORT 1 HAS_INCREMENTAL_SYNTHESIS_SUPPORT 1 HAS_IO_ASSIGNMENT_ANALYSIS_SUPPORT 1 HAS_IO_DECODER 0 HAS_IO_PLACEMENT_OPTIMIZATION_SUPPORT 1 HAS_IO_SMART_RECOMPILE_SUPPORT 0 HAS_JITTER_SUPPORT 1 HAS_JTAG_SLD_HUB_SUPPORT 1 HAS_LOGIC_LOCK_SUPPORT 1 HAS_MICROPROCESSOR 0 HAS_MIF_SMART_COMPILE_SUPPORT 1 HAS_MINMAX_TIMING_MODELING_SUPPORT 1 HAS_MIN_TIMING_ANALYSIS_SUPPORT 1 HAS_MUX_RESTRUCTURE_SUPPORT 1 HAS_NEW_HC_FLOW_SUPPORT 0 HAS_NEW_SERDES_MAX_RESOURCE_COUNT_REPORTING_SUPPORT 1 HAS_NEW_VPR_SUPPORT 1 HAS_NONSOCKET_TECHNOLOGY_MIGRATION_SUPPORT 0 HAS_NO_JTAG_USERCODE_SUPPORT 0 HAS_OPERATING_SETTINGS_AND_CONDITIONS_REPORTING_SUPPORT 1 HAS_PAD_LOCATION_ASSIGNMENT_SUPPORT 0 HAS_PARTIAL_RECONFIG_SUPPORT 0 HAS_PHYSICAL_NETLIST_OUTPUT 0 HAS_PHYSICAL_ROUTING_SUPPORT 0 HAS_PIN_SPECIFIC_VOLTAGE_SUPPORT 1 HAS_PLDM_REF_SUPPORT 1 HAS_POWER_ESTIMATION_SUPPORT 1 HAS_PRELIMINARY_CLOCK_UNCERTAINTY_NUMBERS 0 HAS_PRE_FITTER_FPP_SUPPORT 0 HAS_PRE_FITTER_LUTRAM_NETLIST_CHECKER_ENABLED 0 HAS_PVA_SUPPORT 1 HAS_RCF_SUPPORT 1 HAS_RCF_SUPPORT_FOR_DEBUGGING 0 HAS_RED_BLACK_SEPARATION_SUPPORT 0 HAS_RE_LEVEL_TIMING_GRAPH_SUPPORT 1 HAS_RISEFALL_DELAY_SUPPORT 1 HAS_SIGNAL_PROBE_SUPPORT 1 HAS_SIGNAL_TAP_SUPPORT 1 HAS_SIMULATOR_SUPPORT 0 HAS_SPLIT_IO_SUPPORT 1 HAS_SPLIT_LC_SUPPORT 1 HAS_SYNTH_FSYN_NETLIST_OPT_SUPPORT 1 HAS_SYNTH_NETLIST_OPT_RETIME_SUPPORT 1 HAS_SYNTH_NETLIST_OPT_SUPPORT 1 HAS_TECHNOLOGY_MIGRATION_SUPPORT 0 HAS_TEMPLATED_REGISTER_PACKING_SUPPORT 1 HAS_TIME_BORROWING_SUPPORT 0 HAS_TIMING_DRIVEN_SYNTHESIS_SUPPORT 1 HAS_TIMING_INFO_SUPPORT 1 HAS_TIMING_OPERATING_CONDITIONS 1 HAS_TIMING_SIMULATION_SUPPORT 1 HAS_TITAN_BASED_MAC_REGISTER_PACKER_SUPPORT 0 HAS_USER_HIGH_SPEED_LOW_POWER_TILE_SUPPORT 0 HAS_USE_FITTER_INFO_SUPPORT 1 HAS_VCCPD_POWER_RAIL 0 HAS_VERTICAL_MIGRATION_SUPPORT 1 HAS_VIEWDRAW_SYMBOL_SUPPORT 0 HAS_VIO_SUPPORT 1 HAS_VIRTUAL_DEVICES 0 HAS_WYSIWYG_DFFEAS_SUPPORT 1 HAS_XIBISO_WRITER_SUPPORT 1 INCREMENTAL_DESIGN_SUPPORTS_COMPATIBLE_CONSTRAINTS 1 IS_CONFIG_ROM 0 IS_HARDCOPY_FAMILY 0 LVDS_IO 1 M10K_MEMORY 0 M144K_MEMORY 0 M20K_MEMORY 0 M4K_MEMORY 0 M512_MEMORY 0 M9K_MEMORY 1 MLAB_MEMORY 0 MRAM_MEMORY 0 NO_RPE_SUPPORT 0 NO_SUPPORT_FOR_LOGICLOCK_CONTENT_BACK_ANNOTATION 1 NO_SUPPORT_FOR_STA_CLOCK_UNCERTAINTY_CHECK 0 NO_TDC_SUPPORT 0 POSTFIT_BAK_DATABASE_EXPORT_ENABLED 1 POSTMAP_BAK_DATABASE_EXPORT_ENABLED 1 PROGRAMMER_SUPPORT 1 QFIT_IN_DEVELOPMENT 0 QMAP_IN_DEVELOPMENT 0 RAM_LOGICAL_NAME_CHECKING_IN_CUT_ENABLED 1 REPORTS_METASTABILITY_MTBF 1 REQUIRES_INSTALLATION_PATCH 0 REQUIRES_LIST_OF_TEMPERATURE_AND_VOLTAGE_OPERATING_CONDITIONS 1 RESERVES_SIGNAL_PROBE_PINS 0 RESOLVE_MAX_FANOUT_EARLY 1 RESOLVE_MAX_FANOUT_LATE 0 RESPECTS_FIXED_SIZED_LOCKED_LOCATION_LOGICLOCK 1 RESTRICTED_USER_SELECTION 0 RISEFALL_SUPPORT_IS_HIDDEN 0 STRICT_TIMING_DB_CHECKS 0 SUPPORTS_ADDITIONAL_OPTIONS_FOR_UNUSED_IO 0 SUPPORTS_CRC 1 SUPPORTS_DIFFERENTIAL_AIOT_BOARD_TRACE_MODEL 1 SUPPORTS_DSP_BALANCING_BACK_ANNOTATION 0 SUPPORTS_GENERATION_OF_EARLY_POWER_ESTIMATOR_FILE 1 SUPPORTS_GLOBAL_SIGNAL_BACK_ANNOTATION 0 SUPPORTS_MAC_CHAIN_OUT_ADDER 0 SUPPORTS_RAM_PACKING_BACK_ANNOTATION 0 SUPPORTS_REG_PACKING_BACK_ANNOTATION 0 SUPPORTS_SIGNALPROBE_REGISTER_PIPELINING 1 SUPPORTS_SINGLE_ENDED_AIOT_BOARD_TRACE_MODEL 1 SUPPORTS_USER_MANUAL_LOGIC_DUPLICATION 1 TMV_RUN_CUSTOMIZABLE_VIEWER 1 TMV_RUN_INTERNAL_DETAILS 1 TMV_RUN_INTERNAL_DETAILS_ON_IO 0 TMV_RUN_INTERNAL_DETAILS_ON_IOBUF 1 TMV_RUN_INTERNAL_DETAILS_ON_LCELL 0 TMV_RUN_INTERNAL_DETAILS_ON_LRAM 0 TRANSCEIVER_3G_BLOCK 0 TRANSCEIVER_6G_BLOCK 0 USES_ACV_FOR_FLED 1 USES_ADB_FOR_BACK_ANNOTATION 1 USES_ALTERA_LNSIM 0 USES_ASIC_ROUTING_POWER_CALCULATOR 0 USES_DATA_DRIVEN_PLL_COMPUTATION_UTIL 1 USES_DEV 1 USES_ICP_FOR_ECO_FITTER 0 USES_LIBERTY_TIMING 0 USES_POWER_SIGNAL_ACTIVITIES 1 USES_THIRD_GENERATION_TIMING_MODELS_TIS 1 USE_ADVANCED_IO_POWER_BY_DEFAULT 1 USE_ADVANCED_IO_TIMING_BY_DEFAULT 1 USE_BASE_FAMILY_DDB_PATH 0 USE_OCT_AUTO_CALIBRATION 1 USE_RELAX_IO_ASSIGNMENT_RULES 0 USE_RISEFALL_ONLY 1 USE_SEPARATE_LIST_FOR_TECH_MIGRATION 0 USE_SINGLE_COMPILER_PASS_PLL_MIF_FILE_WRITER 1 USE_TITAN_IO_BASED_IO_REGISTER_PACKER_UTIL 0 WYSIWYG_BUS_WIDTH_CHECKING_IN_CUT_ENABLED 1,exceptionAbsoluteAddr=33554464,exceptionOffset=32,exceptionSlave=sdram.s1,icache_burstType=None,icache_numTCIM=0,icache_ramBlockType=Automatic,icache_size=8192,impl=Fast,instAddrWidth=27,instSlaveMapParam=&lt;address-map&gt;&lt;slave name=&apos;sdram.s1&apos; start=&apos;0x2000000&apos; end=&apos;0x4000000&apos; /&gt;&lt;slave name=&apos;cpu.jtag_debug_module&apos; start=&apos;0x4001000&apos; end=&apos;0x4001800&apos; /&gt;&lt;/address-map&gt;,internalIrqMaskSystemInfo=15,is_hardcopy_compatible=false,manuallyAssignCpuID=true,mmu_TLBMissExcAbsAddr=0,mmu_TLBMissExcOffset=0,mmu_TLBMissExcSlave=,mmu_autoAssignTlbPtrSz=true,mmu_enabled=false,mmu_processIDNumBits=8,mmu_ramBlockType=Automatic,mmu_tlbNumWays=16,mmu_tlbPtrSz=7,mmu_udtlbNumEntries=6,mmu_uitlbNumEntries=4,mpu_enabled=false,mpu_minDataRegionSize=12,mpu_minInstRegionSize=12,mpu_numOfDataRegion=8,mpu_numOfInstRegion=8,mpu_useLimit=false,muldiv_divider=false,muldiv_multiplierType=EmbeddedMulFast,regfile_ramBlockType=Automatic,resetAbsoluteAddr=33554432,resetOffset=0,resetSlave=sdram.s1,setting_HBreakTest=false,setting_HDLSimCachesCleared=true,setting_activateModelChecker=false,setting_activateMonitors=true,setting_activateTestEndChecker=false,setting_activateTrace=true,setting_allowFullAddressRange=false,setting_alwaysEncrypt=true,setting_asic_enabled=false,setting_asic_synopsys_translate_on_off=false,setting_avalonDebugPortPresent=false,setting_bhtIndexPcOnly=false,setting_bhtPtrSz=8,setting_bigEndian=false,setting_bit31BypassDCache=true,setting_branchPredictionType=Automatic,setting_clearXBitsLDNonBypass=true,setting_debugSimGen=false,setting_exportPCB=false,setting_export_large_RAMs=false,setting_extraExceptionInfo=false,setting_fullWaveformSignals=false,setting_illegalInstructionsTrap=false,setting_illegalMemAccessDetection=false,setting_interruptControllerType=Internal,setting_oci_export_jtag_signals=false,setting_perfCounterWidth=32,setting_performanceCounter=false,setting_preciseDivisionErrorException=false,setting_preciseIllegalMemAccessException=false,setting_preciseSlaveAccessErrorException=false,setting_shadowRegisterSets=0,setting_showInternalSettings=false,setting_showUnpublishedSettings=false,tightlyCoupledDataMaster0AddrWidth=1,tightlyCoupledDataMaster0MapParam=,tightlyCoupledDataMaster1AddrWidth=1,tightlyCoupledDataMaster1MapParam=,tightlyCoupledDataMaster2AddrWidth=1,tightlyCoupledDataMaster2MapParam=,tightlyCoupledDataMaster3AddrWidth=1,tightlyCoupledDataMaster3MapParam=,tightlyCoupledInstructionMaster0AddrWidth=1,tightlyCoupledInstructionMaster0MapParam=,tightlyCoupledInstructionMaster1AddrWidth=1,tightlyCoupledInstructionMaster1MapParam=,tightlyCoupledInstructionMaster2AddrWidth=1,tightlyCoupledInstructionMaster2MapParam=,tightlyCoupledInstructionMaster3AddrWidth=1,tightlyCoupledInstructionMaster3MapParam=,translate_off= &quot;synthesis translate_off&quot; ,translate_on= &quot;synthesis translate_on&quot;  ,userDefinedSettings=)(altera_avalon_sysid_qsys:12.1:AUTO_CLK_CLOCK_RATE=100000000,AUTO_DEVICE_FAMILY=Cyclone IV E,id=0,timestamp=1394483680)(altera_avalon_new_sdram_controller:12.1:TAC=5.5,TMRD=3,TRCD=20.0,TRFC=70.0,TRP=20.0,TWR=14.0,casLatency=3,clockRate=100000000,columnWidth=9,dataWidth=16,generateSimulationModel=false,initNOPDelay=0.0,initRefreshCommands=8,masteredTristateBridgeSlave=,model=custom,numberOfBanks=4,numberOfChipSelects=1,pinsSharedViaTriState=false,powerUpDelay=200.0,refreshPeriod=7.8125,registerDataIn=true,rowWidth=13,size=33554432)(altera_avalon_epcs_flash_controller:12.1:autoSelectASMIAtom=true,clockRate=100000000,deviceFamilyString=Cyclone IV E,useASMIAtom=false)(altera_avalon_timer:12.1:alwaysRun=false,counterSize=32,fixedPeriod=false,period=1,periodUnits=MSEC,resetOutput=false,snapshot=true,systemFrequency=100000000,timeoutPulseOutput=false,timerPreset=CUSTOM)(altera_avalon_pio:12.1:bitClearingEdgeCapReg=false,bitModifyingOutReg=true,captureEdge=false,clockRate=100000000,direction=Output,edgeType=RISING,generateIRQ=false,irqType=LEVEL,resetValue=0,simDoTestBenchWiring=false,simDrivenValue=0,width=4)(altera_avalon_pio:12.1:bitClearingEdgeCapReg=false,bitModifyingOutReg=true,captureEdge=false,clockRate=100000000,direction=Output,edgeType=RISING,generateIRQ=false,irqType=LEVEL,resetValue=0,simDoTestBenchWiring=false,simDrivenValue=0,width=7)(altera_avalon_jtag_uart:12.1:allowMultipleConnections=false,avalonSpec=2.0,hubInstanceID=0,legacySignalAllow=false,readBufferDepth=64,readIRQThreshold=8,simInputCharacterStream=,simInteractiveOptions=INTERACTIVE_INPUT_OUTPUT,useRegistersForReadBuffer=false,useRegistersForWriteBuffer=false,useRelativePathForSimFile=false,writeBufferDepth=64,writeIRQThreshold=8)(altera_up_avalon_de0_nano_adc:12.0:AUTO_CLK_CLOCK_RATE=100000000,AUTO_DEVICE_FAMILY=Cyclone IV E,numch=2,sclk_freq=3.2,tsclk=32)(i2c_opencores:1.0:AUTO_CLOCK_SINK_CLOCK_RATE=100000000)(avalon:12.1:arbitrationPriority=1,baseAddress=0x04001000)(avalon:12.1:arbitrationPriority=1,baseAddress=0x04001000)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(avalon:12.1:arbitrationPriority=1,baseAddress=0x04001890)(avalon:12.1:arbitrationPriority=1,baseAddress=0x02000000)(avalon:12.1:arbitrationPriority=1,baseAddress=0x04000800)(avalon:12.1:arbitrationPriority=1,baseAddress=0x04001860)(avalon:12.1:arbitrationPriority=1,baseAddress=0x04001840)(avalon:12.1:arbitrationPriority=1,baseAddress=0x02000000)(clock:12.1:)(clock:12.1:)(clock:12.1:)(clock:12.1:)(clock:12.1:)(clock:12.1:)(interrupt:12.1:irqNumber=0)(interrupt:12.1:irqNumber=1)(clock:12.1:)(reset:12.1:)(avalon:12.1:arbitrationPriority=1,baseAddress=0x04001820)(reset:12.1:)(clock:12.1:)(reset:12.1:)(avalon:12.1:arbitrationPriority=1,baseAddress=0x04001888)(reset:12.1:)(interrupt:12.1:irqNumber=2)(clock:12.1:)(reset:12.1:)(reset:12.1:)(avalon:12.1:arbitrationPriority=1,baseAddress=0x04001800)(avalon:12.1:arbitrationPriority=1,baseAddress=0x04001880)(clock:12.1:)(reset:12.1:)(reset:12.1:)(interrupt:12.1:irqNumber=3)"
+   parameterizationKey="system:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=EP4CE22F17C6,AUTO_DEVICE_FAMILY=Cyclone IV E,AUTO_GENERATION_ID=1394671685,AUTO_UNIQUE_ID=(clock_source:12.1:clockFrequency=100000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(altera_nios2_qsys:12.1:bht_ramBlockType=Automatic,breakAbsoluteAddr=67112992,breakOffset=32,breakSlave=cpu.jtag_debug_module,clockFrequency=100000000,cpuID=0,cpuID_stored=0,cpuReset=false,customInstSlavesSystemInfo=&lt;info/&gt;,dataAddrWidth=27,dataSlaveMapParam=&lt;address-map&gt;&lt;slave name=&apos;sdram.s1&apos; start=&apos;0x2000000&apos; end=&apos;0x4000000&apos; /&gt;&lt;slave name=&apos;epcs_flash_controller.epcs_control_port&apos; start=&apos;0x4000800&apos; end=&apos;0x4001000&apos; /&gt;&lt;slave name=&apos;cpu.jtag_debug_module&apos; start=&apos;0x4001000&apos; end=&apos;0x4001800&apos; /&gt;&lt;slave name=&apos;de0_nano_adc_0.adc_slave&apos; start=&apos;0x4001800&apos; end=&apos;0x4001820&apos; /&gt;&lt;slave name=&apos;pio_led_green.s1&apos; start=&apos;0x4001820&apos; end=&apos;0x4001840&apos; /&gt;&lt;slave name=&apos;transmitter.s1&apos; start=&apos;0x4001840&apos; end=&apos;0x4001860&apos; /&gt;&lt;slave name=&apos;sys_clk_timer.s1&apos; start=&apos;0x4001860&apos; end=&apos;0x4001880&apos; /&gt;&lt;slave name=&apos;i2c_opencores_0.avalon_slave_0&apos; start=&apos;0x4001880&apos; end=&apos;0x4001888&apos; /&gt;&lt;slave name=&apos;jtag_uart.avalon_jtag_slave&apos; start=&apos;0x4001888&apos; end=&apos;0x4001890&apos; /&gt;&lt;slave name=&apos;sysid.control_slave&apos; start=&apos;0x4001890&apos; end=&apos;0x4001898&apos; /&gt;&lt;/address-map&gt;,dcache_bursts=false,dcache_lineSize=32,dcache_numTCDM=0,dcache_omitDataMaster=false,dcache_ramBlockType=Automatic,dcache_size=4096,debug_OCIOnchipTrace=_128,debug_assignJtagInstanceID=false,debug_debugReqSignals=false,debug_embeddedPLL=true,debug_jtagInstanceID=0,debug_level=Level1,debug_triggerArming=true,deviceFamilyName=Cyclone IV E,deviceFeaturesSystemInfo=NOT_LISTED 0 INSTALLED 1 IS_DEFAULT_FAMILY 0 ADDRESS_STALL 1 CELL_LEVEL_BACK_ANNOTATION_DISABLED 0 COMPILER_SUPPORT 1 DSP 0 DSP_SHIFTER_BLOCK 0 DUMP_ASM_LAB_BITS_FOR_POWER 1 EMUL 1 ENABLE_ADVANCED_IO_ANALYSIS_GUI_FEATURES 1 EPCS 1 ESB 0 FAKE1 0 FAKE2 0 FAKE3 0 FITTER_USE_FALLING_EDGE_DELAY 0 GENERATE_DC_ON_CURRENT_WARNING_FOR_INTERNAL_CLAMPING_DIODE 0 HARDCOPY 0 HAS_18_BIT_MULTS 0 HAS_ACE_SUPPORT 1 HAS_ADJUSTABLE_OUTPUT_IO_TIMING_MEAS_POINT 0 HAS_ADVANCED_IO_INVERTED_CORNER 0 HAS_ADVANCED_IO_POWER_SUPPORT 1 HAS_ADVANCED_IO_TIMING_SUPPORT 1 HAS_ALM_SUPPORT 0 HAS_ATOM_AND_ROUTING_POWER_MODELED_TOGETHER 0 HAS_AUTO_DERIVE_CLOCK_UNCERTAINTY_SUPPORT 0 HAS_AUTO_FIT_SUPPORT 1 HAS_BALANCED_OPT_TECHNIQUE_SUPPORT 1 HAS_BENEFICIAL_SKEW_SUPPORT 1 HAS_BITLEVEL_DRIVE_STRENGTH_CONTROL 1 HAS_BSDL_FILE_GENERATION 1 HAS_CGA_SUPPORT 1 HAS_CHECK_NETLIST_SUPPORT 0 HAS_CLOCK_REGION_CHECKER_ENABLED 1 HAS_CORE_JUNCTION_TEMP_DERATING 0 HAS_CROSSTALK_SUPPORT 0 HAS_CUSTOM_REGION_SUPPORT 1 HAS_DAP_JTAG_FROM_HPS 0 HAS_DATA_DRIVEN_ACVQ_HSSI_SUPPORT 0 HAS_DDB_FDI_SUPPORT 0 HAS_DESIGN_ANALYZER_SUPPORT 1 HAS_DETAILED_IO_RAIL_POWER_MODEL 1 HAS_DETAILED_LEIM_STATIC_POWER_MODEL 1 HAS_DETAILED_LE_POWER_MODEL 1 HAS_DETAILED_ROUTING_MUX_STATIC_POWER_MODEL 1 HAS_DETAILED_THERMAL_CIRCUIT_PARAMETER_SUPPORT 1 HAS_DEVICE_MIGRATION_SUPPORT 1 HAS_DIAGONAL_MIGRATION_SUPPORT 0 HAS_EMIF_TOOLKIT_SUPPORT 0 HAS_ERROR_DETECTION_SUPPORT 0 HAS_FAMILY_VARIANT_MIGRATION_SUPPORT 0 HAS_FANOUT_FREE_NODE_SUPPORT 1 HAS_FAST_FIT_SUPPORT 1 HAS_FITTER_EARLY_TIMING_ESTIMATE_SUPPORT 1 HAS_FITTER_ECO_SUPPORT 1 HAS_FIT_NETLIST_OPT_RETIME_SUPPORT 1 HAS_FIT_NETLIST_OPT_SUPPORT 1 HAS_FORMAL_VERIFICATION_SUPPORT 1 HAS_FPGA_XCHANGE_SUPPORT 1 HAS_FSAC_LUTRAM_REGISTER_PACKING_SUPPORT 0 HAS_FULL_DAT_MIN_TIMING_SUPPORT 1 HAS_FULL_INCREMENTAL_DESIGN_SUPPORT 1 HAS_FUNCTIONAL_SIMULATION_SUPPORT 1 HAS_FUNCTIONAL_VERILOG_SIMULATION_SUPPORT 0 HAS_FUNCTIONAL_VHDL_SIMULATION_SUPPORT 0 HAS_GLITCH_FILTERING_SUPPORT 1 HAS_HC_READY_SUPPORT 0 HAS_HIGH_SPEED_LOW_POWER_TILE_SUPPORT 0 HAS_HOLD_TIME_AVOIDANCE_ACROSS_CLOCK_SPINE_SUPPORT 1 HAS_HSPICE_WRITER_SUPPORT 1 HAS_HSSI_POWER_CALCULATOR 0 HAS_IBISO_WRITER_SUPPORT 0 HAS_INCREMENTAL_DAT_SUPPORT 1 HAS_INCREMENTAL_SYNTHESIS_SUPPORT 1 HAS_IO_ASSIGNMENT_ANALYSIS_SUPPORT 1 HAS_IO_DECODER 0 HAS_IO_PLACEMENT_OPTIMIZATION_SUPPORT 1 HAS_IO_SMART_RECOMPILE_SUPPORT 0 HAS_JITTER_SUPPORT 1 HAS_JTAG_SLD_HUB_SUPPORT 1 HAS_LOGIC_LOCK_SUPPORT 1 HAS_MICROPROCESSOR 0 HAS_MIF_SMART_COMPILE_SUPPORT 1 HAS_MINMAX_TIMING_MODELING_SUPPORT 1 HAS_MIN_TIMING_ANALYSIS_SUPPORT 1 HAS_MUX_RESTRUCTURE_SUPPORT 1 HAS_NEW_HC_FLOW_SUPPORT 0 HAS_NEW_SERDES_MAX_RESOURCE_COUNT_REPORTING_SUPPORT 1 HAS_NEW_VPR_SUPPORT 1 HAS_NONSOCKET_TECHNOLOGY_MIGRATION_SUPPORT 0 HAS_NO_JTAG_USERCODE_SUPPORT 0 HAS_OPERATING_SETTINGS_AND_CONDITIONS_REPORTING_SUPPORT 1 HAS_PAD_LOCATION_ASSIGNMENT_SUPPORT 0 HAS_PARTIAL_RECONFIG_SUPPORT 0 HAS_PHYSICAL_NETLIST_OUTPUT 0 HAS_PHYSICAL_ROUTING_SUPPORT 0 HAS_PIN_SPECIFIC_VOLTAGE_SUPPORT 1 HAS_PLDM_REF_SUPPORT 1 HAS_POWER_ESTIMATION_SUPPORT 1 HAS_PRELIMINARY_CLOCK_UNCERTAINTY_NUMBERS 0 HAS_PRE_FITTER_FPP_SUPPORT 0 HAS_PRE_FITTER_LUTRAM_NETLIST_CHECKER_ENABLED 0 HAS_PVA_SUPPORT 1 HAS_RCF_SUPPORT 1 HAS_RCF_SUPPORT_FOR_DEBUGGING 0 HAS_RED_BLACK_SEPARATION_SUPPORT 0 HAS_RE_LEVEL_TIMING_GRAPH_SUPPORT 1 HAS_RISEFALL_DELAY_SUPPORT 1 HAS_SIGNAL_PROBE_SUPPORT 1 HAS_SIGNAL_TAP_SUPPORT 1 HAS_SIMULATOR_SUPPORT 0 HAS_SPLIT_IO_SUPPORT 1 HAS_SPLIT_LC_SUPPORT 1 HAS_SYNTH_FSYN_NETLIST_OPT_SUPPORT 1 HAS_SYNTH_NETLIST_OPT_RETIME_SUPPORT 1 HAS_SYNTH_NETLIST_OPT_SUPPORT 1 HAS_TECHNOLOGY_MIGRATION_SUPPORT 0 HAS_TEMPLATED_REGISTER_PACKING_SUPPORT 1 HAS_TIME_BORROWING_SUPPORT 0 HAS_TIMING_DRIVEN_SYNTHESIS_SUPPORT 1 HAS_TIMING_INFO_SUPPORT 1 HAS_TIMING_OPERATING_CONDITIONS 1 HAS_TIMING_SIMULATION_SUPPORT 1 HAS_TITAN_BASED_MAC_REGISTER_PACKER_SUPPORT 0 HAS_USER_HIGH_SPEED_LOW_POWER_TILE_SUPPORT 0 HAS_USE_FITTER_INFO_SUPPORT 1 HAS_VCCPD_POWER_RAIL 0 HAS_VERTICAL_MIGRATION_SUPPORT 1 HAS_VIEWDRAW_SYMBOL_SUPPORT 0 HAS_VIO_SUPPORT 1 HAS_VIRTUAL_DEVICES 0 HAS_WYSIWYG_DFFEAS_SUPPORT 1 HAS_XIBISO_WRITER_SUPPORT 1 INCREMENTAL_DESIGN_SUPPORTS_COMPATIBLE_CONSTRAINTS 1 IS_CONFIG_ROM 0 IS_HARDCOPY_FAMILY 0 LVDS_IO 1 M10K_MEMORY 0 M144K_MEMORY 0 M20K_MEMORY 0 M4K_MEMORY 0 M512_MEMORY 0 M9K_MEMORY 1 MLAB_MEMORY 0 MRAM_MEMORY 0 NO_RPE_SUPPORT 0 NO_SUPPORT_FOR_LOGICLOCK_CONTENT_BACK_ANNOTATION 1 NO_SUPPORT_FOR_STA_CLOCK_UNCERTAINTY_CHECK 0 NO_TDC_SUPPORT 0 POSTFIT_BAK_DATABASE_EXPORT_ENABLED 1 POSTMAP_BAK_DATABASE_EXPORT_ENABLED 1 PROGRAMMER_SUPPORT 1 QFIT_IN_DEVELOPMENT 0 QMAP_IN_DEVELOPMENT 0 RAM_LOGICAL_NAME_CHECKING_IN_CUT_ENABLED 1 REPORTS_METASTABILITY_MTBF 1 REQUIRES_INSTALLATION_PATCH 0 REQUIRES_LIST_OF_TEMPERATURE_AND_VOLTAGE_OPERATING_CONDITIONS 1 RESERVES_SIGNAL_PROBE_PINS 0 RESOLVE_MAX_FANOUT_EARLY 1 RESOLVE_MAX_FANOUT_LATE 0 RESPECTS_FIXED_SIZED_LOCKED_LOCATION_LOGICLOCK 1 RESTRICTED_USER_SELECTION 0 RISEFALL_SUPPORT_IS_HIDDEN 0 STRICT_TIMING_DB_CHECKS 0 SUPPORTS_ADDITIONAL_OPTIONS_FOR_UNUSED_IO 0 SUPPORTS_CRC 1 SUPPORTS_DIFFERENTIAL_AIOT_BOARD_TRACE_MODEL 1 SUPPORTS_DSP_BALANCING_BACK_ANNOTATION 0 SUPPORTS_GENERATION_OF_EARLY_POWER_ESTIMATOR_FILE 1 SUPPORTS_GLOBAL_SIGNAL_BACK_ANNOTATION 0 SUPPORTS_MAC_CHAIN_OUT_ADDER 0 SUPPORTS_RAM_PACKING_BACK_ANNOTATION 0 SUPPORTS_REG_PACKING_BACK_ANNOTATION 0 SUPPORTS_SIGNALPROBE_REGISTER_PIPELINING 1 SUPPORTS_SINGLE_ENDED_AIOT_BOARD_TRACE_MODEL 1 SUPPORTS_USER_MANUAL_LOGIC_DUPLICATION 1 TMV_RUN_CUSTOMIZABLE_VIEWER 1 TMV_RUN_INTERNAL_DETAILS 1 TMV_RUN_INTERNAL_DETAILS_ON_IO 0 TMV_RUN_INTERNAL_DETAILS_ON_IOBUF 1 TMV_RUN_INTERNAL_DETAILS_ON_LCELL 0 TMV_RUN_INTERNAL_DETAILS_ON_LRAM 0 TRANSCEIVER_3G_BLOCK 0 TRANSCEIVER_6G_BLOCK 0 USES_ACV_FOR_FLED 1 USES_ADB_FOR_BACK_ANNOTATION 1 USES_ALTERA_LNSIM 0 USES_ASIC_ROUTING_POWER_CALCULATOR 0 USES_DATA_DRIVEN_PLL_COMPUTATION_UTIL 1 USES_DEV 1 USES_ICP_FOR_ECO_FITTER 0 USES_LIBERTY_TIMING 0 USES_POWER_SIGNAL_ACTIVITIES 1 USES_THIRD_GENERATION_TIMING_MODELS_TIS 1 USE_ADVANCED_IO_POWER_BY_DEFAULT 1 USE_ADVANCED_IO_TIMING_BY_DEFAULT 1 USE_BASE_FAMILY_DDB_PATH 0 USE_OCT_AUTO_CALIBRATION 1 USE_RELAX_IO_ASSIGNMENT_RULES 0 USE_RISEFALL_ONLY 1 USE_SEPARATE_LIST_FOR_TECH_MIGRATION 0 USE_SINGLE_COMPILER_PASS_PLL_MIF_FILE_WRITER 1 USE_TITAN_IO_BASED_IO_REGISTER_PACKER_UTIL 0 WYSIWYG_BUS_WIDTH_CHECKING_IN_CUT_ENABLED 1,exceptionAbsoluteAddr=33554464,exceptionOffset=32,exceptionSlave=sdram.s1,icache_burstType=None,icache_numTCIM=0,icache_ramBlockType=Automatic,icache_size=8192,impl=Fast,instAddrWidth=27,instSlaveMapParam=&lt;address-map&gt;&lt;slave name=&apos;sdram.s1&apos; start=&apos;0x2000000&apos; end=&apos;0x4000000&apos; /&gt;&lt;slave name=&apos;cpu.jtag_debug_module&apos; start=&apos;0x4001000&apos; end=&apos;0x4001800&apos; /&gt;&lt;/address-map&gt;,internalIrqMaskSystemInfo=15,is_hardcopy_compatible=false,manuallyAssignCpuID=true,mmu_TLBMissExcAbsAddr=0,mmu_TLBMissExcOffset=0,mmu_TLBMissExcSlave=,mmu_autoAssignTlbPtrSz=true,mmu_enabled=false,mmu_processIDNumBits=8,mmu_ramBlockType=Automatic,mmu_tlbNumWays=16,mmu_tlbPtrSz=7,mmu_udtlbNumEntries=6,mmu_uitlbNumEntries=4,mpu_enabled=false,mpu_minDataRegionSize=12,mpu_minInstRegionSize=12,mpu_numOfDataRegion=8,mpu_numOfInstRegion=8,mpu_useLimit=false,muldiv_divider=false,muldiv_multiplierType=EmbeddedMulFast,regfile_ramBlockType=Automatic,resetAbsoluteAddr=33554432,resetOffset=0,resetSlave=sdram.s1,setting_HBreakTest=false,setting_HDLSimCachesCleared=true,setting_activateModelChecker=false,setting_activateMonitors=true,setting_activateTestEndChecker=false,setting_activateTrace=true,setting_allowFullAddressRange=false,setting_alwaysEncrypt=true,setting_asic_enabled=false,setting_asic_synopsys_translate_on_off=false,setting_avalonDebugPortPresent=false,setting_bhtIndexPcOnly=false,setting_bhtPtrSz=8,setting_bigEndian=false,setting_bit31BypassDCache=true,setting_branchPredictionType=Automatic,setting_clearXBitsLDNonBypass=true,setting_debugSimGen=false,setting_exportPCB=false,setting_export_large_RAMs=false,setting_extraExceptionInfo=false,setting_fullWaveformSignals=false,setting_illegalInstructionsTrap=false,setting_illegalMemAccessDetection=false,setting_interruptControllerType=Internal,setting_oci_export_jtag_signals=false,setting_perfCounterWidth=32,setting_performanceCounter=false,setting_preciseDivisionErrorException=false,setting_preciseIllegalMemAccessException=false,setting_preciseSlaveAccessErrorException=false,setting_shadowRegisterSets=0,setting_showInternalSettings=false,setting_showUnpublishedSettings=false,tightlyCoupledDataMaster0AddrWidth=1,tightlyCoupledDataMaster0MapParam=,tightlyCoupledDataMaster1AddrWidth=1,tightlyCoupledDataMaster1MapParam=,tightlyCoupledDataMaster2AddrWidth=1,tightlyCoupledDataMaster2MapParam=,tightlyCoupledDataMaster3AddrWidth=1,tightlyCoupledDataMaster3MapParam=,tightlyCoupledInstructionMaster0AddrWidth=1,tightlyCoupledInstructionMaster0MapParam=,tightlyCoupledInstructionMaster1AddrWidth=1,tightlyCoupledInstructionMaster1MapParam=,tightlyCoupledInstructionMaster2AddrWidth=1,tightlyCoupledInstructionMaster2MapParam=,tightlyCoupledInstructionMaster3AddrWidth=1,tightlyCoupledInstructionMaster3MapParam=,translate_off= &quot;synthesis translate_off&quot; ,translate_on= &quot;synthesis translate_on&quot;  ,userDefinedSettings=)(altera_avalon_sysid_qsys:12.1:AUTO_CLK_CLOCK_RATE=100000000,AUTO_DEVICE_FAMILY=Cyclone IV E,id=0,timestamp=1394671685)(altera_avalon_new_sdram_controller:12.1:TAC=5.5,TMRD=3,TRCD=20.0,TRFC=70.0,TRP=20.0,TWR=14.0,casLatency=3,clockRate=100000000,columnWidth=9,dataWidth=16,generateSimulationModel=false,initNOPDelay=0.0,initRefreshCommands=8,masteredTristateBridgeSlave=,model=custom,numberOfBanks=4,numberOfChipSelects=1,pinsSharedViaTriState=false,powerUpDelay=200.0,refreshPeriod=7.8125,registerDataIn=true,rowWidth=13,size=33554432)(altera_avalon_epcs_flash_controller:12.1:autoSelectASMIAtom=true,clockRate=100000000,deviceFamilyString=Cyclone IV E,useASMIAtom=false)(altera_avalon_timer:12.1:alwaysRun=false,counterSize=32,fixedPeriod=false,period=1,periodUnits=MSEC,resetOutput=false,snapshot=true,systemFrequency=100000000,timeoutPulseOutput=false,timerPreset=CUSTOM)(altera_avalon_pio:12.1:bitClearingEdgeCapReg=false,bitModifyingOutReg=true,captureEdge=false,clockRate=100000000,direction=Output,edgeType=RISING,generateIRQ=false,irqType=LEVEL,resetValue=0,simDoTestBenchWiring=false,simDrivenValue=0,width=4)(altera_avalon_pio:12.1:bitClearingEdgeCapReg=false,bitModifyingOutReg=true,captureEdge=false,clockRate=100000000,direction=Output,edgeType=RISING,generateIRQ=false,irqType=LEVEL,resetValue=0,simDoTestBenchWiring=false,simDrivenValue=0,width=7)(altera_avalon_jtag_uart:12.1:allowMultipleConnections=false,avalonSpec=2.0,hubInstanceID=0,legacySignalAllow=false,readBufferDepth=64,readIRQThreshold=8,simInputCharacterStream=,simInteractiveOptions=INTERACTIVE_INPUT_OUTPUT,useRegistersForReadBuffer=false,useRegistersForWriteBuffer=false,useRelativePathForSimFile=false,writeBufferDepth=64,writeIRQThreshold=8)(altera_up_avalon_de0_nano_adc:12.0:AUTO_CLK_CLOCK_RATE=100000000,AUTO_DEVICE_FAMILY=Cyclone IV E,numch=2,sclk_freq=3.2,tsclk=32)(i2c_opencores:1.0:AUTO_CLOCK_SINK_CLOCK_RATE=100000000)(avalon:12.1:arbitrationPriority=1,baseAddress=0x04001000)(avalon:12.1:arbitrationPriority=1,baseAddress=0x04001000)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(reset:12.1:)(avalon:12.1:arbitrationPriority=1,baseAddress=0x04001890)(avalon:12.1:arbitrationPriority=1,baseAddress=0x02000000)(avalon:12.1:arbitrationPriority=1,baseAddress=0x04000800)(avalon:12.1:arbitrationPriority=1,baseAddress=0x04001860)(avalon:12.1:arbitrationPriority=1,baseAddress=0x04001840)(avalon:12.1:arbitrationPriority=1,baseAddress=0x02000000)(clock:12.1:)(clock:12.1:)(clock:12.1:)(clock:12.1:)(clock:12.1:)(clock:12.1:)(interrupt:12.1:irqNumber=0)(interrupt:12.1:irqNumber=1)(clock:12.1:)(reset:12.1:)(avalon:12.1:arbitrationPriority=1,baseAddress=0x04001820)(reset:12.1:)(clock:12.1:)(reset:12.1:)(avalon:12.1:arbitrationPriority=1,baseAddress=0x04001888)(reset:12.1:)(interrupt:12.1:irqNumber=2)(clock:12.1:)(reset:12.1:)(reset:12.1:)(avalon:12.1:arbitrationPriority=1,baseAddress=0x04001800)(avalon:12.1:arbitrationPriority=1,baseAddress=0x04001880)(clock:12.1:)(reset:12.1:)(reset:12.1:)(interrupt:12.1:irqNumber=3)"
    instancePathKey="system"
    kind="system"
    version="1.0"
@@ -118,7 +118,7 @@
   <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
   <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
   <parameter name="AUTO_DEVICE" value="EP4CE22F17C6" />
-  <parameter name="AUTO_GENERATION_ID" value="1394483680" />
+  <parameter name="AUTO_GENERATION_ID" value="1394671685" />
   <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
   <generatedFiles>
    <file
@@ -943,29 +943,29 @@
    <message level="Debug" culprit="system"><![CDATA["<b>system</b>" reuses <b>altera_irq_mapper</b> "<b>submodules/system_irq_mapper</b>"]]></message>
    <message level="Debug" culprit="system">queue size: 81 starting:altera_nios2_qsys "submodules/system_cpu"</message>
    <message level="Info" culprit="cpu">Starting RTL generation for module 'system_cpu'</message>
-   <message level="Info" culprit="cpu">  Generation command is [exec C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/12.1sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/12.1sp1/quartus/sopc_builder/bin/europa -I C:/altera/12.1sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/12.1sp1/quartus/sopc_builder/bin -I C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=system_cpu --dir=C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0001_cpu_gen/ --quartus_dir=C:/altera/12.1sp1/quartus --verilog --config=C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0001_cpu_gen//system_cpu_processor_configuration.pl  --do_build_sim=0    --bogus  ]</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:45 (*) Starting Nios II generation</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:45 (*)   Checking for plaintext license.</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)   Couldn't query license setup in Quartus directory C:/altera/12.1sp1/quartus</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)   Plaintext license not found.</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)   Checking for encrypted license (non-evaluation).</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)   Couldn't query license setup in Quartus directory C:/altera/12.1sp1/quartus</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)   Encrypted license found.  SOF will not be time-limited.</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)   Elaborating CPU configuration settings</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)   Creating all objects for CPU</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)     Testbench</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)     Instruction decoding</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)       Instruction fields</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:47 (*)       Instruction decodes</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:47 (*)       Signals for RTL simulation waveforms</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:47 (*)       Instruction controls</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:47 (*)     Pipeline frontend</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:47 (*)     Pipeline backend</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:50 (*)   Generating RTL from CPU objects</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:53 (*)   Creating encrypted RTL</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:54 (*) Done Nios II generation</message>
+   <message level="Info" culprit="cpu">  Generation command is [exec C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/12.1sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/12.1sp1/quartus/sopc_builder/bin/europa -I C:/altera/12.1sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/12.1sp1/quartus/sopc_builder/bin -I C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=system_cpu --dir=C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0001_cpu_gen/ --quartus_dir=C:/altera/12.1sp1/quartus --verilog --config=C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0001_cpu_gen//system_cpu_processor_configuration.pl  --do_build_sim=0    --bogus  ]</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:10 (*) Starting Nios II generation</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:10 (*)   Checking for plaintext license.</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:10 (*)   Couldn't query license setup in Quartus directory C:/altera/12.1sp1/quartus</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:10 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:10 (*)   Plaintext license not found.</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:10 (*)   Checking for encrypted license (non-evaluation).</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:10 (*)   Couldn't query license setup in Quartus directory C:/altera/12.1sp1/quartus</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:10 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:11 (*)   Encrypted license found.  SOF will not be time-limited.</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:11 (*)   Elaborating CPU configuration settings</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:11 (*)   Creating all objects for CPU</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:11 (*)     Testbench</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:11 (*)     Instruction decoding</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:11 (*)       Instruction fields</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:11 (*)       Instruction decodes</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:11 (*)       Signals for RTL simulation waveforms</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:12 (*)       Instruction controls</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:12 (*)     Pipeline frontend</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:12 (*)     Pipeline backend</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:14 (*)   Generating RTL from CPU objects</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:17 (*)   Creating encrypted RTL</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:18 (*) Done Nios II generation</message>
    <message level="Info" culprit="cpu">Done RTL generation for module 'system_cpu'</message>
    <message level="Info" culprit="cpu"><![CDATA["<b>system</b>" instantiated <b>altera_nios2_qsys</b> "<b>cpu</b>"]]></message>
    <message level="Debug" culprit="system">queue size: 80 starting:altera_avalon_sysid_qsys "submodules/system_sysid"</message>
@@ -978,9 +978,9 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Info">Finished elaborating module.</message>
-   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen/yysystem.ptf</message>
+   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen/yysystem.ptf</message>
    <message level="Info">Running sopc_builder...</message>
    <message level="Progress">cygwin warning:</message>
    <message level="Progress">  MS-DOS style path detected: C:/altera/12.1sp1/quartus/sopc_builder/bin/nios_sh</message>
@@ -988,36 +988,36 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Progress">Altera SOPC Builder Version 12.11 Build 243</message>
    <message level="Progress">Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.</message>
    <message level="Progress">No .sopc_builder configuration file(!)</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) mk_custom_sdk starting</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen/yysystem.ptf.</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) Finding all CPUs</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) Finding all peripherals</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) Finding software components</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) (Legacy SDK Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) (All TCL Script Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) (No Libraries Built)</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) (Contents Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) mk_custom_sdk finishing</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) Starting generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) mk_custom_sdk starting</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen/yysystem.ptf.</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) Finding all CPUs</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) Finding all peripherals</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) Finding software components</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) (Legacy SDK Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) (All TCL Script Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) (No Libraries Built)</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) (Contents Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) mk_custom_sdk finishing</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) Starting generation for system: yysystem.</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2014.03.10 14:35:00 (*) Running Generator Program for system_sdram</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) Running Generator Program for system_sdram</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2014.03.10 14:35:00 (*) Running Test Generator Program for system_sdram</message>
-   <message level="Progress"># 2014.03.10 14:35:00 (*) Making arbitration and system (top) modules.</message>
-   <message level="Progress"># 2014.03.10 14:35:01 (*) Generating Quartus symbol for top level: yysystem</message>
-   <message level="Progress"># 2014.03.10 14:35:01 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen/yysystem.bsf</message>
-   <message level="Progress"># 2014.03.10 14:35:01 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen/yysystem_generation_script</message>
-   <message level="Progress"># 2014.03.10 14:35:01 (*) Running setup for HDL simulator: modelsim</message>
-   <message level="Progress">00# 2014.03.10 14:35:01 (*) Completed generation for system: yysystem.</message>
-   <message level="Progress"># 2014.03.10 14:35:01 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
-   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen/yysystem.ptf </message>
-   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen/yysystem.v </message>
-   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen/yysystem_generation_script </message>
-   <message level="Progress"># 2014.03.10 14:35:01 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
+   <message level="Progress"># 2014.03.12 18:48:24 (*) Running Test Generator Program for system_sdram</message>
+   <message level="Progress"># 2014.03.12 18:48:24 (*) Making arbitration and system (top) modules.</message>
+   <message level="Progress"># 2014.03.12 18:48:25 (*) Generating Quartus symbol for top level: yysystem</message>
+   <message level="Progress"># 2014.03.12 18:48:25 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen/yysystem.bsf</message>
+   <message level="Progress"># 2014.03.12 18:48:25 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen/yysystem_generation_script</message>
+   <message level="Progress"># 2014.03.12 18:48:25 (*) Running setup for HDL simulator: modelsim</message>
+   <message level="Progress">00# 2014.03.12 18:48:25 (*) Completed generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:25 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
+   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen/yysystem.ptf </message>
+   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen/yysystem.v </message>
+   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen/yysystem_generation_script </message>
+   <message level="Progress"># 2014.03.12 18:48:25 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
    <message level="Info" culprit="sdram"><![CDATA["<b>system</b>" instantiated <b>altera_avalon_new_sdram_controller</b> "<b>sdram</b>"]]></message>
    <message level="Debug" culprit="system">queue size: 78 starting:altera_avalon_epcs_flash_controller "submodules/system_epcs_flash_controller"</message>
    <message level="Info">Starting module elaboration.</message>
@@ -1027,9 +1027,9 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Info">Finished elaborating module.</message>
-   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen/yysystem.ptf</message>
+   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen/yysystem.ptf</message>
    <message level="Info">Running sopc_builder...</message>
    <message level="Progress">cygwin warning:</message>
    <message level="Progress">  MS-DOS style path detected: C:/altera/12.1sp1/quartus/sopc_builder/bin/nios_sh</message>
@@ -1037,34 +1037,34 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Progress">Altera SOPC Builder Version 12.11 Build 243</message>
    <message level="Progress">Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.</message>
    <message level="Progress">No .sopc_builder configuration file(!)</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) mk_custom_sdk starting</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen/yysystem.ptf.</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) Finding all CPUs</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) Finding all peripherals</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) Finding software components</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) (Legacy SDK Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) (All TCL Script Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) (No Libraries Built)</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) (Contents Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) mk_custom_sdk finishing</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) Starting generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) mk_custom_sdk starting</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen/yysystem.ptf.</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) Finding all CPUs</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) Finding all peripherals</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) Finding software components</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) (Legacy SDK Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) (All TCL Script Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) (No Libraries Built)</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) (Contents Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) mk_custom_sdk finishing</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) Starting generation for system: yysystem.</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) Running Generator Program for system_epcs_flash_controller</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) Making arbitration and system (top) modules.</message>
-   <message level="Progress"># 2014.03.10 14:35:07 (*) Generating Quartus symbol for top level: yysystem</message>
-   <message level="Progress"># 2014.03.10 14:35:07 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen/yysystem.bsf</message>
-   <message level="Progress"># 2014.03.10 14:35:07 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen/yysystem_generation_script</message>
-   <message level="Progress"># 2014.03.10 14:35:07 (*) Running setup for HDL simulator: modelsim</message>
-   <message level="Progress">00# 2014.03.10 14:35:07 (*) Completed generation for system: yysystem.</message>
-   <message level="Progress"># 2014.03.10 14:35:07 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
-   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen/yysystem.ptf </message>
-   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen/yysystem.v </message>
-   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen/yysystem_generation_script </message>
-   <message level="Progress"># 2014.03.10 14:35:07 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) Running Generator Program for system_epcs_flash_controller</message>
+   <message level="Progress"># 2014.03.12 18:48:30 (*) Making arbitration and system (top) modules.</message>
+   <message level="Progress"># 2014.03.12 18:48:30 (*) Generating Quartus symbol for top level: yysystem</message>
+   <message level="Progress"># 2014.03.12 18:48:30 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen/yysystem.bsf</message>
+   <message level="Progress"># 2014.03.12 18:48:30 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen/yysystem_generation_script</message>
+   <message level="Progress"># 2014.03.12 18:48:30 (*) Running setup for HDL simulator: modelsim</message>
+   <message level="Progress">00# 2014.03.12 18:48:30 (*) Completed generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:30 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
+   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen/yysystem.ptf </message>
+   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen/yysystem.v </message>
+   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen/yysystem_generation_script </message>
+   <message level="Progress"># 2014.03.12 18:48:30 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
    <message level="Info" culprit="epcs_flash_controller"><![CDATA["<b>system</b>" instantiated <b>altera_avalon_epcs_flash_controller</b> "<b>epcs_flash_controller</b>"]]></message>
    <message level="Debug" culprit="system">queue size: 77 starting:altera_avalon_timer "submodules/system_sys_clk_timer"</message>
    <message level="Info">Starting module elaboration.</message>
@@ -1074,9 +1074,9 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Info">Finished elaborating module.</message>
-   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen/yysystem.ptf</message>
+   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen/yysystem.ptf</message>
    <message level="Info">Running sopc_builder...</message>
    <message level="Progress">cygwin warning:</message>
    <message level="Progress">  MS-DOS style path detected: C:/altera/12.1sp1/quartus/sopc_builder/bin/nios_sh</message>
@@ -1084,34 +1084,34 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Progress">Altera SOPC Builder Version 12.11 Build 243</message>
    <message level="Progress">Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.</message>
    <message level="Progress">No .sopc_builder configuration file(!)</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) mk_custom_sdk starting</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen/yysystem.ptf.</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) Finding all CPUs</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) Finding all peripherals</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) Finding software components</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) (Legacy SDK Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) (All TCL Script Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) (No Libraries Built)</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) (Contents Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) mk_custom_sdk finishing</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) Starting generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) mk_custom_sdk starting</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen/yysystem.ptf.</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) Finding all CPUs</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) Finding all peripherals</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) Finding software components</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) (Legacy SDK Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) (All TCL Script Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) (No Libraries Built)</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) (Contents Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) mk_custom_sdk finishing</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) Starting generation for system: yysystem.</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) Running Generator Program for system_sys_clk_timer</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) Making arbitration and system (top) modules.</message>
-   <message level="Progress"># 2014.03.10 14:35:11 (*) Generating Quartus symbol for top level: yysystem</message>
-   <message level="Progress"># 2014.03.10 14:35:11 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen/yysystem.bsf</message>
-   <message level="Progress"># 2014.03.10 14:35:11 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen/yysystem_generation_script</message>
-   <message level="Progress"># 2014.03.10 14:35:11 (*) Running setup for HDL simulator: modelsim</message>
-   <message level="Progress">00# 2014.03.10 14:35:11 (*) Completed generation for system: yysystem.</message>
-   <message level="Progress"># 2014.03.10 14:35:11 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
-   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen/yysystem.ptf </message>
-   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen/yysystem.v </message>
-   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen/yysystem_generation_script </message>
-   <message level="Progress"># 2014.03.10 14:35:11 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) Running Generator Program for system_sys_clk_timer</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) Making arbitration and system (top) modules.</message>
+   <message level="Progress"># 2014.03.12 18:48:35 (*) Generating Quartus symbol for top level: yysystem</message>
+   <message level="Progress"># 2014.03.12 18:48:35 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen/yysystem.bsf</message>
+   <message level="Progress"># 2014.03.12 18:48:35 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen/yysystem_generation_script</message>
+   <message level="Progress"># 2014.03.12 18:48:35 (*) Running setup for HDL simulator: modelsim</message>
+   <message level="Progress">00# 2014.03.12 18:48:35 (*) Completed generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:35 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
+   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen/yysystem.ptf </message>
+   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen/yysystem.v </message>
+   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen/yysystem_generation_script </message>
+   <message level="Progress"># 2014.03.12 18:48:35 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
    <message level="Info" culprit="sys_clk_timer"><![CDATA["<b>system</b>" instantiated <b>altera_avalon_timer</b> "<b>sys_clk_timer</b>"]]></message>
    <message level="Debug" culprit="system">queue size: 76 starting:altera_avalon_pio "submodules/system_transmitter"</message>
    <message level="Info">Starting module elaboration.</message>
@@ -1121,9 +1121,9 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Info">Finished elaborating module.</message>
-   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen/yysystem.ptf</message>
+   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen/yysystem.ptf</message>
    <message level="Info">Running sopc_builder...</message>
    <message level="Progress">cygwin warning:</message>
    <message level="Progress">  MS-DOS style path detected: C:/altera/12.1sp1/quartus/sopc_builder/bin/nios_sh</message>
@@ -1131,34 +1131,34 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Progress">Altera SOPC Builder Version 12.11 Build 243</message>
    <message level="Progress">Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.</message>
    <message level="Progress">No .sopc_builder configuration file(!)</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) mk_custom_sdk starting</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen/yysystem.ptf.</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) Finding all CPUs</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) Finding all peripherals</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) Finding software components</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) (Legacy SDK Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) (All TCL Script Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) (No Libraries Built)</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) (Contents Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) mk_custom_sdk finishing</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) Starting generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) mk_custom_sdk starting</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen/yysystem.ptf.</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) Finding all CPUs</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) Finding all peripherals</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) Finding software components</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) (Legacy SDK Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) (All TCL Script Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) (No Libraries Built)</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) (Contents Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) mk_custom_sdk finishing</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) Starting generation for system: yysystem.</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) Running Generator Program for system_transmitter</message>
-   <message level="Progress"># 2014.03.10 14:35:15 (*) Making arbitration and system (top) modules.</message>
-   <message level="Progress"># 2014.03.10 14:35:15 (*) Generating Quartus symbol for top level: yysystem</message>
-   <message level="Progress"># 2014.03.10 14:35:15 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen/yysystem.bsf</message>
-   <message level="Progress"># 2014.03.10 14:35:15 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen/yysystem_generation_script</message>
-   <message level="Progress"># 2014.03.10 14:35:15 (*) Running setup for HDL simulator: modelsim</message>
-   <message level="Progress">00# 2014.03.10 14:35:15 (*) Completed generation for system: yysystem.</message>
-   <message level="Progress"># 2014.03.10 14:35:15 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
-   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen/yysystem.ptf </message>
-   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen/yysystem.v </message>
-   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen/yysystem_generation_script </message>
-   <message level="Progress"># 2014.03.10 14:35:15 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) Running Generator Program for system_transmitter</message>
+   <message level="Progress"># 2014.03.12 18:48:39 (*) Making arbitration and system (top) modules.</message>
+   <message level="Progress"># 2014.03.12 18:48:39 (*) Generating Quartus symbol for top level: yysystem</message>
+   <message level="Progress"># 2014.03.12 18:48:39 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen/yysystem.bsf</message>
+   <message level="Progress"># 2014.03.12 18:48:39 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen/yysystem_generation_script</message>
+   <message level="Progress"># 2014.03.12 18:48:39 (*) Running setup for HDL simulator: modelsim</message>
+   <message level="Progress">00# 2014.03.12 18:48:39 (*) Completed generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:39 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
+   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen/yysystem.ptf </message>
+   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen/yysystem.v </message>
+   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen/yysystem_generation_script </message>
+   <message level="Progress"># 2014.03.12 18:48:39 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
    <message level="Info" culprit="transmitter"><![CDATA["<b>system</b>" instantiated <b>altera_avalon_pio</b> "<b>transmitter</b>"]]></message>
    <message level="Debug" culprit="system">queue size: 75 starting:altera_avalon_pio "submodules/system_pio_led_green"</message>
    <message level="Info">Starting module elaboration.</message>
@@ -1168,9 +1168,9 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Info">Finished elaborating module.</message>
-   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen/yysystem.ptf</message>
+   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen/yysystem.ptf</message>
    <message level="Info">Running sopc_builder...</message>
    <message level="Progress">cygwin warning:</message>
    <message level="Progress">  MS-DOS style path detected: C:/altera/12.1sp1/quartus/sopc_builder/bin/nios_sh</message>
@@ -1178,34 +1178,34 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Progress">Altera SOPC Builder Version 12.11 Build 243</message>
    <message level="Progress">Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.</message>
    <message level="Progress">No .sopc_builder configuration file(!)</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) mk_custom_sdk starting</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen/yysystem.ptf.</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Finding all CPUs</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Finding all peripherals</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Finding software components</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) (Legacy SDK Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) (All TCL Script Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) (No Libraries Built)</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) (Contents Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) mk_custom_sdk finishing</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Starting generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) mk_custom_sdk starting</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen/yysystem.ptf.</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Finding all CPUs</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Finding all peripherals</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Finding software components</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) (Legacy SDK Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) (All TCL Script Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) (No Libraries Built)</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) (Contents Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) mk_custom_sdk finishing</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Starting generation for system: yysystem.</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Running Generator Program for system_pio_led_green</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Making arbitration and system (top) modules.</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Generating Quartus symbol for top level: yysystem</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen/yysystem.bsf</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen/yysystem_generation_script</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Running setup for HDL simulator: modelsim</message>
-   <message level="Progress">00# 2014.03.10 14:35:19 (*) Completed generation for system: yysystem.</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
-   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen/yysystem.ptf </message>
-   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen/yysystem.v </message>
-   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen/yysystem_generation_script </message>
-   <message level="Progress"># 2014.03.10 14:35:20 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Running Generator Program for system_pio_led_green</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Making arbitration and system (top) modules.</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Generating Quartus symbol for top level: yysystem</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen/yysystem.bsf</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen/yysystem_generation_script</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Running setup for HDL simulator: modelsim</message>
+   <message level="Progress">00# 2014.03.12 18:48:43 (*) Completed generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
+   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen/yysystem.ptf </message>
+   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen/yysystem.v </message>
+   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen/yysystem_generation_script </message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
    <message level="Info" culprit="pio_led_green"><![CDATA["<b>system</b>" instantiated <b>altera_avalon_pio</b> "<b>pio_led_green</b>"]]></message>
    <message level="Debug" culprit="system">queue size: 74 starting:altera_avalon_jtag_uart "submodules/system_jtag_uart"</message>
    <message level="Info">Starting module elaboration.</message>
@@ -1215,9 +1215,9 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Info">Finished elaborating module.</message>
-   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen/yysystem.ptf</message>
+   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen/yysystem.ptf</message>
    <message level="Info">Running sopc_builder...</message>
    <message level="Progress">cygwin warning:</message>
    <message level="Progress">  MS-DOS style path detected: C:/altera/12.1sp1/quartus/sopc_builder/bin/nios_sh</message>
@@ -1225,41 +1225,41 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Progress">Altera SOPC Builder Version 12.11 Build 243</message>
    <message level="Progress">Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.</message>
    <message level="Progress">No .sopc_builder configuration file(!)</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) mk_custom_sdk starting</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen/yysystem.ptf.</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) Finding all CPUs</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) Finding all peripherals</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) Finding software components</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) (Legacy SDK Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) (All TCL Script Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) (No Libraries Built)</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) (Contents Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) mk_custom_sdk finishing</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) Starting generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) mk_custom_sdk starting</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen/yysystem.ptf.</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) Finding all CPUs</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) Finding all peripherals</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) Finding software components</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) (Legacy SDK Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) (All TCL Script Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) (No Libraries Built)</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) (Contents Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) mk_custom_sdk finishing</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) Starting generation for system: yysystem.</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) Running Generator Program for system_jtag_uart</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) Making arbitration and system (top) modules.</message>
-   <message level="Progress"># 2014.03.10 14:35:24 (*) Generating Quartus symbol for top level: yysystem</message>
-   <message level="Progress"># 2014.03.10 14:35:24 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen/yysystem.bsf</message>
-   <message level="Progress"># 2014.03.10 14:35:24 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen/yysystem_generation_script</message>
-   <message level="Progress"># 2014.03.10 14:35:24 (*) Running setup for HDL simulator: modelsim</message>
-   <message level="Progress">00# 2014.03.10 14:35:24 (*) Completed generation for system: yysystem.</message>
-   <message level="Progress"># 2014.03.10 14:35:24 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
-   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen/yysystem.ptf </message>
-   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen/yysystem.v </message>
-   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen/yysystem_generation_script </message>
-   <message level="Progress"># 2014.03.10 14:35:24 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) Running Generator Program for system_jtag_uart</message>
+   <message level="Progress"># 2014.03.12 18:48:48 (*) Making arbitration and system (top) modules.</message>
+   <message level="Progress"># 2014.03.12 18:48:48 (*) Generating Quartus symbol for top level: yysystem</message>
+   <message level="Progress"># 2014.03.12 18:48:48 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen/yysystem.bsf</message>
+   <message level="Progress"># 2014.03.12 18:48:48 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen/yysystem_generation_script</message>
+   <message level="Progress"># 2014.03.12 18:48:48 (*) Running setup for HDL simulator: modelsim</message>
+   <message level="Progress">00# 2014.03.12 18:48:48 (*) Completed generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:48 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
+   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen/yysystem.ptf </message>
+   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen/yysystem.v </message>
+   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen/yysystem_generation_script </message>
+   <message level="Progress"># 2014.03.12 18:48:48 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
    <message level="Info" culprit="jtag_uart"><![CDATA["<b>system</b>" instantiated <b>altera_avalon_jtag_uart</b> "<b>jtag_uart</b>"]]></message>
    <message level="Debug" culprit="system">queue size: 73 starting:altera_up_avalon_de0_nano_adc "submodules/system_de0_nano_adc_0"</message>
    <message level="Info" culprit="de0_nano_adc_0">Starting Generation of DE0-Nano ADC Controller</message>
-   <message level="Info" culprit="de0_nano_adc_0">C:/altera/12.1sp1/ip/University_Program/Input_Output/altera_up_avalon_de0_nano_adc/hdl/adv_adc.v C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0009_sopcgen/system_de0_nano_adc_0.v</message>
+   <message level="Info" culprit="de0_nano_adc_0">C:/altera/12.1sp1/ip/University_Program/Input_Output/altera_up_avalon_de0_nano_adc/hdl/adv_adc.v C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0009_sopcgen/system_de0_nano_adc_0.v</message>
    <message level="Debug">set ALTERA_HW_TCL_KEEP_TEMP_FILES=1 to retain temp files</message>
-   <message level="Debug">Command: C:/altera/12.1sp1/quartus/bin/quartus_map.exe not_a_project --generate_hdl_interface=C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0009_sopcgen/system_de0_nano_adc_0.v --source=C:/altera/12.1sp1/ip/University_Program/Input_Output/altera_up_avalon_de0_nano_adc/hdl/adv_adc.v --source=C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0009_sopcgen/system_de0_nano_adc_0.v --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0010_sopcqmap/ --ini=disable_check_quartus_compatibility_qsys_only=on</message>
-   <message level="Debug">Command took 5.262s</message>
+   <message level="Debug">Command: C:/altera/12.1sp1/quartus/bin/quartus_map.exe not_a_project --generate_hdl_interface=C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0009_sopcgen/system_de0_nano_adc_0.v --source=C:/altera/12.1sp1/ip/University_Program/Input_Output/altera_up_avalon_de0_nano_adc/hdl/adv_adc.v --source=C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0009_sopcgen/system_de0_nano_adc_0.v --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0010_sopcqmap/ --ini=disable_check_quartus_compatibility_qsys_only=on</message>
+   <message level="Debug">Command took 4.199s</message>
    <message level="Warning" culprit="de0_nano_adc_0"><![CDATA[Parameter <b>tsclk</b> has hdl_parameter = false but parameter exists on the HDL]]></message>
    <message level="Warning" culprit="de0_nano_adc_0"><![CDATA[Parameter <b>numch</b> has hdl_parameter = false but parameter exists on the HDL]]></message>
    <message level="Info" culprit="de0_nano_adc_0"><![CDATA["<b>system</b>" instantiated <b>altera_up_avalon_de0_nano_adc</b> "<b>de0_nano_adc_0</b>"]]></message>
@@ -1524,41 +1524,41 @@
   <messages>
    <message level="Debug" culprit="system">queue size: 81 starting:altera_nios2_qsys "submodules/system_cpu"</message>
    <message level="Info" culprit="cpu">Starting RTL generation for module 'system_cpu'</message>
-   <message level="Info" culprit="cpu">  Generation command is [exec C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/12.1sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/12.1sp1/quartus/sopc_builder/bin/europa -I C:/altera/12.1sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/12.1sp1/quartus/sopc_builder/bin -I C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=system_cpu --dir=C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0001_cpu_gen/ --quartus_dir=C:/altera/12.1sp1/quartus --verilog --config=C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0001_cpu_gen//system_cpu_processor_configuration.pl  --do_build_sim=0    --bogus  ]</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:45 (*) Starting Nios II generation</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:45 (*)   Checking for plaintext license.</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)   Couldn't query license setup in Quartus directory C:/altera/12.1sp1/quartus</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)   Plaintext license not found.</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)   Checking for encrypted license (non-evaluation).</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)   Couldn't query license setup in Quartus directory C:/altera/12.1sp1/quartus</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)   Encrypted license found.  SOF will not be time-limited.</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)   Elaborating CPU configuration settings</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)   Creating all objects for CPU</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)     Testbench</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)     Instruction decoding</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:46 (*)       Instruction fields</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:47 (*)       Instruction decodes</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:47 (*)       Signals for RTL simulation waveforms</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:47 (*)       Instruction controls</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:47 (*)     Pipeline frontend</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:47 (*)     Pipeline backend</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:50 (*)   Generating RTL from CPU objects</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:53 (*)   Creating encrypted RTL</message>
-   <message level="Info" culprit="cpu"># 2014.03.10 14:34:54 (*) Done Nios II generation</message>
+   <message level="Info" culprit="cpu">  Generation command is [exec C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/12.1sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/12.1sp1/quartus/sopc_builder/bin/europa -I C:/altera/12.1sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/12.1sp1/quartus/sopc_builder/bin -I C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/12.1sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=system_cpu --dir=C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0001_cpu_gen/ --quartus_dir=C:/altera/12.1sp1/quartus --verilog --config=C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0001_cpu_gen//system_cpu_processor_configuration.pl  --do_build_sim=0    --bogus  ]</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:10 (*) Starting Nios II generation</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:10 (*)   Checking for plaintext license.</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:10 (*)   Couldn't query license setup in Quartus directory C:/altera/12.1sp1/quartus</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:10 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:10 (*)   Plaintext license not found.</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:10 (*)   Checking for encrypted license (non-evaluation).</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:10 (*)   Couldn't query license setup in Quartus directory C:/altera/12.1sp1/quartus</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:10 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:11 (*)   Encrypted license found.  SOF will not be time-limited.</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:11 (*)   Elaborating CPU configuration settings</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:11 (*)   Creating all objects for CPU</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:11 (*)     Testbench</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:11 (*)     Instruction decoding</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:11 (*)       Instruction fields</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:11 (*)       Instruction decodes</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:11 (*)       Signals for RTL simulation waveforms</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:12 (*)       Instruction controls</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:12 (*)     Pipeline frontend</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:12 (*)     Pipeline backend</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:14 (*)   Generating RTL from CPU objects</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:17 (*)   Creating encrypted RTL</message>
+   <message level="Info" culprit="cpu"># 2014.03.12 18:48:18 (*) Done Nios II generation</message>
    <message level="Info" culprit="cpu">Done RTL generation for module 'system_cpu'</message>
    <message level="Info" culprit="cpu"><![CDATA["<b>system</b>" instantiated <b>altera_nios2_qsys</b> "<b>cpu</b>"]]></message>
   </messages>
  </entity>
  <entity
    path="submodules/"
-   parameterizationKey="altera_avalon_sysid_qsys:12.1:AUTO_CLK_CLOCK_RATE=100000000,AUTO_DEVICE_FAMILY=Cyclone IV E,id=0,timestamp=1394483680"
+   parameterizationKey="altera_avalon_sysid_qsys:12.1:AUTO_CLK_CLOCK_RATE=100000000,AUTO_DEVICE_FAMILY=Cyclone IV E,id=0,timestamp=1394671685"
    instancePathKey="system:.:sysid"
    kind="altera_avalon_sysid_qsys"
    version="12.1"
    name="system_sysid">
-  <parameter name="timestamp" value="1394483680" />
+  <parameter name="timestamp" value="1394671685" />
   <parameter name="id" value="0" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
   <parameter name="AUTO_CLK_CLOCK_RATE" value="100000000" />
@@ -1630,9 +1630,9 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Info">Finished elaborating module.</message>
-   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen/yysystem.ptf</message>
+   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen/yysystem.ptf</message>
    <message level="Info">Running sopc_builder...</message>
    <message level="Progress">cygwin warning:</message>
    <message level="Progress">  MS-DOS style path detected: C:/altera/12.1sp1/quartus/sopc_builder/bin/nios_sh</message>
@@ -1640,36 +1640,36 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Progress">Altera SOPC Builder Version 12.11 Build 243</message>
    <message level="Progress">Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.</message>
    <message level="Progress">No .sopc_builder configuration file(!)</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) mk_custom_sdk starting</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen/yysystem.ptf.</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) Finding all CPUs</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) Finding all peripherals</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) Finding software components</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) (Legacy SDK Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) (All TCL Script Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) (No Libraries Built)</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) (Contents Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) mk_custom_sdk finishing</message>
-   <message level="Progress"># 2014.03.10 14:34:59 (*) Starting generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) mk_custom_sdk starting</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen/yysystem.ptf.</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) Finding all CPUs</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) Finding all peripherals</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) Finding software components</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) (Legacy SDK Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) (All TCL Script Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) (No Libraries Built)</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) (Contents Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) mk_custom_sdk finishing</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) Starting generation for system: yysystem.</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2014.03.10 14:35:00 (*) Running Generator Program for system_sdram</message>
+   <message level="Progress"># 2014.03.12 18:48:23 (*) Running Generator Program for system_sdram</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2014.03.10 14:35:00 (*) Running Test Generator Program for system_sdram</message>
-   <message level="Progress"># 2014.03.10 14:35:00 (*) Making arbitration and system (top) modules.</message>
-   <message level="Progress"># 2014.03.10 14:35:01 (*) Generating Quartus symbol for top level: yysystem</message>
-   <message level="Progress"># 2014.03.10 14:35:01 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen/yysystem.bsf</message>
-   <message level="Progress"># 2014.03.10 14:35:01 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen/yysystem_generation_script</message>
-   <message level="Progress"># 2014.03.10 14:35:01 (*) Running setup for HDL simulator: modelsim</message>
-   <message level="Progress">00# 2014.03.10 14:35:01 (*) Completed generation for system: yysystem.</message>
-   <message level="Progress"># 2014.03.10 14:35:01 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
-   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen/yysystem.ptf </message>
-   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen/yysystem.v </message>
-   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0003_sopclgen/yysystem_generation_script </message>
-   <message level="Progress"># 2014.03.10 14:35:01 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
+   <message level="Progress"># 2014.03.12 18:48:24 (*) Running Test Generator Program for system_sdram</message>
+   <message level="Progress"># 2014.03.12 18:48:24 (*) Making arbitration and system (top) modules.</message>
+   <message level="Progress"># 2014.03.12 18:48:25 (*) Generating Quartus symbol for top level: yysystem</message>
+   <message level="Progress"># 2014.03.12 18:48:25 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen/yysystem.bsf</message>
+   <message level="Progress"># 2014.03.12 18:48:25 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen/yysystem_generation_script</message>
+   <message level="Progress"># 2014.03.12 18:48:25 (*) Running setup for HDL simulator: modelsim</message>
+   <message level="Progress">00# 2014.03.12 18:48:25 (*) Completed generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:25 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
+   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen/yysystem.ptf </message>
+   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen/yysystem.v </message>
+   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0003_sopclgen/yysystem_generation_script </message>
+   <message level="Progress"># 2014.03.12 18:48:25 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
    <message level="Info" culprit="sdram"><![CDATA["<b>system</b>" instantiated <b>altera_avalon_new_sdram_controller</b> "<b>sdram</b>"]]></message>
   </messages>
  </entity>
@@ -1707,9 +1707,9 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Info">Finished elaborating module.</message>
-   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen/yysystem.ptf</message>
+   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen/yysystem.ptf</message>
    <message level="Info">Running sopc_builder...</message>
    <message level="Progress">cygwin warning:</message>
    <message level="Progress">  MS-DOS style path detected: C:/altera/12.1sp1/quartus/sopc_builder/bin/nios_sh</message>
@@ -1717,34 +1717,34 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Progress">Altera SOPC Builder Version 12.11 Build 243</message>
    <message level="Progress">Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.</message>
    <message level="Progress">No .sopc_builder configuration file(!)</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) mk_custom_sdk starting</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen/yysystem.ptf.</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) Finding all CPUs</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) Finding all peripherals</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) Finding software components</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) (Legacy SDK Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) (All TCL Script Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) (No Libraries Built)</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) (Contents Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) mk_custom_sdk finishing</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) Starting generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) mk_custom_sdk starting</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen/yysystem.ptf.</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) Finding all CPUs</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) Finding all peripherals</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) Finding software components</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) (Legacy SDK Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) (All TCL Script Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) (No Libraries Built)</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) (Contents Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) mk_custom_sdk finishing</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) Starting generation for system: yysystem.</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) Running Generator Program for system_epcs_flash_controller</message>
-   <message level="Progress"># 2014.03.10 14:35:06 (*) Making arbitration and system (top) modules.</message>
-   <message level="Progress"># 2014.03.10 14:35:07 (*) Generating Quartus symbol for top level: yysystem</message>
-   <message level="Progress"># 2014.03.10 14:35:07 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen/yysystem.bsf</message>
-   <message level="Progress"># 2014.03.10 14:35:07 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen/yysystem_generation_script</message>
-   <message level="Progress"># 2014.03.10 14:35:07 (*) Running setup for HDL simulator: modelsim</message>
-   <message level="Progress">00# 2014.03.10 14:35:07 (*) Completed generation for system: yysystem.</message>
-   <message level="Progress"># 2014.03.10 14:35:07 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
-   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen/yysystem.ptf </message>
-   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen/yysystem.v </message>
-   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0004_sopclgen/yysystem_generation_script </message>
-   <message level="Progress"># 2014.03.10 14:35:07 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
+   <message level="Progress"># 2014.03.12 18:48:29 (*) Running Generator Program for system_epcs_flash_controller</message>
+   <message level="Progress"># 2014.03.12 18:48:30 (*) Making arbitration and system (top) modules.</message>
+   <message level="Progress"># 2014.03.12 18:48:30 (*) Generating Quartus symbol for top level: yysystem</message>
+   <message level="Progress"># 2014.03.12 18:48:30 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen/yysystem.bsf</message>
+   <message level="Progress"># 2014.03.12 18:48:30 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen/yysystem_generation_script</message>
+   <message level="Progress"># 2014.03.12 18:48:30 (*) Running setup for HDL simulator: modelsim</message>
+   <message level="Progress">00# 2014.03.12 18:48:30 (*) Completed generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:30 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
+   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen/yysystem.ptf </message>
+   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen/yysystem.v </message>
+   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0004_sopclgen/yysystem_generation_script </message>
+   <message level="Progress"># 2014.03.12 18:48:30 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
    <message level="Info" culprit="epcs_flash_controller"><![CDATA["<b>system</b>" instantiated <b>altera_avalon_epcs_flash_controller</b> "<b>epcs_flash_controller</b>"]]></message>
   </messages>
  </entity>
@@ -1784,9 +1784,9 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Info">Finished elaborating module.</message>
-   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen/yysystem.ptf</message>
+   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen/yysystem.ptf</message>
    <message level="Info">Running sopc_builder...</message>
    <message level="Progress">cygwin warning:</message>
    <message level="Progress">  MS-DOS style path detected: C:/altera/12.1sp1/quartus/sopc_builder/bin/nios_sh</message>
@@ -1794,34 +1794,34 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Progress">Altera SOPC Builder Version 12.11 Build 243</message>
    <message level="Progress">Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.</message>
    <message level="Progress">No .sopc_builder configuration file(!)</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) mk_custom_sdk starting</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen/yysystem.ptf.</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) Finding all CPUs</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) Finding all peripherals</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) Finding software components</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) (Legacy SDK Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) (All TCL Script Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) (No Libraries Built)</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) (Contents Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) mk_custom_sdk finishing</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) Starting generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) mk_custom_sdk starting</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen/yysystem.ptf.</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) Finding all CPUs</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) Finding all peripherals</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) Finding software components</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) (Legacy SDK Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) (All TCL Script Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) (No Libraries Built)</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) (Contents Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) mk_custom_sdk finishing</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) Starting generation for system: yysystem.</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) Running Generator Program for system_sys_clk_timer</message>
-   <message level="Progress"># 2014.03.10 14:35:10 (*) Making arbitration and system (top) modules.</message>
-   <message level="Progress"># 2014.03.10 14:35:11 (*) Generating Quartus symbol for top level: yysystem</message>
-   <message level="Progress"># 2014.03.10 14:35:11 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen/yysystem.bsf</message>
-   <message level="Progress"># 2014.03.10 14:35:11 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen/yysystem_generation_script</message>
-   <message level="Progress"># 2014.03.10 14:35:11 (*) Running setup for HDL simulator: modelsim</message>
-   <message level="Progress">00# 2014.03.10 14:35:11 (*) Completed generation for system: yysystem.</message>
-   <message level="Progress"># 2014.03.10 14:35:11 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
-   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen/yysystem.ptf </message>
-   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen/yysystem.v </message>
-   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0005_sopclgen/yysystem_generation_script </message>
-   <message level="Progress"># 2014.03.10 14:35:11 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) Running Generator Program for system_sys_clk_timer</message>
+   <message level="Progress"># 2014.03.12 18:48:34 (*) Making arbitration and system (top) modules.</message>
+   <message level="Progress"># 2014.03.12 18:48:35 (*) Generating Quartus symbol for top level: yysystem</message>
+   <message level="Progress"># 2014.03.12 18:48:35 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen/yysystem.bsf</message>
+   <message level="Progress"># 2014.03.12 18:48:35 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen/yysystem_generation_script</message>
+   <message level="Progress"># 2014.03.12 18:48:35 (*) Running setup for HDL simulator: modelsim</message>
+   <message level="Progress">00# 2014.03.12 18:48:35 (*) Completed generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:35 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
+   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen/yysystem.ptf </message>
+   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen/yysystem.v </message>
+   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0005_sopclgen/yysystem_generation_script </message>
+   <message level="Progress"># 2014.03.12 18:48:35 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
    <message level="Info" culprit="sys_clk_timer"><![CDATA["<b>system</b>" instantiated <b>altera_avalon_timer</b> "<b>sys_clk_timer</b>"]]></message>
   </messages>
  </entity>
@@ -1863,9 +1863,9 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Info">Finished elaborating module.</message>
-   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen/yysystem.ptf</message>
+   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen/yysystem.ptf</message>
    <message level="Info">Running sopc_builder...</message>
    <message level="Progress">cygwin warning:</message>
    <message level="Progress">  MS-DOS style path detected: C:/altera/12.1sp1/quartus/sopc_builder/bin/nios_sh</message>
@@ -1873,34 +1873,34 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Progress">Altera SOPC Builder Version 12.11 Build 243</message>
    <message level="Progress">Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.</message>
    <message level="Progress">No .sopc_builder configuration file(!)</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) mk_custom_sdk starting</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen/yysystem.ptf.</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) Finding all CPUs</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) Finding all peripherals</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) Finding software components</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) (Legacy SDK Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) (All TCL Script Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) (No Libraries Built)</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) (Contents Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) mk_custom_sdk finishing</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) Starting generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) mk_custom_sdk starting</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen/yysystem.ptf.</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) Finding all CPUs</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) Finding all peripherals</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) Finding software components</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) (Legacy SDK Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) (All TCL Script Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) (No Libraries Built)</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) (Contents Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) mk_custom_sdk finishing</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) Starting generation for system: yysystem.</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2014.03.10 14:35:14 (*) Running Generator Program for system_transmitter</message>
-   <message level="Progress"># 2014.03.10 14:35:15 (*) Making arbitration and system (top) modules.</message>
-   <message level="Progress"># 2014.03.10 14:35:15 (*) Generating Quartus symbol for top level: yysystem</message>
-   <message level="Progress"># 2014.03.10 14:35:15 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen/yysystem.bsf</message>
-   <message level="Progress"># 2014.03.10 14:35:15 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen/yysystem_generation_script</message>
-   <message level="Progress"># 2014.03.10 14:35:15 (*) Running setup for HDL simulator: modelsim</message>
-   <message level="Progress">00# 2014.03.10 14:35:15 (*) Completed generation for system: yysystem.</message>
-   <message level="Progress"># 2014.03.10 14:35:15 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
-   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen/yysystem.ptf </message>
-   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen/yysystem.v </message>
-   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0006_sopclgen/yysystem_generation_script </message>
-   <message level="Progress"># 2014.03.10 14:35:15 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
+   <message level="Progress"># 2014.03.12 18:48:38 (*) Running Generator Program for system_transmitter</message>
+   <message level="Progress"># 2014.03.12 18:48:39 (*) Making arbitration and system (top) modules.</message>
+   <message level="Progress"># 2014.03.12 18:48:39 (*) Generating Quartus symbol for top level: yysystem</message>
+   <message level="Progress"># 2014.03.12 18:48:39 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen/yysystem.bsf</message>
+   <message level="Progress"># 2014.03.12 18:48:39 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen/yysystem_generation_script</message>
+   <message level="Progress"># 2014.03.12 18:48:39 (*) Running setup for HDL simulator: modelsim</message>
+   <message level="Progress">00# 2014.03.12 18:48:39 (*) Completed generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:39 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
+   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen/yysystem.ptf </message>
+   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen/yysystem.v </message>
+   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0006_sopclgen/yysystem_generation_script </message>
+   <message level="Progress"># 2014.03.12 18:48:39 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
    <message level="Info" culprit="transmitter"><![CDATA["<b>system</b>" instantiated <b>altera_avalon_pio</b> "<b>transmitter</b>"]]></message>
   </messages>
  </entity>
@@ -1942,9 +1942,9 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Info">Finished elaborating module.</message>
-   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen/yysystem.ptf</message>
+   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen/yysystem.ptf</message>
    <message level="Info">Running sopc_builder...</message>
    <message level="Progress">cygwin warning:</message>
    <message level="Progress">  MS-DOS style path detected: C:/altera/12.1sp1/quartus/sopc_builder/bin/nios_sh</message>
@@ -1952,34 +1952,34 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Progress">Altera SOPC Builder Version 12.11 Build 243</message>
    <message level="Progress">Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.</message>
    <message level="Progress">No .sopc_builder configuration file(!)</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) mk_custom_sdk starting</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen/yysystem.ptf.</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Finding all CPUs</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Finding all peripherals</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Finding software components</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) (Legacy SDK Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) (All TCL Script Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) (No Libraries Built)</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) (Contents Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) mk_custom_sdk finishing</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Starting generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) mk_custom_sdk starting</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen/yysystem.ptf.</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Finding all CPUs</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Finding all peripherals</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Finding software components</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) (Legacy SDK Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) (All TCL Script Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) (No Libraries Built)</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) (Contents Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) mk_custom_sdk finishing</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Starting generation for system: yysystem.</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Running Generator Program for system_pio_led_green</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Making arbitration and system (top) modules.</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Generating Quartus symbol for top level: yysystem</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen/yysystem.bsf</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen/yysystem_generation_script</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) Running setup for HDL simulator: modelsim</message>
-   <message level="Progress">00# 2014.03.10 14:35:19 (*) Completed generation for system: yysystem.</message>
-   <message level="Progress"># 2014.03.10 14:35:19 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
-   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen/yysystem.ptf </message>
-   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen/yysystem.v </message>
-   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0007_sopclgen/yysystem_generation_script </message>
-   <message level="Progress"># 2014.03.10 14:35:20 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Running Generator Program for system_pio_led_green</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Making arbitration and system (top) modules.</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Generating Quartus symbol for top level: yysystem</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen/yysystem.bsf</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen/yysystem_generation_script</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) Running setup for HDL simulator: modelsim</message>
+   <message level="Progress">00# 2014.03.12 18:48:43 (*) Completed generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
+   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen/yysystem.ptf </message>
+   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen/yysystem.v </message>
+   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0007_sopclgen/yysystem_generation_script </message>
+   <message level="Progress"># 2014.03.12 18:48:43 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
    <message level="Info" culprit="pio_led_green"><![CDATA["<b>system</b>" instantiated <b>altera_avalon_pio</b> "<b>pio_led_green</b>"]]></message>
   </messages>
  </entity>
@@ -2034,9 +2034,9 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen  --no_splash --refresh C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Info">Finished elaborating module.</message>
-   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen/yysystem.ptf</message>
+   <message level="Progress">Executing: C:/altera/12.1sp1/quartus//sopc_builder/bin/sopc_builder --classic --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen/yysystem.ptf</message>
    <message level="Info">Running sopc_builder...</message>
    <message level="Progress">cygwin warning:</message>
    <message level="Progress">  MS-DOS style path detected: C:/altera/12.1sp1/quartus/sopc_builder/bin/nios_sh</message>
@@ -2044,34 +2044,34 @@
    <message level="Progress">  CYGWIN environment variable option "nodosfilewarning" turns off this warning.</message>
    <message level="Progress">  Consult the user's guide for more details about POSIX paths:</message>
    <message level="Progress">    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames</message>
-   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
+   <message level="Progress">"c:/altera/12.1sp1/quartus/bin/jre/bin/java.exe" -Xmx512M -classpath "c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_builder.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/PinAssigner.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/sopc_wizard.jar;c:/altera/12.1sp1/quartus/sopc_builder/bin/jptf.jar" sopc_builder.sopc_builder  -d"c:/altera/12.1sp1/quartus/sopc_builder" -notalkback=1 -projectnameyysystem.qpf -projectpathC:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen  --generate C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen/yysystem.v --quartus_dir="c:/altera/12.1sp1/quartus" --sopc_perl="c:/altera/12.1sp1/quartus/bin/perl" --sopc_lib_path="++c:/altera/12.1sp1/quartus/../ip/altera/sopc_builder_ip+c:/altera/12.1sp1/quartus/../ip/altera/nios2_ip"</message>
    <message level="Progress">Altera SOPC Builder Version 12.11 Build 243</message>
    <message level="Progress">Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.</message>
    <message level="Progress">No .sopc_builder configuration file(!)</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) mk_custom_sdk starting</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen/yysystem.ptf.</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) Finding all CPUs</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) Finding all peripherals</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) Finding software components</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) (Legacy SDK Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) (All TCL Script Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) (No Libraries Built)</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) (Contents Generation Skipped)</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) mk_custom_sdk finishing</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) Starting generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) mk_custom_sdk starting</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) Reading project C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen/yysystem.ptf.</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) Finding all CPUs</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) Finding all peripherals</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) Finding software components</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) (Legacy SDK Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) (All TCL Script Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) (No Libraries Built)</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) (Contents Generation Skipped)</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) mk_custom_sdk finishing</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) Starting generation for system: yysystem.</message>
    <message level="Progress">.</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) Running Generator Program for system_jtag_uart</message>
-   <message level="Progress"># 2014.03.10 14:35:23 (*) Making arbitration and system (top) modules.</message>
-   <message level="Progress"># 2014.03.10 14:35:24 (*) Generating Quartus symbol for top level: yysystem</message>
-   <message level="Progress"># 2014.03.10 14:35:24 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen/yysystem.bsf</message>
-   <message level="Progress"># 2014.03.10 14:35:24 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen/yysystem_generation_script</message>
-   <message level="Progress"># 2014.03.10 14:35:24 (*) Running setup for HDL simulator: modelsim</message>
-   <message level="Progress">00# 2014.03.10 14:35:24 (*) Completed generation for system: yysystem.</message>
-   <message level="Progress"># 2014.03.10 14:35:24 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
-   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen/yysystem.ptf </message>
-   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen/yysystem.v </message>
-   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0008_sopclgen/yysystem_generation_script </message>
-   <message level="Progress"># 2014.03.10 14:35:24 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
+   <message level="Progress"># 2014.03.12 18:48:47 (*) Running Generator Program for system_jtag_uart</message>
+   <message level="Progress"># 2014.03.12 18:48:48 (*) Making arbitration and system (top) modules.</message>
+   <message level="Progress"># 2014.03.12 18:48:48 (*) Generating Quartus symbol for top level: yysystem</message>
+   <message level="Progress"># 2014.03.12 18:48:48 (*) Generating Symbol C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen/yysystem.bsf</message>
+   <message level="Progress"># 2014.03.12 18:48:48 (*) Creating command-line system-generation script: C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen/yysystem_generation_script</message>
+   <message level="Progress"># 2014.03.12 18:48:48 (*) Running setup for HDL simulator: modelsim</message>
+   <message level="Progress">00# 2014.03.12 18:48:48 (*) Completed generation for system: yysystem.</message>
+   <message level="Progress"># 2014.03.12 18:48:48 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:</message>
+   <message level="Progress">  SOPC Builder database : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen/yysystem.ptf </message>
+   <message level="Progress">  System HDL Model : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen/yysystem.v </message>
+   <message level="Progress">  System Generation Script : C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0008_sopclgen/yysystem_generation_script </message>
+   <message level="Progress"># 2014.03.12 18:48:48 (*) SUCCESS: SYSTEM GENERATION COMPLETED.</message>
    <message level="Info" culprit="jtag_uart"><![CDATA["<b>system</b>" instantiated <b>altera_avalon_jtag_uart</b> "<b>jtag_uart</b>"]]></message>
   </messages>
  </entity>
@@ -2111,10 +2111,10 @@
   <messages>
    <message level="Debug" culprit="system">queue size: 73 starting:altera_up_avalon_de0_nano_adc "submodules/system_de0_nano_adc_0"</message>
    <message level="Info" culprit="de0_nano_adc_0">Starting Generation of DE0-Nano ADC Controller</message>
-   <message level="Info" culprit="de0_nano_adc_0">C:/altera/12.1sp1/ip/University_Program/Input_Output/altera_up_avalon_de0_nano_adc/hdl/adv_adc.v C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0009_sopcgen/system_de0_nano_adc_0.v</message>
+   <message level="Info" culprit="de0_nano_adc_0">C:/altera/12.1sp1/ip/University_Program/Input_Output/altera_up_avalon_de0_nano_adc/hdl/adv_adc.v C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0009_sopcgen/system_de0_nano_adc_0.v</message>
    <message level="Debug">set ALTERA_HW_TCL_KEEP_TEMP_FILES=1 to retain temp files</message>
-   <message level="Debug">Command: C:/altera/12.1sp1/quartus/bin/quartus_map.exe not_a_project --generate_hdl_interface=C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0009_sopcgen/system_de0_nano_adc_0.v --source=C:/altera/12.1sp1/ip/University_Program/Input_Output/altera_up_avalon_de0_nano_adc/hdl/adv_adc.v --source=C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0009_sopcgen/system_de0_nano_adc_0.v --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/gdhunter/AppData/Local/Temp/alt6139_2697277074231199231.dir/0010_sopcqmap/ --ini=disable_check_quartus_compatibility_qsys_only=on</message>
-   <message level="Debug">Command took 5.262s</message>
+   <message level="Debug">Command: C:/altera/12.1sp1/quartus/bin/quartus_map.exe not_a_project --generate_hdl_interface=C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0009_sopcgen/system_de0_nano_adc_0.v --source=C:/altera/12.1sp1/ip/University_Program/Input_Output/altera_up_avalon_de0_nano_adc/hdl/adv_adc.v --source=C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0009_sopcgen/system_de0_nano_adc_0.v --set=HDL_INTERFACE_OUTPUT_PATH=C:/Users/gdhunter/AppData/Local/Temp/alt6142_7517893080191781187.dir/0010_sopcqmap/ --ini=disable_check_quartus_compatibility_qsys_only=on</message>
+   <message level="Debug">Command took 4.199s</message>
    <message level="Warning" culprit="de0_nano_adc_0"><![CDATA[Parameter <b>tsclk</b> has hdl_parameter = false but parameter exists on the HDL]]></message>
    <message level="Warning" culprit="de0_nano_adc_0"><![CDATA[Parameter <b>numch</b> has hdl_parameter = false but parameter exists on the HDL]]></message>
    <message level="Info" culprit="de0_nano_adc_0"><![CDATA["<b>system</b>" instantiated <b>altera_up_avalon_de0_nano_adc</b> "<b>de0_nano_adc_0</b>"]]></message>

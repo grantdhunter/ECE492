@@ -9,7 +9,7 @@
 #define TRANSMITTERINTERFACE_H_
 #include "ucos_ii.h"
 #include "dataType.h"
-
+#include <ctype.h>
 
 
 

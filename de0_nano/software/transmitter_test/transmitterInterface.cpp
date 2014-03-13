@@ -7,7 +7,13 @@
 
 #include "transmitterInterface"
 
-
+/*
+ * Pin layout
+ * forward	TODO should be ether GPIO PI 5 or 6 but not working
+ * reverse	TODO should be ether GPIO PI 5 or 6 but not working
+ * left		GPIO PIN 4
+ * right 	GPIO PIN 2
+ */
 
 
 /********Public Functions*************/
