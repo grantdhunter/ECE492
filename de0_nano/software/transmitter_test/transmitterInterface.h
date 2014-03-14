@@ -67,7 +67,7 @@ public:
 	
 private:
 	
-	Addr baseAddress;
+	volatile Addr baseAddress;
 	OS_EVENT* transmitter_lock;
 	INT8U err;
 	/*

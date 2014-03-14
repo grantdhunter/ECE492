@@ -4,13 +4,13 @@
  *  Created on: 2014-01-28
  *      Author: gdhunter
  */
-
-#include "transmitterInterface"
-
+#include <stdio.h>
+#include "transmitterInterface.h"
+#include "ucos_ii.h"
 /*
  * Pin layout
- * forward	TODO should be ether GPIO PI 5 or 6 but not working
- * reverse	TODO should be ether GPIO PI 5 or 6 but not working
+ * forward	GPIO PIN 6
+ * reverse	GPIO PIN 5
  * left		GPIO PIN 4
  * right 	GPIO PIN 2
  */
@@ -47,6 +47,7 @@ void TransmitterInterface::turnLeft() {
 	//Read current status of the register
 	oldReg = *(baseAddress);
 	
+	printf("oldReg: %d\n",oldReg);
 	//Create new valid turn command with out changing the other movement
 	newReg = validateTurn(oldReg,LEFT_CMD);
 	
@@ -66,6 +67,7 @@ void TransmitterInterface::turnRight() {
 	//Read current status of the register
 	oldReg = *(baseAddress);
 	
+	printf("oldReg: %d\n",oldReg);
 	//Create new valid turn command with out changing the other movement
 	newReg = validateTurn(oldReg,RIGHT_CMD);
 	
@@ -85,6 +87,7 @@ void TransmitterInterface::moveForward() {
 	//Read current status of the register
 	oldReg = *(baseAddress);
 	
+	printf("oldReg: %d\n",oldReg);
 	//Create new valid movement command with out changing the turning property
 	newReg = validateMove(oldReg,FORWARD_CMD);
 	
@@ -104,6 +107,7 @@ void TransmitterInterface::moveReverse() {
 	//Read current status of the register
 	oldReg = *(baseAddress);
 	
+	printf("oldReg: %d\n",oldReg);
 	//Create new valid movement command with out changing the turning property
 	newReg = validateMove(oldReg,REVERSE_CMD);
 	

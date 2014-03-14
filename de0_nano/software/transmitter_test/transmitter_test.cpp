@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include "includes.h"
 #include "system.h"
-#include "transmitterInterface"
+#include "transmitterInterface.h"
 
 
 
@@ -34,25 +34,25 @@ void task1(void* pdata)
 	  transmit.moveForward();
 	  OSTimeDlyHMSM(0, 0, 3, 0);
 
-//	  printf("Move Backward\n");
-//	  transmit.moveReverse();
-//	  OSTimeDlyHMSM(0, 0, 3, 0);
-//
+	  printf("Move Backward\n");
+	  transmit.moveReverse();
+	  OSTimeDlyHMSM(0, 0, 3, 0);
+
 	  printf("Stop move\n");
 	  transmit.moveOff();
 	  OSTimeDlyHMSM(0, 0, 3, 0);
-//
-//	  printf("Turn Left\n");
-//	  transmit.turnLeft();
-//	  OSTimeDlyHMSM(0, 0, 3, 0);
-//
-//	  printf("Turn Right\n");
-//	  transmit.turnRight();
-//	  OSTimeDlyHMSM(0, 0, 3, 0);
-//
-//	  printf("Stop Turn\n");
-//	  transmit.turnOff();
-//	  OSTimeDlyHMSM(0, 0, 3, 0);
+
+	  printf("Turn Left\n");
+	  transmit.turnLeft();
+	  OSTimeDlyHMSM(0, 0, 3, 0);
+
+	  printf("Turn Right\n");
+	  transmit.turnRight();
+	  OSTimeDlyHMSM(0, 0, 3, 0);
+
+	  printf("Stop Turn\n");
+	  transmit.turnOff();
+	  OSTimeDlyHMSM(0, 0, 3, 0);
 
   }
 }
