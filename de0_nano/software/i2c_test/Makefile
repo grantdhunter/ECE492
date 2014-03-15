@@ -142,9 +142,8 @@ ACDS_VERSION := 12.1sp1
 ELF := i2c_test.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS += hello_ucosii.c
-C_SRCS += i2c_opencores.c
-CXX_SRCS :=
+C_SRCS := i2c_opencores.c
+CXX_SRCS := i2c_test.cpp
 ASM_SRCS :=
 
 

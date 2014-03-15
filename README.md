@@ -22,3 +22,9 @@ left		GPIO PIN 4
 right 		GPIO PIN 2 
 
 GND			GPIO PIN 12
+
+I2C
+----
+
+Clock 		GPIO PIN 7
+Data		GPIO PIN 8

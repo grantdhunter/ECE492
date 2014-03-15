@@ -23,28 +23,37 @@ OS_STK    task1_stk[TASK_STACKSIZE];
 
 #define TASK1_PRIORITY      1
 
-TransmitterInterface transmit((char*)TRANSMITTER_BASE);
+TransmitterInterface transmit((int*)TRANSMITTER_BASE);
 
 /* Prints "Hello World" and sleeps for three seconds */
 void task1(void* pdata)
 {
   while (1)
   { 
-	  printf("Move Forward\n");
-	  transmit.moveForward();
-	  OSTimeDlyHMSM(0, 0, 3, 0);
+//	  printf("Move Forward\n");
+//	  transmit.moveForward();
+//	  OSTimeDlyHMSM(0, 0, 3, 0);
+//
+//	  printf("Stop move\n");
+//	  transmit.moveOff();
+//	  OSTimeDlyHMSM(0, 0, 3, 0);
+//
+//	  printf("Move Backward\n");
+//	  transmit.moveReverse();
+//	  OSTimeDlyHMSM(0, 0, 3, 0);
+//
+//	  printf("Stop move\n");
+//	  transmit.moveOff();
+//	  OSTimeDlyHMSM(0, 0, 3, 0);
+//
+//	  printf("Turn Left\n");
+//	  transmit.turnLeft();
+//	  OSTimeDlyHMSM(0, 0, 3, 0);
+//
+//	  printf("Stop Turn\n");
+//	  transmit.turnOff();
+//	  OSTimeDlyHMSM(0, 0, 3, 0);
 
-	  printf("Move Backward\n");
-	  transmit.moveReverse();
-	  OSTimeDlyHMSM(0, 0, 3, 0);
-
-	  printf("Stop move\n");
-	  transmit.moveOff();
-	  OSTimeDlyHMSM(0, 0, 3, 0);
-
-	  printf("Turn Left\n");
-	  transmit.turnLeft();
-	  OSTimeDlyHMSM(0, 0, 3, 0);
 
 	  printf("Turn Right\n");
 	  transmit.turnRight();
@@ -53,6 +62,7 @@ void task1(void* pdata)
 	  printf("Stop Turn\n");
 	  transmit.turnOff();
 	  OSTimeDlyHMSM(0, 0, 3, 0);
+
 
   }
 }

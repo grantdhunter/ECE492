@@ -28,6 +28,6 @@ typedef uint64_t 	uint_fast64_t;
 
 typedef unsigned char prog_uchar;
 
-typedef char* Addr;
+typedef int* Addr;
 
 #endif /* DATATYPE_H_ */
