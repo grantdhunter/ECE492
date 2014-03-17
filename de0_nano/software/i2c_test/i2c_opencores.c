@@ -3,7 +3,6 @@
 #include "i2c_opencores_regs.h"
 #include "i2c_opencores.h"
 
-#define I2C_DEBUG 1
 // #define I2C_DEBUG
 //int I2C_init(alt_u32 base,alt_u32 clk, alt_u32 speed)
 //int I2C_start(alt_u32 base, alt_u32 add, alt_u32 write);
