@@ -13,7 +13,7 @@
 #include "MPU6050.h"
 #include "dataType.h"
 
-#define I2C_OPENCORES_0_BASE 0x4001880
+
 
 #define X_OFFSET 0
 #define Y_OFFSET 0
@@ -29,8 +29,7 @@ OS_STK task1_stk[TASK_STACKSIZE];
 
 #define TASK1_PRIORITY      1
 
-MPU6050 imu(I2C_OPENCORES_0_BASE);
-//MPU6050 imu();
+MPU6050 imu;
 
 /* Prints "Hello World" and sleeps for three seconds */
 void task1(void* pdata) {

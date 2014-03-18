@@ -10,9 +10,9 @@ extern "C"
 #endif /* __cplusplus */
 
 //MPU6050 max speed is 400khz
-#define SPEED 400
+#define SPEED 400000
 //MPU6050 default address
-#define DEVICE_ADDR 104
+//#define DEVICE_ADDR 104
 #define READ 1
 #define WRITE 0
 #define NOT_LAST 1

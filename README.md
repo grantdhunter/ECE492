@@ -28,3 +28,5 @@ I2C
 
 Clock 		GPIO PIN 7
 Data		GPIO PIN 8
+Power		GPIO PIN 29
+GND			GPIO PIN 12

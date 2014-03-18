@@ -16,11 +16,7 @@
    {
       datum baseAddress
       {
-<<<<<<< HEAD
          value = "67115040";
-=======
-         value = "67115072";
->>>>>>> a8a39b47828534f67d5178f74fb837c2466940ad
          type = "String";
       }
    }
@@ -28,11 +24,7 @@
    {
       datum baseAddress
       {
-<<<<<<< HEAD
          value = "67115168";
-=======
-         value = "67115200";
->>>>>>> a8a39b47828534f67d5178f74fb837c2466940ad
          type = "String";
       }
    }
@@ -40,11 +32,7 @@
    {
       datum baseAddress
       {
-<<<<<<< HEAD
          value = "67115008";
-=======
-         value = "67115040";
->>>>>>> a8a39b47828534f67d5178f74fb837c2466940ad
          type = "String";
       }
    }
@@ -60,11 +48,7 @@
    {
       datum baseAddress
       {
-<<<<<<< HEAD
          value = "67115176";
-=======
-         value = "67115208";
->>>>>>> a8a39b47828534f67d5178f74fb837c2466940ad
          type = "String";
       }
    }
@@ -141,35 +125,7 @@
    {
       datum baseAddress
       {
-<<<<<<< HEAD
          value = "67115136";
-=======
-         value = "67115168";
->>>>>>> a8a39b47828534f67d5178f74fb837c2466940ad
-         type = "String";
-      }
-   }
-   element sdram.s1
-   {
-      datum baseAddress
-      {
-<<<<<<< HEAD
-         value = "67115104";
-         type = "String";
-      }
-   }
-   element sdram.s1
-=======
-         value = "33554432";
-         type = "String";
-      }
-   }
-   element pio_led_green.s1
->>>>>>> a8a39b47828534f67d5178f74fb837c2466940ad
-   {
-      datum baseAddress
-      {
-         value = "33554432";
          type = "String";
       }
    }
@@ -177,11 +133,23 @@
    {
       datum baseAddress
       {
-<<<<<<< HEAD
+         value = "67115104";
+         type = "String";
+      }
+   }
+   element sdram.s1
+   {
+      datum baseAddress
+      {
+         value = "33554432";
+         type = "String";
+      }
+   }
+   element pio_led_green.s1
+   {
+      datum baseAddress
+      {
          value = "67115072";
-=======
-         value = "67115136";
->>>>>>> a8a39b47828534f67d5178f74fb837c2466940ad
          type = "String";
       }
    }
@@ -237,96 +205,33 @@
  <parameter name="projectName" value="de0_nano_system.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
-<<<<<<< HEAD
  <parameter name="timeStamp" value="1395097490427" />
-=======
- <parameter name="timeStamp" value="1395015927985" />
->>>>>>> a8a39b47828534f67d5178f74fb837c2466940ad
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
+ <interface name="clk" internal="clk_sys.clk_in" type="clock" dir="end" />
+ <interface name="reset" internal="clk_sys.clk_in_reset" type="reset" dir="end" />
+ <interface name="sdram" internal="sdram.wire" type="conduit" dir="end" />
  <interface
-   name="clk_sys_clk_in_reset"
-   internal="clk_sys.clk_in_reset"
-   type="reset"
-   dir="end">
-  <port name="reset_n" internal="reset_n" />
- </interface>
- <interface name="sdram_wire" internal="sdram.wire" type="conduit" dir="end">
-  <port name="zs_addr_from_the_sdram" internal="zs_addr" />
-  <port name="zs_ba_from_the_sdram" internal="zs_ba" />
-  <port name="zs_cas_n_from_the_sdram" internal="zs_cas_n" />
-  <port name="zs_cke_from_the_sdram" internal="zs_cke" />
-  <port name="zs_cs_n_from_the_sdram" internal="zs_cs_n" />
-  <port name="zs_dq_to_and_from_the_sdram" internal="zs_dq" />
-  <port name="zs_dqm_from_the_sdram" internal="zs_dqm" />
-  <port name="zs_ras_n_from_the_sdram" internal="zs_ras_n" />
-  <port name="zs_we_n_from_the_sdram" internal="zs_we_n" />
- </interface>
- <interface
-   name="de0_nano_adc_0_external_interface"
-   internal="de0_nano_adc_0.external_interface"
-   type="conduit"
-   dir="end">
-  <port name="adc_sclk_from_the_de0_nano_adc_0" internal="adc_sclk" />
-  <port name="adc_cs_n_from_the_de0_nano_adc_0" internal="adc_cs_n" />
-  <port name="adc_dout_to_the_de0_nano_adc_0" internal="adc_dout" />
-  <port name="adc_din_from_the_de0_nano_adc_0" internal="adc_din" />
- </interface>
- <interface
-   name="epcs_flash_controller_external"
-   internal="epcs_flash_controller.external"
-   type="conduit"
-   dir="end">
-  <port name="dclk_from_the_epcs_flash_controller" internal="dclk" />
-  <port name="sce_from_the_epcs_flash_controller" internal="sce" />
-  <port name="sdo_from_the_epcs_flash_controller" internal="sdo" />
-  <port name="data0_to_the_epcs_flash_controller" internal="data0" />
- </interface>
- <interface
-   name="pio_led_green_external_connection"
-   internal="pio_led_green.external_connection"
-   type="conduit"
-   dir="end">
-  <port name="out_port_from_the_pio_led_green" internal="out_port" />
- </interface>
- <interface
-   name="clk_sys_clk_in"
-   internal="clk_sys.clk_in"
-   type="clock"
-   dir="end">
-  <port name="clk_sys" internal="in_clk" />
- </interface>
- <interface
-   name="transmitter_external_connection"
+   name="transmitter"
    internal="transmitter.external_connection"
    type="conduit"
-   dir="end">
-  <port name="out_port_from_the_transmitter" internal="out_port" />
- </interface>
- <interface
-   name="i2c_opencores_clock"
-   internal="i2c_opencores.clock"
-   type="clock"
    dir="end" />
  <interface
-   name="i2c_opencores_reset"
-   internal="i2c_opencores.clock_reset"
-   type="reset"
-   dir="end" />
-<<<<<<< HEAD
- <interface name="i2c" internal="i2c_opencores.export" type="conduit" dir="end" />
-=======
- <interface
-   name="i2c_opencores_export"
-   internal="i2c_opencores.export"
+   name="epcs"
+   internal="epcs_flash_controller.external"
    type="conduit"
    dir="end" />
  <interface
-   name="i2c_opencores_slave"
-   internal="i2c_opencores.avalon_slave_0"
-   type="avalon"
+   name="pio_led_green"
+   internal="pio_led_green.external_connection"
+   type="conduit"
    dir="end" />
->>>>>>> a8a39b47828534f67d5178f74fb837c2466940ad
+ <interface
+   name="adc"
+   internal="de0_nano_adc_0.external_interface"
+   type="conduit"
+   dir="end" />
+ <interface name="i2c" internal="i2c_opencores.export" type="conduit" dir="end" />
  <module kind="clock_source" version="12.1" enabled="1" name="clk_sys">
   <parameter name="clockFrequency" value="100000000" />
   <parameter name="clockFrequencyKnown" value="true" />
@@ -429,11 +334,7 @@
   <parameter name="tightlyCoupledInstructionMaster2AddrWidth" value="1" />
   <parameter name="tightlyCoupledInstructionMaster3AddrWidth" value="1" />
   <parameter name="instSlaveMapParam"><![CDATA[<address-map><slave name='sdram.s1' start='0x2000000' end='0x4000000' /><slave name='cpu.jtag_debug_module' start='0x4001000' end='0x4001800' /></address-map>]]></parameter>
-<<<<<<< HEAD
   <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sdram.s1' start='0x2000000' end='0x4000000' /><slave name='epcs_flash_controller.epcs_control_port' start='0x4000800' end='0x4001000' /><slave name='cpu.jtag_debug_module' start='0x4001000' end='0x4001800' /><slave name='i2c_opencores.avalon_slave_0' start='0x4001800' end='0x4001820' /><slave name='de0_nano_adc_0.adc_slave' start='0x4001820' end='0x4001840' /><slave name='pio_led_green.s1' start='0x4001840' end='0x4001860' /><slave name='transmitter.s1' start='0x4001860' end='0x4001880' /><slave name='sys_clk_timer.s1' start='0x4001880' end='0x40018A0' /><slave name='jtag_uart.avalon_jtag_slave' start='0x40018A0' end='0x40018A8' /><slave name='sysid.control_slave' start='0x40018A8' end='0x40018B0' /></address-map>]]></parameter>
-=======
-  <parameter name="dataSlaveMapParam"><![CDATA[<address-map><slave name='sdram.s1' start='0x2000000' end='0x4000000' /><slave name='epcs_flash_controller.epcs_control_port' start='0x4000800' end='0x4001000' /><slave name='cpu.jtag_debug_module' start='0x4001000' end='0x4001800' /><slave name='de0_nano_adc_0.adc_slave' start='0x4001840' end='0x4001860' /><slave name='pio_led_green.s1' start='0x4001860' end='0x4001880' /><slave name='transmitter.s1' start='0x4001880' end='0x40018A0' /><slave name='sys_clk_timer.s1' start='0x40018A0' end='0x40018C0' /><slave name='jtag_uart.avalon_jtag_slave' start='0x40018C0' end='0x40018C8' /><slave name='sysid.control_slave' start='0x40018C8' end='0x40018D0' /></address-map>]]></parameter>
->>>>>>> a8a39b47828534f67d5178f74fb837c2466940ad
   <parameter name="clockFrequency" value="100000000" />
   <parameter name="deviceFamilyName" value="Cyclone IV E" />
   <parameter name="internalIrqMaskSystemInfo" value="15" />
@@ -576,13 +477,9 @@
   <parameter name="AUTO_CLK_CLOCK_RATE" value="100000000" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
  </module>
-<<<<<<< HEAD
  <module kind="i2c_opencores" version="12.0" enabled="1" name="i2c_opencores">
   <parameter name="AUTO_CLOCK_CLOCK_RATE" value="100000000" />
  </module>
-=======
- <module kind="i2c_opencores" version="12.0" enabled="1" name="i2c_opencores" />
->>>>>>> a8a39b47828534f67d5178f74fb837c2466940ad
  <connection
    kind="avalon"
    version="12.1"
@@ -665,11 +562,7 @@
    start="cpu.data_master"
    end="sysid.control_slave">
   <parameter name="arbitrationPriority" value="1" />
-<<<<<<< HEAD
   <parameter name="baseAddress" value="0x040018a8" />
-=======
-  <parameter name="baseAddress" value="0x040018c8" />
->>>>>>> a8a39b47828534f67d5178f74fb837c2466940ad
  </connection>
  <connection kind="avalon" version="12.1" start="cpu.data_master" end="sdram.s1">
   <parameter name="arbitrationPriority" value="1" />
@@ -689,11 +582,7 @@
    start="cpu.data_master"
    end="sys_clk_timer.s1">
   <parameter name="arbitrationPriority" value="1" />
-<<<<<<< HEAD
   <parameter name="baseAddress" value="0x04001880" />
-=======
-  <parameter name="baseAddress" value="0x040018a0" />
->>>>>>> a8a39b47828534f67d5178f74fb837c2466940ad
  </connection>
  <connection
    kind="avalon"
@@ -701,11 +590,7 @@
    start="cpu.data_master"
    end="transmitter.s1">
   <parameter name="arbitrationPriority" value="1" />
-<<<<<<< HEAD
   <parameter name="baseAddress" value="0x04001860" />
-=======
-  <parameter name="baseAddress" value="0x04001880" />
->>>>>>> a8a39b47828534f67d5178f74fb837c2466940ad
  </connection>
  <connection
    kind="avalon"
@@ -759,11 +644,7 @@
    start="cpu.data_master"
    end="pio_led_green.s1">
   <parameter name="arbitrationPriority" value="1" />
-<<<<<<< HEAD
   <parameter name="baseAddress" value="0x04001840" />
-=======
-  <parameter name="baseAddress" value="0x04001860" />
->>>>>>> a8a39b47828534f67d5178f74fb837c2466940ad
  </connection>
  <connection
    kind="reset"
@@ -782,11 +663,7 @@
    start="cpu.data_master"
    end="jtag_uart.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
-<<<<<<< HEAD
   <parameter name="baseAddress" value="0x040018a0" />
-=======
-  <parameter name="baseAddress" value="0x040018c0" />
->>>>>>> a8a39b47828534f67d5178f74fb837c2466940ad
  </connection>
  <connection
    kind="reset"
@@ -817,7 +694,6 @@
    start="cpu.data_master"
    end="de0_nano_adc_0.adc_slave">
   <parameter name="arbitrationPriority" value="1" />
-<<<<<<< HEAD
   <parameter name="baseAddress" value="0x04001820" />
  </connection>
  <connection
@@ -844,11 +720,6 @@
    start="cpu.jtag_debug_module_reset"
    end="i2c_opencores.clock_reset" />
  <connection
-=======
-  <parameter name="baseAddress" value="0x04001840" />
- </connection>
- <connection
->>>>>>> a8a39b47828534f67d5178f74fb837c2466940ad
    kind="interrupt"
    version="12.1"
    start="cpu.d_irq"

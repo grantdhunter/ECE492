@@ -1,36 +1,28 @@
 	component system is
 		port (
-			reset_n                             : in    std_logic                     := 'X';             -- reset_n
-			zs_addr_from_the_sdram              : out   std_logic_vector(12 downto 0);                    -- addr
-			zs_ba_from_the_sdram                : out   std_logic_vector(1 downto 0);                     -- ba
-			zs_cas_n_from_the_sdram             : out   std_logic;                                        -- cas_n
-			zs_cke_from_the_sdram               : out   std_logic;                                        -- cke
-			zs_cs_n_from_the_sdram              : out   std_logic;                                        -- cs_n
-			zs_dq_to_and_from_the_sdram         : inout std_logic_vector(15 downto 0) := (others => 'X'); -- dq
-			zs_dqm_from_the_sdram               : out   std_logic_vector(1 downto 0);                     -- dqm
-			zs_ras_n_from_the_sdram             : out   std_logic;                                        -- ras_n
-			zs_we_n_from_the_sdram              : out   std_logic;                                        -- we_n
-			adc_sclk_from_the_de0_nano_adc_0    : out   std_logic;                                        -- sclk
-			adc_cs_n_from_the_de0_nano_adc_0    : out   std_logic;                                        -- cs_n
-			adc_dout_to_the_de0_nano_adc_0      : in    std_logic                     := 'X';             -- dout
-			adc_din_from_the_de0_nano_adc_0     : out   std_logic;                                        -- din
-			dclk_from_the_epcs_flash_controller : out   std_logic;                                        -- dclk
-			sce_from_the_epcs_flash_controller  : out   std_logic;                                        -- sce
-			sdo_from_the_epcs_flash_controller  : out   std_logic;                                        -- sdo
-			data0_to_the_epcs_flash_controller  : in    std_logic                     := 'X';             -- data0
-			out_port_from_the_pio_led_green     : out   std_logic_vector(6 downto 0);                     -- export
-			clk_sys                             : in    std_logic                     := 'X';             -- clk
-			out_port_from_the_transmitter       : out   std_logic_vector(3 downto 0);                     -- export
-			i2c_opencores_clock_clk             : in    std_logic                     := 'X';             -- clk
-			i2c_opencores_reset_reset           : in    std_logic                     := 'X';             -- reset
-			i2c_opencores_export_scl_pad_io     : inout std_logic                     := 'X';             -- scl_pad_io
-			i2c_opencores_export_sda_pad_io     : inout std_logic                     := 'X';             -- sda_pad_io
-			i2c_opencores_slave_address         : in    std_logic_vector(2 downto 0)  := (others => 'X'); -- address
-			i2c_opencores_slave_writedata       : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- writedata
-			i2c_opencores_slave_readdata        : out   std_logic_vector(7 downto 0);                     -- readdata
-			i2c_opencores_slave_write           : in    std_logic                     := 'X';             -- write
-			i2c_opencores_slave_chipselect      : in    std_logic                     := 'X';             -- chipselect
-			i2c_opencores_slave_waitrequest_n   : out   std_logic                                         -- waitrequest_n
+			clk_clk              : in    std_logic                     := 'X';             -- clk
+			reset_reset_n        : in    std_logic                     := 'X';             -- reset_n
+			sdram_addr           : out   std_logic_vector(12 downto 0);                    -- addr
+			sdram_ba             : out   std_logic_vector(1 downto 0);                     -- ba
+			sdram_cas_n          : out   std_logic;                                        -- cas_n
+			sdram_cke            : out   std_logic;                                        -- cke
+			sdram_cs_n           : out   std_logic;                                        -- cs_n
+			sdram_dq             : inout std_logic_vector(15 downto 0) := (others => 'X'); -- dq
+			sdram_dqm            : out   std_logic_vector(1 downto 0);                     -- dqm
+			sdram_ras_n          : out   std_logic;                                        -- ras_n
+			sdram_we_n           : out   std_logic;                                        -- we_n
+			transmitter_export   : out   std_logic_vector(3 downto 0);                     -- export
+			epcs_dclk            : out   std_logic;                                        -- dclk
+			epcs_sce             : out   std_logic;                                        -- sce
+			epcs_sdo             : out   std_logic;                                        -- sdo
+			epcs_data0           : in    std_logic                     := 'X';             -- data0
+			pio_led_green_export : out   std_logic_vector(6 downto 0);                     -- export
+			adc_sclk             : out   std_logic;                                        -- sclk
+			adc_cs_n             : out   std_logic;                                        -- cs_n
+			adc_dout             : in    std_logic                     := 'X';             -- dout
+			adc_din              : out   std_logic;                                        -- din
+			i2c_scl_pad_io       : inout std_logic                     := 'X';             -- scl_pad_io
+			i2c_sda_pad_io       : inout std_logic                     := 'X'              -- sda_pad_io
 		);
 	end component system;
 

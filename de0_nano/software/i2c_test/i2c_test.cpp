@@ -38,7 +38,7 @@ OS_STK task1_stk[TASK_STACKSIZE];
 OS_STK task2_stk[TASK_STACKSIZE];
 
 // speed is 400 khz
-#define SPEED 400000
+#define SPEED 100000
 
 #define  I2C_DEBUG 1
 /* Definition of Task Priorities */

@@ -46,12 +46,12 @@
 #include "i2c_opencores.h"
 #include "system.h"
 
-#define I2C_OPENCORES_0_BASE 0x4001880
+
 /** Default constructor.
  */
 I2Cdev::I2Cdev() {
 
-	I2C_init(I2C_OPENCORES_0_BASE, ALT_CPU_FREQ, SPEED);
+	I2C_init((uint8_t)I2C_OPENCORES_BASE, ALT_CPU_FREQ, SPEED);
 }
 
 /** Read a single bit from an 8-bit device register.
@@ -174,13 +174,13 @@ int8_t I2Cdev::readWord(uint8_t devAddr, uint8_t regAddr, uint16_t *data,
 int8_t I2Cdev::readBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length,
 		uint8_t *data, uint16_t timeout) {
 
-	I2C_start(devAddr, DEVICE_ADDR, READ);
-
+	I2C_start((uint8_t)I2C_OPENCORES_BASE, devAddr, READ);
+	I2C_write((uint8_t)I2C_OPENCORES_BASE,regAddr,NOT_LAST);
 	for (int i = 0; i < length - 1; i++) {
-		data[i] = I2C_read(devAddr, NOT_LAST);
+		data[i] = I2C_read((uint8_t)I2C_OPENCORES_BASE, NOT_LAST);
 	}
 
-	data[length] = I2C_read(devAddr, LAST);
+	data[length] = I2C_read((uint8_t)I2C_OPENCORES_BASE, LAST);
 
 	//TODO make this meaningful.
 	return length;
@@ -200,13 +200,14 @@ int8_t I2Cdev::readWords(uint8_t devAddr, uint8_t regAddr, uint8_t length,
 	//One word is two bytes
 	length = length * 2;
 
-	I2C_start(devAddr, DEVICE_ADDR, READ);
+	I2C_start((uint8_t)I2C_OPENCORES_BASE, devAddr, READ);
+	I2C_write((uint8_t)I2C_OPENCORES_BASE,regAddr,NOT_LAST);
 
 	for (int i = 0; i < length - 1; i++) {
-		data[i] = I2C_read(devAddr, NOT_LAST);
+		data[i] = I2C_read((uint8_t)I2C_OPENCORES_BASE, NOT_LAST);
 	}
 
-	data[length] = I2C_read(devAddr, LAST);
+	data[length] = I2C_read((uint8_t)I2C_OPENCORES_BASE, LAST);
 
 	//TODO make this meaningful.
 	return length;
@@ -332,13 +333,14 @@ bool I2Cdev::writeWord(uint8_t devAddr, uint8_t regAddr, uint16_t data) {
  */
 bool I2Cdev::writeBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length,
 		uint8_t* data) {
-	I2C_start(devAddr, DEVICE_ADDR, WRITE);
+	I2C_start((uint8_t)I2C_OPENCORES_BASE, devAddr, WRITE);
+	I2C_write((uint8_t)I2C_OPENCORES_BASE, regAddr, NOT_LAST);
 
 	for (int i = 0; i < length - 1; i++) {
-		I2C_write(devAddr, (*data), NOT_LAST);
+		I2C_write((uint8_t)I2C_OPENCORES_BASE, (*data), NOT_LAST);
 	}
 
-	I2C_write(devAddr, (*data), LAST);
+	I2C_write((uint8_t)I2C_OPENCORES_BASE, (*data), LAST);
 
 	return 0;
 }
@@ -353,15 +355,16 @@ bool I2Cdev::writeBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length,
 bool I2Cdev::writeWords(uint8_t devAddr, uint8_t regAddr, uint8_t length,
 		uint16_t* data) {
 
-	I2C_start(devAddr,  DEVICE_ADDR, WRITE);
+	I2C_start((uint8_t)I2C_OPENCORES_BASE, devAddr, WRITE);
+	I2C_write((uint8_t)I2C_OPENCORES_BASE, regAddr, NOT_LAST);
 
 	length = 2 * length;
 
 	for (int i = 0; i < length - 1; i++) {
-		I2C_write(devAddr, (*data), NOT_LAST);
+		I2C_write((uint8_t)I2C_OPENCORES_BASE, (*data), NOT_LAST);
 	}
 
-	I2C_write(devAddr, (*data), LAST);
+	I2C_write((uint8_t)I2C_OPENCORES_BASE, (*data), LAST);
 
 	return 0;
 }

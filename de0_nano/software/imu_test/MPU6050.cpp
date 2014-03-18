@@ -43,15 +43,6 @@ MPU6050::MPU6050() {
     devAddr = MPU6050_DEFAULT_ADDRESS;
 }
 
-/** Specific address constructor.
- * @param address I2C address
- * @see MPU6050_DEFAULT_ADDRESS
- * @see MPU6050_ADDRESS_AD0_LOW
- * @see MPU6050_ADDRESS_AD0_HIGH
- */
-MPU6050::MPU6050(uint16_t address) {
-    devAddr = address;
-}
 
 /** Power on and prepare for general usage.
  * This will activate the device and take it out of sleep mode (which must be done
