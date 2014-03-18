@@ -1,5 +1,5 @@
 
-State Machine - |de0_nano_system|system:inst_cpu|i2c_opencores:i2c_opencores_0|i2c_master_top:i2c_master_top_inst|i2c_master_byte_ctrl:byte_controller|c_state
+State Machine - |de0_nano_system|system:inst_cpu|i2c_opencores:i2c_opencores|i2c_master_top:i2c_master_top_inst|i2c_master_byte_ctrl:byte_controller|c_state
 Name c_state.ST_IDLE c_state.ST_STOP c_state.ST_ACK c_state.ST_WRITE c_state.ST_READ c_state.ST_START 
 c_state.ST_IDLE 0 0 0 0 0 0 
 c_state.ST_START 1 0 0 0 0 1 

@@ -1,5 +1,5 @@
 --alt_ded_mult_y CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" dedicated_multiplier_circuitry="YES" device_family="Cyclone IV E" dsp_block_balancing="Auto" extra_latency=0 input_reg_a="UNREGISTERED" input_reg_b="UNREGISTERED" output_aclr="ACLR0" output_reg="CLOCK0" pipeline_reg="UNREGISTERED" representation_a="UNSIGNED" representation_b="UNSIGNED" sub_dedicated_multiplier_circuitry="YES" width_a=16 width_b=16 aclr clock dataa datab ena result
---VERSION_BEGIN 12.1SP1 cbx_alt_ded_mult_y 2013:01:31:18:05:07:SJ cbx_cycloneii 2013:01:31:18:05:07:SJ cbx_lpm_add_sub 2013:01:31:18:05:07:SJ cbx_mgl 2013:01:31:18:08:27:SJ cbx_padd 2013:01:31:18:05:07:SJ cbx_parallel_add 2013:01:31:18:05:07:SJ cbx_stratix 2013:01:31:18:05:07:SJ cbx_stratixii 2013:01:31:18:05:07:SJ cbx_util_mgl 2013:01:31:18:05:07:SJ  VERSION_END
+--VERSION_BEGIN 12.1SP1 cbx_alt_ded_mult_y 2013:01:31:18:04:58:SJ cbx_cycloneii 2013:01:31:18:04:59:SJ cbx_lpm_add_sub 2013:01:31:18:04:59:SJ cbx_mgl 2013:01:31:18:08:27:SJ cbx_padd 2013:01:31:18:04:59:SJ cbx_parallel_add 2013:01:31:18:04:59:SJ cbx_stratix 2013:01:31:18:04:59:SJ cbx_stratixii 2013:01:31:18:04:59:SJ cbx_util_mgl 2013:01:31:18:04:59:SJ  VERSION_END
 
 
 -- Copyright (C) 1991-2012 Altera Corporation

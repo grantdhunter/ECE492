@@ -1,6 +1,5 @@
 *.metadata
 *.cproject
-*.project
 *.force_relink
 *.elf
 *.rpt
@@ -18,3 +17,4 @@
 /de0_nano/greybox_tmp/
 /de0_nano/system/
 /de0_nano/.qsys_edit
+/de0_nano/db
