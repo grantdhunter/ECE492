@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'system'
  * SOPC Builder design path: C:/Users/gdhunter/Documents/Capstone/ECE492/de0_nano/system.sopcinfo
  *
- * Generated: Fri Mar 14 15:33:49 MDT 2014
+ * Generated: Fri Mar 21 15:04:37 MDT 2014
  */
 
 /*
@@ -154,19 +154,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart"
-#define ALT_STDERR_BASE 0x4001888
+#define ALT_STDERR_BASE 0x40018a0
 #define ALT_STDERR_DEV jtag_uart
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart"
-#define ALT_STDIN_BASE 0x4001888
+#define ALT_STDIN_BASE 0x40018a0
 #define ALT_STDIN_DEV jtag_uart
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart"
-#define ALT_STDOUT_BASE 0x4001888
+#define ALT_STDOUT_BASE 0x40018a0
 #define ALT_STDOUT_DEV jtag_uart
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -180,7 +180,7 @@
  */
 
 #define ALT_MODULE_CLASS_de0_nano_adc_0 altera_up_avalon_de0_nano_adc
-#define DE0_NANO_ADC_0_BASE 0x4001800
+#define DE0_NANO_ADC_0_BASE 0x4001820
 #define DE0_NANO_ADC_0_IRQ -1
 #define DE0_NANO_ADC_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define DE0_NANO_ADC_0_NAME "/dev/de0_nano_adc_0"
@@ -214,17 +214,17 @@
 
 
 /*
- * i2c_opencores_0 configuration
+ * i2c_opencores configuration
  *
  */
 
-#define ALT_MODULE_CLASS_i2c_opencores_0 i2c_opencores
-#define I2C_OPENCORES_0_BASE 0x4001880
-#define I2C_OPENCORES_0_IRQ 3
-#define I2C_OPENCORES_0_IRQ_INTERRUPT_CONTROLLER_ID 0
-#define I2C_OPENCORES_0_NAME "/dev/i2c_opencores_0"
-#define I2C_OPENCORES_0_SPAN 8
-#define I2C_OPENCORES_0_TYPE "i2c_opencores"
+#define ALT_MODULE_CLASS_i2c_opencores i2c_opencores
+#define I2C_OPENCORES_BASE 0x4001800
+#define I2C_OPENCORES_IRQ 3
+#define I2C_OPENCORES_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define I2C_OPENCORES_NAME "/dev/i2c_opencores"
+#define I2C_OPENCORES_SPAN 32
+#define I2C_OPENCORES_TYPE "i2c_opencores"
 
 
 /*
@@ -233,7 +233,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart altera_avalon_jtag_uart
-#define JTAG_UART_BASE 0x4001888
+#define JTAG_UART_BASE 0x40018a0
 #define JTAG_UART_IRQ 2
 #define JTAG_UART_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_NAME "/dev/jtag_uart"
@@ -251,7 +251,7 @@
  */
 
 #define ALT_MODULE_CLASS_pio_led_green altera_avalon_pio
-#define PIO_LED_GREEN_BASE 0x4001820
+#define PIO_LED_GREEN_BASE 0x4001840
 #define PIO_LED_GREEN_BIT_CLEARING_EDGE_REGISTER 0
 #define PIO_LED_GREEN_BIT_MODIFYING_OUTPUT_REGISTER 1
 #define PIO_LED_GREEN_CAPTURE 0
@@ -318,7 +318,7 @@
 
 #define ALT_MODULE_CLASS_sys_clk_timer altera_avalon_timer
 #define SYS_CLK_TIMER_ALWAYS_RUN 0
-#define SYS_CLK_TIMER_BASE 0x4001860
+#define SYS_CLK_TIMER_BASE 0x4001880
 #define SYS_CLK_TIMER_COUNTER_SIZE 32
 #define SYS_CLK_TIMER_FIXED_PERIOD 0
 #define SYS_CLK_TIMER_FREQ 100000000u
@@ -343,13 +343,13 @@
  */
 
 #define ALT_MODULE_CLASS_sysid altera_avalon_sysid_qsys
-#define SYSID_BASE 0x4001890
+#define SYSID_BASE 0x40018a8
 #define SYSID_ID 0
 #define SYSID_IRQ -1
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
-#define SYSID_TIMESTAMP 1394832661
+#define SYSID_TIMESTAMP 1395434731
 #define SYSID_TYPE "altera_avalon_sysid_qsys"
 
 
@@ -359,7 +359,7 @@
  */
 
 #define ALT_MODULE_CLASS_transmitter altera_avalon_pio
-#define TRANSMITTER_BASE 0x4001840
+#define TRANSMITTER_BASE 0x4001860
 #define TRANSMITTER_BIT_CLEARING_EDGE_REGISTER 0
 #define TRANSMITTER_BIT_MODIFYING_OUTPUT_REGISTER 1
 #define TRANSMITTER_CAPTURE 0

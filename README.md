@@ -12,6 +12,8 @@ By:
 Wiring specifications
 =====================
 
+GPIO Header 0
+----------------------
 
 Transmitter
 -----------
@@ -26,7 +28,14 @@ GND			GPIO PIN 12
 I2C
 ----
 
-Clock 		GPIO PIN 7
-Data		GPIO PIN 8
+Clock 		GPIO PIN 27
+Data		GPIO PIN 28
 Power		GPIO PIN 29
-GND			GPIO PIN 12
+VIO			GPIO PIN 29
+GND			GPIO PIN 30
+
+2X13 Header
+-------------------------
+
+Data 		GPIO PIN 24
+GND			GPIO PIN 26

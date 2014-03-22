@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'system'
  * SOPC Builder design path: C:/Users/gdhunter/Documents/Capstone/ECE492/de0_nano/system.sopcinfo
  *
- * Generated: Fri Feb 28 15:47:05 MST 2014
+ * Generated: Fri Mar 21 15:04:24 MDT 2014
  */
 
 /*

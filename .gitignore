@@ -1,5 +1,4 @@
 *.metadata
-*.cproject
 *.force_relink
 *.elf
 *.rpt

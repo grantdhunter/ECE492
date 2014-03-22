@@ -248,8 +248,8 @@ set_location_assignment PIN_C3 -to GPIO_0[1]
 set_location_assignment PIN_A2 -to GPIO_0[2]
 set_location_assignment PIN_A3 -to GPIO_0[3]
 
-set_location_assignment PIN_B3 -to GPIO_1
-set_location_assignment PIN_B4 -to GPIO_2
+set_location_assignment PIN_F9 -to GPIO_1
+set_location_assignment PIN_E9 -to GPIO_2
 
 #	set_location_assignment PIN_A4 -to GPIO_0[6]
 #	set_location_assignment PIN_B5 -to GPIO_0[7]
