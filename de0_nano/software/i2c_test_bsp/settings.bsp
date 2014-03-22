@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>ucosii</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>21-Mar-2014 3:04:15 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1395435855088</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>22-Mar-2014 11:30:36 AM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1395509436199</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>C:\Users\gdhunter\Documents\Capstone\ECE492\de0_nano\software\i2c_test_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>C:\Users\gdhunter\Documents\Capstone\ECE492\de0_nano\system.sopcinfo</SopcDesignFile>

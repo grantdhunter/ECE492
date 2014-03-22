@@ -13,8 +13,6 @@
 #include "MPU6050.h"
 #include "dataType.h"
 
-
-
 #define X_OFFSET 0
 #define Y_OFFSET 0
 #define Z_OFFSET 0
@@ -34,22 +32,14 @@ MPU6050 imu;
 /* Prints "Hello World" and sleeps for three seconds */
 void task1(void* pdata) {
 
-
 	int16_t roll = 0;
 	int16_t pitch = 0;
 	int16_t yaw = 0;
-
-
 
 	imu.initialize();
 	//True if every thing is good
 	if (imu.testConnection()) {
 
-		//TODO set offsets to zero the IMU
-		imu.setXGyroOffset(X_OFFSET);
-		imu.setYGyroOffset(Y_OFFSET);
-		imu.setZGyroOffset(Z_OFFSET);
-		imu.setZAccelOffset(Z_OFFSET_A);
 	} else {
 		//Error
 		//TODO handle error
@@ -57,18 +47,17 @@ void task1(void* pdata) {
 
 	}
 
-
-
 	while (1) {
 		roll = imu.getRotationX();
 		pitch = imu.getRotationY();
 		yaw = imu.getRotationZ();
 
-		printf("Roll: %d\n",roll);
-		printf("Pitch: %d\n",pitch);
-		printf("Yaw: %d\n",yaw);
+		printf("Roll: %d\n", roll);
+		printf("Pitch: %d\n", pitch);
+		printf("Yaw: %d\n", yaw);
 		OSTimeDlyHMSM(0, 0, 3, 0);
 	}
+
 }
 
 /* The main function creates two task and starts multi-tasking */

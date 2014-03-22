@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'system'
  * SOPC Builder design path: C:/Users/gdhunter/Documents/Capstone/ECE492/de0_nano/system.sopcinfo
  *
- * Generated: Fri Mar 21 14:55:37 MDT 2014
+ * Generated: Sat Mar 22 11:30:28 MDT 2014
  */
 
 /*
@@ -349,7 +349,7 @@
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
-#define SYSID_TIMESTAMP 1395434731
+#define SYSID_TIMESTAMP 1395507838
 #define SYSID_TYPE "altera_avalon_sysid_qsys"
 
 
