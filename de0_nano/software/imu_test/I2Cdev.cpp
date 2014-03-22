@@ -182,7 +182,7 @@ int8_t I2Cdev::readBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length,
 		uint8_t *data, uint16_t timeout) {
 
 	I2C_start((uint32_t)I2C_OPENCORES_BASE, devAddr, WRITE);
-	I2C_write((uint32_t)I2C_OPENCORES_BASE,regAddr,LAST);
+	I2C_write((uint32_t)I2C_OPENCORES_BASE,regAddr,NOT_LAST);
 
 	I2C_start((uint32_t)I2C_OPENCORES_BASE, devAddr, READ);
 
@@ -211,7 +211,7 @@ int8_t I2Cdev::readWords(uint8_t devAddr, uint8_t regAddr, uint8_t length,
 	length = length * 2;
 
 	I2C_start((uint32_t)I2C_OPENCORES_BASE, devAddr, WRITE);
-	I2C_write((uint32_t)I2C_OPENCORES_BASE,regAddr,LAST);
+	I2C_write((uint32_t)I2C_OPENCORES_BASE,regAddr,NOT_LAST);
 
 	I2C_start((uint32_t)I2C_OPENCORES_BASE, devAddr, READ);
 

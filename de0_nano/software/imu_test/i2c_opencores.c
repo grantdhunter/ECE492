@@ -155,6 +155,7 @@ alt_u32 I2C_write(alt_u32 base,alt_u8 data, alt_u32 last)
                /* start a read and no ack and stop bit*/
            IOWR_I2C_OPENCORES_CR(base, I2C_OPENCORES_CR_WR_MSK |
                I2C_OPENCORES_CR_STO_MSK);
+
   }
   else
   {
