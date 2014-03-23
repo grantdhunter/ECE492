@@ -32,9 +32,13 @@ MPU6050 imu;
 /* Prints "Hello World" and sleeps for three seconds */
 void task1(void* pdata) {
 
-	int16_t roll = 0;
-	int16_t pitch = 0;
-	int16_t yaw = 0;
+	int16_t gx = 0;
+	int16_t gy = 0;
+	int16_t gz = 0;
+
+	int16_t ax = 0;
+	int16_t ay = 0;
+	int16_t az = 0;
 
 	imu.initialize();
 	//True if every thing is good
@@ -48,13 +52,25 @@ void task1(void* pdata) {
 	}
 
 	while (1) {
-		roll = imu.getRotationX();
-		pitch = imu.getRotationY();
-		yaw = imu.getRotationZ();
 
-		printf("Roll: %d\n", roll);
-		printf("Pitch: %d\n", pitch);
-		printf("Yaw: %d\n", yaw);
+		imu.getMotion6(&ax,&ay,&az,&gx,&gy,&gz);
+
+
+//		roll = imu.getRotationX();
+//		pitch = imu.getRotationY();
+//		yaw = imu.getRotationZ();
+//
+		printf("gx: %d\n", gx & 0xFF);
+		printf("gy: %d\n", gy & 0xFF);
+		printf("gz: %d\n\n", gz & 0xFF);
+//
+//		accx = imu.getAccelerationX();
+//		accy = imu.getAccelerationY();
+//		accz = imu.getAccelerationZ();
+//
+		printf("ax: %d\n", ax & 0xFF);
+		printf("ay: %d\n", ay & 0xFF);
+		printf("az: %d\n\n", az & 0xFF);
 		OSTimeDlyHMSM(0, 0, 3, 0);
 	}
 

@@ -402,6 +402,9 @@ class MPU6050 {
         MPU6050();
 
         void initialize();
+
+        void bitReverse(uint8_t* data);
+
         bool testConnection();
 
         // AUX_VDDIO register
