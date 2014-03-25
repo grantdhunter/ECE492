@@ -46,17 +46,18 @@ OS_STK    task1_stk[TASK_STACKSIZE];
 /* Prints "Hello World" and sleeps for three seconds */
 void task1(void* pdata)
 {
-	EmgInterface emg((char*)DE0_NANO_ADC_0_BASE);
+	char* adc = DE0_NANO_ADC_0_NAME;
+	EmgInterface emg(adc, CHANNEL);
 
 	volatile uint16_t data = 0;
 
   while (1)
   { 
-	  data = emg.rawRead();
+	  data = emg.rawRead()/16;
 
 	  printf("EMG READS: %u\n", data);
 
-    OSTimeDlyHMSM(0, 0, 0, 50);
+    OSTimeDlyHMSM(0, 0, 0, 5);
   }
 }
 

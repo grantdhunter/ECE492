@@ -8,17 +8,22 @@
 #ifndef EMGINTERFACE_H_
 #define EMGINTERFACE_H_
 #include "dataType.h"
+extern "C"{
+#include "altera_up_avalon_de0_nano_adc.h"
+}
+#include "system.h"
 
-#define START_ADC 0
+#define CHANNEL 0
 
 class EmgInterface {
-	volatile Addr BaseAddress;
+	alt_up_de0_nano_adc_dev * adc;
+	uint16_t channel;
 public:
 	/*
 	 * EMG sensor software interface constructor. Takes the base address of the
 	 * pin that the EMG sensor is connected to.
 	 */
-	EmgInterface(Addr);
+	EmgInterface(char*,int16_t);
 
 	/*
 	 * Destructor for the emgIterface object
