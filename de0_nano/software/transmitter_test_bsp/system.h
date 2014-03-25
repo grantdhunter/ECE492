@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'system'
  * SOPC Builder design path: C:/Users/gdhunter/Documents/Capstone/ECE492/de0_nano/system.sopcinfo
  *
- * Generated: Sat Mar 22 11:30:57 MDT 2014
+ * Generated: Tue Mar 25 14:41:02 MDT 2014
  */
 
 /*
@@ -135,7 +135,6 @@
 #define __ALTERA_AVALON_TIMER
 #define __ALTERA_NIOS2_QSYS
 #define __ALTERA_UP_AVALON_DE0_NANO_ADC
-#define __I2C_OPENCORES
 
 
 /*
@@ -180,7 +179,7 @@
  */
 
 #define ALT_MODULE_CLASS_de0_nano_adc_0 altera_up_avalon_de0_nano_adc
-#define DE0_NANO_ADC_0_BASE 0x4001820
+#define DE0_NANO_ADC_0_BASE 0x4001800
 #define DE0_NANO_ADC_0_IRQ -1
 #define DE0_NANO_ADC_0_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define DE0_NANO_ADC_0_NAME "/dev/de0_nano_adc_0"
@@ -214,17 +213,57 @@
 
 
 /*
- * i2c_opencores configuration
+ * i2c_clk configuration
  *
  */
 
-#define ALT_MODULE_CLASS_i2c_opencores i2c_opencores
-#define I2C_OPENCORES_BASE 0x4001800
-#define I2C_OPENCORES_IRQ 3
-#define I2C_OPENCORES_IRQ_INTERRUPT_CONTROLLER_ID 0
-#define I2C_OPENCORES_NAME "/dev/i2c_opencores"
-#define I2C_OPENCORES_SPAN 32
-#define I2C_OPENCORES_TYPE "i2c_opencores"
+#define ALT_MODULE_CLASS_i2c_clk altera_avalon_pio
+#define I2C_CLK_BASE 0x4001890
+#define I2C_CLK_BIT_CLEARING_EDGE_REGISTER 0
+#define I2C_CLK_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define I2C_CLK_CAPTURE 0
+#define I2C_CLK_DATA_WIDTH 1
+#define I2C_CLK_DO_TEST_BENCH_WIRING 0
+#define I2C_CLK_DRIVEN_SIM_VALUE 0x0
+#define I2C_CLK_EDGE_TYPE "NONE"
+#define I2C_CLK_FREQ 100000000u
+#define I2C_CLK_HAS_IN 1
+#define I2C_CLK_HAS_OUT 1
+#define I2C_CLK_HAS_TRI 0
+#define I2C_CLK_IRQ -1
+#define I2C_CLK_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define I2C_CLK_IRQ_TYPE "NONE"
+#define I2C_CLK_NAME "/dev/i2c_clk"
+#define I2C_CLK_RESET_VALUE 0x0
+#define I2C_CLK_SPAN 16
+#define I2C_CLK_TYPE "altera_avalon_pio"
+
+
+/*
+ * i2c_data configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_i2c_data altera_avalon_pio
+#define I2C_DATA_BASE 0x4001880
+#define I2C_DATA_BIT_CLEARING_EDGE_REGISTER 0
+#define I2C_DATA_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define I2C_DATA_CAPTURE 0
+#define I2C_DATA_DATA_WIDTH 1
+#define I2C_DATA_DO_TEST_BENCH_WIRING 0
+#define I2C_DATA_DRIVEN_SIM_VALUE 0x0
+#define I2C_DATA_EDGE_TYPE "NONE"
+#define I2C_DATA_FREQ 100000000u
+#define I2C_DATA_HAS_IN 1
+#define I2C_DATA_HAS_OUT 1
+#define I2C_DATA_HAS_TRI 0
+#define I2C_DATA_IRQ -1
+#define I2C_DATA_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define I2C_DATA_IRQ_TYPE "NONE"
+#define I2C_DATA_NAME "/dev/i2c_data"
+#define I2C_DATA_RESET_VALUE 0x0
+#define I2C_DATA_SPAN 16
+#define I2C_DATA_TYPE "altera_avalon_pio"
 
 
 /*
@@ -251,7 +290,7 @@
  */
 
 #define ALT_MODULE_CLASS_pio_led_green altera_avalon_pio
-#define PIO_LED_GREEN_BASE 0x4001840
+#define PIO_LED_GREEN_BASE 0x4001820
 #define PIO_LED_GREEN_BIT_CLEARING_EDGE_REGISTER 0
 #define PIO_LED_GREEN_BIT_MODIFYING_OUTPUT_REGISTER 1
 #define PIO_LED_GREEN_CAPTURE 0
@@ -318,7 +357,7 @@
 
 #define ALT_MODULE_CLASS_sys_clk_timer altera_avalon_timer
 #define SYS_CLK_TIMER_ALWAYS_RUN 0
-#define SYS_CLK_TIMER_BASE 0x4001880
+#define SYS_CLK_TIMER_BASE 0x4001860
 #define SYS_CLK_TIMER_COUNTER_SIZE 32
 #define SYS_CLK_TIMER_FIXED_PERIOD 0
 #define SYS_CLK_TIMER_FREQ 100000000u
@@ -349,7 +388,7 @@
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
-#define SYSID_TIMESTAMP 1395507838
+#define SYSID_TIMESTAMP 1395780031
 #define SYSID_TYPE "altera_avalon_sysid_qsys"
 
 
@@ -359,7 +398,7 @@
  */
 
 #define ALT_MODULE_CLASS_transmitter altera_avalon_pio
-#define TRANSMITTER_BASE 0x4001860
+#define TRANSMITTER_BASE 0x4001840
 #define TRANSMITTER_BIT_CLEARING_EDGE_REGISTER 0
 #define TRANSMITTER_BIT_MODIFYING_OUTPUT_REGISTER 1
 #define TRANSMITTER_CAPTURE 0

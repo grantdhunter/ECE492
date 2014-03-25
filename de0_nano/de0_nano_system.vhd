@@ -166,7 +166,10 @@ architecture syn of de0_nano_system is
 				--I2C
 				i2c_scl_pad_io       : inout std_logic                     := 'X';             -- scl_pad_io
 				i2c_sda_pad_io       : inout std_logic                     := 'X'              -- sda_pad_io
-        
+				--i2c_data_in_port     : in    std_logic                     := 'X';             -- in_port
+            --i2c_data_out_port    : out   std_logic;                                        -- out_port
+            --i2c_clk_in_port      : in    std_logic                     := 'X';             -- in_port
+            --i2c_clk_out_port     : out   std_logic                                         -- out_port
 				
            );
    end component system;
@@ -233,7 +236,10 @@ begin
 					
 					  i2c_scl_pad_io       => GPIO_1,       --           i2c.scl_pad_io
 					  i2c_sda_pad_io       => GPIO_2        --              .sda_pad_io
-					  
+					  --i2c_data_in_port     => GPIO_2,     --      i2c_data.in_port
+					  --i2c_data_out_port    => GPIO_2,    --              .out_port
+					  --i2c_clk_in_port      => GPIO_1,      --       i2c_clk.in_port
+					  --i2c_clk_out_port     => GPIO_1      --              .out_port
                );  
             
    SDRAM_BA_1 <= sdram_ba(1);

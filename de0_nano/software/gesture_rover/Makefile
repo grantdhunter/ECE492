@@ -139,14 +139,13 @@ ACDS_VERSION := 12.1sp1
 # Define path to the application ELF. 
 # It may be used by the makefile fragments so is defined before including them. 
 # 
-ELF := imu_test.elf
+ELF := gesture_rover.elf
 
 # Paths to C, C++, and assembly source files.
-C_SRCS += i2c_opencores.c
-C_SRCS += I2C.c
-CXX_SRCS += imu_test.cpp
-CXX_SRCS += MPU6050.cpp
-CXX_SRCS += I2Cdev.cpp
+C_SRCS :=
+CXX_SRCS += emgInterface.cpp
+CXX_SRCS += main.cpp
+CXX_SRCS += transmitterInterface.cpp
 ASM_SRCS :=
 
 
@@ -180,7 +179,7 @@ CRT0 :=
 SYS_LIB :=
 
 # Define path to the root of the BSP.
-BSP_ROOT_DIR := ../imu_test_bsp/
+BSP_ROOT_DIR := ../gesture_rover_bsp/
 
 # List of application specific include directories, library directories and library names
 APP_INCLUDE_DIRS :=
