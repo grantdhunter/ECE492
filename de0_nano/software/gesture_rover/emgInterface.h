@@ -16,7 +16,8 @@ extern "C" {
 }
 
 
-#define CHANNEL 0
+#define CHANNEL_0 0
+#define CHANNEL_1 1
 
 class EmgInterface {
 	alt_up_de0_nano_adc_dev * adc;
