@@ -89,9 +89,6 @@ entity de0_nano_system is
 			-- TRANSMITTER
 			GPIO_0 	: out std_logic_vector(3 downto 0);
   
-			--I2C
-			GPIO_1 : inout std_logic;
-			GPIO_2 : inout std_logic;
 			
 			--ADC
 			ADC_CS_N  : out std_logic;
@@ -150,10 +147,10 @@ architecture syn of de0_nano_system is
             
 				transmitter_export   : out   std_logic_vector(3 downto 0);                     -- export
 				
-				epcs_dclk            : out   std_logic;                                        -- dclk
-            epcs_sce             : out   std_logic;                                        -- sce
-            epcs_sdo             : out   std_logic;                                        -- sdo
-            epcs_data0           : in    std_logic                     := 'X';             -- data0
+				epcs_flash_dclk      : out   std_logic;                                        -- dclk
+            epcs_flash_sce       : out   std_logic;                                        -- sce
+            epcs_flash_sdo       : out   std_logic;                                        -- sdo
+            epcs_flash_data0     : in    std_logic                     := 'X';              -- data0
            
 			   pio_led_green_export : out   std_logic_vector(6 downto 0);                      -- export
  
@@ -161,16 +158,8 @@ architecture syn of de0_nano_system is
 				adc_sclk             : out   std_logic;                                        -- sclk
 				adc_cs_n             : out   std_logic;                                        -- cs_n
 				adc_dout             : in    std_logic                     := 'X';             -- dout
-				adc_din              : out   std_logic;                                        -- din
-				
-				--I2C
-				i2c_scl_pad_io       : inout std_logic                     := 'X';             -- scl_pad_io
-				i2c_sda_pad_io       : inout std_logic                     := 'X'              -- sda_pad_io
-				--i2c_data_in_port     : in    std_logic                     := 'X';             -- in_port
-            --i2c_data_out_port    : out   std_logic;                                        -- out_port
-            --i2c_clk_in_port      : in    std_logic                     := 'X';             -- in_port
-            --i2c_clk_out_port     : out   std_logic                                         -- out_port
-				
+				adc_din              : out   std_logic                                        -- din
+								
            );
    end component system;
    
@@ -219,10 +208,10 @@ begin
                  sdram_ras_n          => SDRAM_RAS_N,
                  sdram_we_n           => SDRAM_WE_N,
                  
-                 epcs_dclk            => EPCS_DCLK,
-                 epcs_sce             => EPCS_NCSO,
-                 epcs_sdo             => EPCS_ASDO,
-                 epcs_data0           => EPCS_DATA0,
+					  epcs_flash_dclk            => EPCS_DCLK,
+                 epcs_flash_sce             => EPCS_NCSO,
+                 epcs_flash_sdo             => EPCS_ASDO,
+                 epcs_flash_data0           => EPCS_DATA0,
                  
                  
                  pio_led_green_export => LED_GREEN,
@@ -232,14 +221,8 @@ begin
 					  adc_sclk             => ADC_SCLK,             --           adc.sclk
 					  adc_cs_n             => ADC_CS_N,             --              .cs_n
 					  adc_dout             => ADC_SDAT,             --              .dout
-					  adc_din              => ADC_SADDR,              --              .din
+					  adc_din              => ADC_SADDR              --              .din
 					
-					  i2c_scl_pad_io       => GPIO_1,       --           i2c.scl_pad_io
-					  i2c_sda_pad_io       => GPIO_2        --              .sda_pad_io
-					  --i2c_data_in_port     => GPIO_2,     --      i2c_data.in_port
-					  --i2c_data_out_port    => GPIO_2,    --              .out_port
-					  --i2c_clk_in_port      => GPIO_1,      --       i2c_clk.in_port
-					  --i2c_clk_out_port     => GPIO_1      --              .out_port
                );  
             
    SDRAM_BA_1 <= sdram_ba(1);

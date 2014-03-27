@@ -191,14 +191,14 @@ int8_t I2Cdev::readBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length,
 //	for (int i = 0; i < length - 1; i++) {
 //		data[i] = I2C_read((uint32_t)I2C_OPENCORES_BASE, NOT_LAST);
 //	}
-//
+
 //	data[length] = I2C_read((uint32_t)I2C_OPENCORES_BASE, LAST);
 
-	I2C_Start((uint32_t)I2C_CLK_BASE, (uint32_t)I2C_DATA_BASE);
+	I2C_Start((uint32_t)I2C_SCL_BASE, (uint32_t)I2C_SDA_BASE);
 
-	I2C_ReadFromDeviceRegister((uint32_t)I2C_CLK_BASE,(uint32_t) I2C_DATA_BASE, devAddr, regAddr, data, length*2,true);
+	I2C_ReadFromDeviceRegister((uint32_t)I2C_SCL_BASE,(uint32_t) I2C_SDA_BASE, devAddr, regAddr, data, length*2,true);
 
-	I2C_Stop((uint32_t)I2C_CLK_BASE,(uint32_t) I2C_DATA_BASE);
+	I2C_Stop((uint32_t)I2C_SCL_BASE,(uint32_t) I2C_SDA_BASE);
 
 	//TODO make this meaningful.
 	return length;
@@ -217,7 +217,7 @@ int8_t I2Cdev::readWords(uint8_t devAddr, uint8_t regAddr, uint8_t length,
 
 	//One word is two bytes
 //	length = length * 2;
-
+//
 //	I2C_start((uint32_t)I2C_OPENCORES_BASE, devAddr, WRITE);
 //	I2C_write((uint32_t)I2C_OPENCORES_BASE,regAddr,NOT_LAST);
 //
@@ -229,11 +229,11 @@ int8_t I2Cdev::readWords(uint8_t devAddr, uint8_t regAddr, uint8_t length,
 //
 //	data[length] = I2C_read((uint32_t)I2C_OPENCORES_BASE, LAST);
 
-	I2C_Start((uint32_t)I2C_CLK_BASE, (uint32_t)I2C_DATA_BASE);
+	I2C_Start((uint32_t)I2C_SCL_BASE, (uint32_t)I2C_SDA_BASE);
 
-	I2C_ReadFromDeviceRegister((uint32_t)I2C_CLK_BASE, (uint32_t)I2C_DATA_BASE, devAddr, regAddr,(uint8_t*) data, length*2,true);
+	I2C_ReadFromDeviceRegister((uint32_t)I2C_SCL_BASE, (uint32_t)I2C_SDA_BASE, devAddr, regAddr,(uint8_t*) data, length*2,true);
 
-	I2C_Stop((uint32_t)I2C_CLK_BASE,(uint32_t) I2C_DATA_BASE);
+	I2C_Stop((uint32_t)I2C_SCL_BASE,(uint32_t) I2C_SDA_BASE);
 	//TODO make this meaningful.
 	return length;
 
@@ -367,11 +367,11 @@ bool I2Cdev::writeBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length,
 //
 //	I2C_write((uint32_t)I2C_OPENCORES_BASE, (*data), LAST);
 
-	I2C_Start((uint32_t)I2C_CLK_BASE,(uint32_t) I2C_DATA_BASE);
+	I2C_Start((uint32_t)I2C_SCL_BASE,(uint32_t) I2C_SDA_BASE);
 
-	I2C_WriteToDeviceRegister((uint32_t)I2C_CLK_BASE, (uint32_t)I2C_DATA_BASE, devAddr, regAddr, data, length);
+	I2C_WriteToDeviceRegister((uint32_t)I2C_SCL_BASE, (uint32_t)I2C_SDA_BASE, devAddr, regAddr, data, length);
 
-	I2C_Stop((uint32_t)I2C_CLK_BASE, (uint32_t)I2C_DATA_BASE);
+	I2C_Stop((uint32_t)I2C_SCL_BASE, (uint32_t)I2C_SDA_BASE);
 
 	return 0;
 }
@@ -397,11 +397,11 @@ bool I2Cdev::writeWords(uint8_t devAddr, uint8_t regAddr, uint8_t length,
 //
 //	I2C_write((uint32_t)I2C_OPENCORES_BASE, (*data), LAST);
 
-	I2C_Start((uint32_t)I2C_CLK_BASE,(uint32_t) I2C_DATA_BASE);
+	I2C_Start((uint32_t)I2C_SCL_BASE,(uint32_t) I2C_SDA_BASE);
 
-	I2C_WriteToDeviceRegister((uint32_t)I2C_CLK_BASE, (uint32_t)I2C_DATA_BASE, devAddr, regAddr,(uint8_t*) data, length*2);
+	I2C_WriteToDeviceRegister((uint32_t)I2C_SCL_BASE, (uint32_t)I2C_SDA_BASE, devAddr, regAddr,(uint8_t*) data, length*2);
 
-	I2C_Stop((uint32_t)I2C_CLK_BASE,(uint32_t) I2C_DATA_BASE);
+	I2C_Stop((uint32_t)I2C_SCL_BASE,(uint32_t) I2C_SDA_BASE);
 	return 0;
 }
 

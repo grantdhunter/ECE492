@@ -12,17 +12,15 @@
 			sdram_ras_n          : out   std_logic;                                        -- ras_n
 			sdram_we_n           : out   std_logic;                                        -- we_n
 			transmitter_export   : out   std_logic_vector(3 downto 0);                     -- export
-			epcs_dclk            : out   std_logic;                                        -- dclk
-			epcs_sce             : out   std_logic;                                        -- sce
-			epcs_sdo             : out   std_logic;                                        -- sdo
-			epcs_data0           : in    std_logic                     := 'X';             -- data0
 			pio_led_green_export : out   std_logic_vector(6 downto 0);                     -- export
 			adc_sclk             : out   std_logic;                                        -- sclk
 			adc_cs_n             : out   std_logic;                                        -- cs_n
 			adc_dout             : in    std_logic                     := 'X';             -- dout
 			adc_din              : out   std_logic;                                        -- din
-			i2c_scl_pad_io       : inout std_logic                     := 'X';             -- scl_pad_io
-			i2c_sda_pad_io       : inout std_logic                     := 'X'              -- sda_pad_io
+			epcs_flash_dclk      : out   std_logic;                                        -- dclk
+			epcs_flash_sce       : out   std_logic;                                        -- sce
+			epcs_flash_sdo       : out   std_logic;                                        -- sdo
+			epcs_flash_data0     : in    std_logic                     := 'X'              -- data0
 		);
 	end component system;
 

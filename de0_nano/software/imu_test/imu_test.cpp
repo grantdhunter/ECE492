@@ -60,17 +60,17 @@ void task1(void* pdata) {
 //		pitch = imu.getRotationY();
 //		yaw = imu.getRotationZ();
 //
-		printf("gx: %d\n", gx & 0xFF);
-		printf("gy: %d\n", gy & 0xFF);
-		printf("gz: %d\n\n", gz & 0xFF);
-//
+		printf("gx: %x\n", gx & 0xFF);
+//		printf("gy: %x\n", gy & 0xFF);
+//		printf("gz: %x\n\n", gz & 0xFF);
+////
 //		accx = imu.getAccelerationX();
 //		accy = imu.getAccelerationY();
 //		accz = imu.getAccelerationZ();
 //
-		printf("ax: %d\n", ax & 0xFF);
-		printf("ay: %d\n", ay & 0xFF);
-		printf("az: %d\n\n", az & 0xFF);
+//		printf("ax: %d\n", ax & 0xFF);
+//		printf("ay: %d\n", ay & 0xFF);
+//		printf("az: %d\n\n", az & 0xFF);
 		OSTimeDlyHMSM(0, 0, 3, 0);
 	}
 

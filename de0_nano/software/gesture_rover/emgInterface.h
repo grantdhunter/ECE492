@@ -10,6 +10,7 @@
 
 #include "dataType.h"
 #include "system.h"
+#include "ucos_ii.h"
 
 extern "C" {
 	#include "altera_up_avalon_de0_nano_adc.h"
@@ -20,14 +21,13 @@ extern "C" {
 #define CHANNEL_1 1
 
 class EmgInterface {
-	alt_up_de0_nano_adc_dev * adc;
-	uint16_t channel;
+
 public:
 	/*
 	 * EMG sensor software interface constructor. Takes the base address of the
 	 * pin that the EMG sensor is connected to.
 	 */
-	EmgInterface(char*, int16_t);
+	EmgInterface(char*);
 
 	/*
 	 * Destructor for the emgIterface object
@@ -37,13 +37,14 @@ public:
 	/*
 	 * Read data from the EMG sensor.
 	 */
-	uint16_t rawRead();
+	uint16_t readChannel_0();
+	uint16_t readChannel_1();
 
-	/*
-	 * Determing if data from the EMG sensor is greater than a set threshold.
-	 * Takes the threshold value and the raw EMG data.
-	 */
-	bool isOverThreshold(uint16_t, uint16_t);
+
+private:
+	INT8U err;
+	alt_up_de0_nano_adc_dev * adc;
+	OS_EVENT* emg_lock;
 };
 
 #endif /* EMGINTERFACE_H_ */

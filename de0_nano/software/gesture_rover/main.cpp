@@ -12,16 +12,15 @@
 #include "TransmitterInterface.h"
 #include "EmgInterface.h"
 #include "system.h"
-//TODO check execution time
-//#include <time.h>
+
 
 /*Definition of Task Stacks */
 #define TASK_STACKSIZE        2048
-OS_STK task_emg_stk[TASK_STACKSIZE];
+OS_STK task_move_stk[TASK_STACKSIZE];
 OS_STK task_turn_stk[TASK_STACKSIZE];
 
 /*Definition of Task priorities*/
-#define  TASK_EMG_PRIORITY 1
+#define  TASK_MOVE_PRIORITY 1
 #define  TASK_TURN_PRIORITY 2
 
 //emg thresholds move
@@ -43,54 +42,45 @@ OS_STK task_turn_stk[TASK_STACKSIZE];
 #define SAMPLE_ERROR_TURN 	5
 
 TransmitterInterface transmitter((char*) TRANSMITTER_BASE);
-EmgInterface emg0(DE0_NANO_ADC_0_NAME, CHANNEL_0);
-EmgInterface emg1(DE0_NANO_ADC_0_NAME, CHANNEL_1);
+EmgInterface emg(DE0_NANO_ADC_0_NAME);
 
-uint16_t collectSample(int channel) {
+
+uint16_t collectSampleChannel_0() {
 
 	uint16_t emgData = 0;
 	int i = 0;
-	//TODO check execution time
-	//time_t rawtime;
-	//struct tm * timeinfo;
-
-
-	if (channel == CHANNEL_0) {
-//TODO check execution time
-//		 time ( &rawtime );
-//		  timeinfo = localtime ( &rawtime );
-//		  printf ( "Current local time and date: %s", asctime (timeinfo) );
-		while (i != WINDOW_SIZE_DRIVE) {
-			i++;
-			//Read analogue data from EMG sensor
-			emgData += emg0.rawRead() / 16;
-
-			OSTimeDlyHMSM(0, 0, 0, EMG_DELAY_MSEC_DRIVE);
-		}
-//TODO check execution time
-//		 time ( &rawtime );
-//		  timeinfo = localtime ( &rawtime );
-//		  printf ( "Current local time and date: %s", asctime (timeinfo) );
-		//printf("emg: %d\n",emgData/WINDOW_SIZE);
-		emgData = emgData / WINDOW_SIZE_DRIVE;
-
-	} else if (channel == CHANNEL_1) {
 
 		while (i != WINDOW_SIZE_TURN) {
 			i++;
 			//Read analogue data from EMG sensor
-			emgData += emg1.rawRead() / 16;
+			emgData += emg.readChannel_0() / 16;
 
 			OSTimeDlyHMSM(0, 0, 0, EMG_DELAY_MSEC_TURN);
 		}
 		//printf("emg: %d\n",emgData/WINDOW_SIZE);
 		emgData = emgData / WINDOW_SIZE_TURN;
-	} else {
-		//error
-	}
+
 	return emgData;
 }
 
+
+uint16_t collectSampleChannel_1() {
+
+	uint16_t emgData = 0;
+	int i = 0;
+
+		while (i != WINDOW_SIZE_TURN) {
+			i++;
+			//Read analogue data from EMG sensor
+			emgData += emg.readChannel_0() / 16;
+
+			OSTimeDlyHMSM(0, 0, 0, EMG_DELAY_MSEC_TURN);
+		}
+		//printf("emg: %d\n",emgData/WINDOW_SIZE);
+		emgData = emgData / WINDOW_SIZE_TURN;
+
+	return emgData;
+}
 //When a forward signal has been received send move forward to the transmitter
 //then poll the emg for the stop signal.
 void forwardCommand() {
@@ -101,7 +91,7 @@ void forwardCommand() {
 	transmitter.moveForward();
 
 	while (1) {
-		emgData = collectSample(CHANNEL_0);
+		emgData = collectSampleChannel_0();
 
 		if (emgData < EMG_STOP_THRESHOLD) {
 
@@ -122,7 +112,7 @@ void backwardCommand() {
 	transmitter.moveReverse();
 
 	while (1) {
-		emgData = collectSample(CHANNEL_0);
+		emgData = collectSampleChannel_0();
 
 		if (emgData < EMG_STOP_THRESHOLD) {
 
@@ -143,7 +133,7 @@ void leftCommand() {
 	transmitter.turnLeft();
 
 	while (1) {
-		emgData = collectSample(CHANNEL_1);
+		emgData = collectSampleChannel_1();
 
 		if (emgData < EMG_STOP_TURN_THRESHOLD) {
 
@@ -164,7 +154,7 @@ void rightCommand() {
 	transmitter.turnRight();
 
 	while (1) {
-		emgData = collectSample(CHANNEL_1);
+		emgData = collectSampleChannel_1();
 
 		if (emgData < EMG_STOP_TURN_THRESHOLD) {
 
@@ -176,26 +166,26 @@ void rightCommand() {
 }
 
 /*Task that polls EMG Sensor, processes the information and relays it to the transmitter*/
-void taskEmg(void* pdata) {
+void taskMove(void* pdata) {
 
 	int16_t emgData1;
 	int16_t emgData2;
 
 	printf("Starting drive control\n");
 
-	emgData1 = collectSample(CHANNEL_0);
+	emgData1 = collectSampleChannel_0();
 	while (1) {
 
-		emgData2 = collectSample(CHANNEL_0);
+		emgData2 = collectSampleChannel_0();
 
-		//printf("emg1: %d\n",emgData1);
-		//printf("emg2: %d\n",emgData2);
+		//printf("emg: %d\n",emgData1);
+		//printf("emg: %d\n",emgData2);
 
 		if (emgData2 > emgData1 - SAMPLE_ERROR_DRIVE) {
 
 			if (emgData2 > EMG_FORWARD_THRESHOLD) {
 				forwardCommand();
-				emgData1 = collectSample(CHANNEL_0);
+				emgData1 = collectSampleChannel_0();
 			} else {
 				emgData1 = emgData2;
 			}
@@ -230,19 +220,19 @@ void taskTurn(void* pdata) {
 
 	printf("Starting turn control\n");
 
-	emgData1 = collectSample(CHANNEL_1);
+	emgData1 = collectSampleChannel_1();
 	while (1) {
 
-		emgData2 = collectSample(CHANNEL_1);
+		emgData2 = collectSampleChannel_1();
 
-		//printf("emg1: %d\n",emgData1);
-		//printf("emg2: %d\n",emgData2);
+		//printf("emg: %d\n",emgData1);
+		//printf("emg: %d\n",emgData2);
 
 		if (emgData2 > emgData1 - SAMPLE_ERROR_TURN) {
 
 			if (emgData2 > EMG_RIGHT_THRESHOLD) {
 				rightCommand();
-				emgData1 = collectSample(CHANNEL_1);
+				emgData1 = collectSampleChannel_1();
 			} else {
 				emgData1 = emgData2;
 			}
@@ -271,8 +261,8 @@ void taskTurn(void* pdata) {
 int main(void) {
 
 	//Start EMG Task
-	OSTaskCreateExt(taskEmg, NULL, &task_emg_stk[TASK_STACKSIZE - 1],
-			TASK_EMG_PRIORITY, TASK_EMG_PRIORITY, task_emg_stk, TASK_STACKSIZE,
+	OSTaskCreateExt(taskMove, NULL, &task_move_stk[TASK_STACKSIZE - 1],
+			TASK_MOVE_PRIORITY, TASK_MOVE_PRIORITY, task_move_stk, TASK_STACKSIZE,
 			NULL, 0);
 
 	//Start Gyro Task

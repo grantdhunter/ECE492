@@ -8,6 +8,7 @@
 #include "EmgInterface.h"
 #include "dataType.h"
 #include "system.h"
+#include "ucos_ii.h"
 
 extern "C"{
 	#include "altera_up_avalon_de0_nano_adc.h"
@@ -18,10 +19,13 @@ extern "C"{
  * EMG sensor software interface constructor. Takes the base address of the
  * pin that the EMG sensor is connected to.
  */
-EmgInterface::EmgInterface(char* emgName, int16_t chnl) {
+EmgInterface::EmgInterface(char* emgName ) {
+
+	OSSemPend(emg_lock,0,&err);
 
 	adc = alt_up_de0_nano_adc_open_dev(emgName);
-	channel = chnl;
+
+	OSSemPost(emg_lock);
 }
 
 /*
@@ -34,26 +38,34 @@ EmgInterface::~EmgInterface() {
 /*
  * Read data from the EMG sensor.
  */
-uint16_t EmgInterface::rawRead() {
+uint16_t EmgInterface::readChannel_0() {
 	uint16_t rawData;
 
+	OSSemPend(emg_lock,0,&err);
+
 	alt_up_de0_nano_adc_update (adc);
-	rawData = alt_up_de0_nano_adc_read (adc, channel);
+	rawData = alt_up_de0_nano_adc_read (adc, CHANNEL_0);
+
+	OSSemPost(emg_lock);
 
 	return rawData;
 }
-
 /*
- * Determing if data from the EMG sensor is greater than a set threshold.
- * Takes the threshold value and the raw EMG data.
+ * Read data from the EMG sensor.
  */
-bool EmgInterface::isOverThreshold(uint16_t threshold, uint16_t rawData) {
-	if (threshold < rawData) {
-		return true;
-	} else {
-		return false;
-	}
+uint16_t EmgInterface::readChannel_1() {
+	uint16_t rawData;
+
+	OSSemPend(emg_lock,0,&err);
+
+	alt_up_de0_nano_adc_update (adc);
+	rawData = alt_up_de0_nano_adc_read (adc, CHANNEL_1);
+
+	OSSemPost(emg_lock);
+	return rawData;
 }
+
+
 //The MIT License (MIT)
 //
 //Copyright (c) 2014 Grant Hunter

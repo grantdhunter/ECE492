@@ -35,6 +35,7 @@ THE SOFTWARE.
 */
 #include "MPU6050.h"
 #include "I2Cdev.h"
+#include <stdio.h>
 /** Default constructor, uses default I2C address.
  * @see MPU6050_DEFAULT_ADDRESS
  */
@@ -65,7 +66,9 @@ void MPU6050::initialize() {
  * @return True if connection is valid, false otherwise
  */
 bool MPU6050::testConnection() {
-  	return getDeviceID() == 0x34;
+	uint8_t id = getDeviceID();
+	printf("device id: %x\n", id);
+  	return id == 0x34;
 }
 
 // AUX_VDDIO register (InvenSense demo code calls this RA_*G_OFFS_TC)

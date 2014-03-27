@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'system'
  * SOPC Builder design path: C:/Users/gdhunter/Documents/Capstone/ECE492/de0_nano/system.sopcinfo
  *
- * Generated: Tue Mar 25 13:56:15 MDT 2014
+ * Generated: Thu Mar 27 14:15:46 MDT 2014
  */
 
 /*
@@ -213,57 +213,57 @@
 
 
 /*
- * i2c_clk configuration
+ * i2c_scl configuration
  *
  */
 
-#define ALT_MODULE_CLASS_i2c_clk altera_avalon_pio
-#define I2C_CLK_BASE 0x4001890
-#define I2C_CLK_BIT_CLEARING_EDGE_REGISTER 0
-#define I2C_CLK_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define I2C_CLK_CAPTURE 0
-#define I2C_CLK_DATA_WIDTH 1
-#define I2C_CLK_DO_TEST_BENCH_WIRING 0
-#define I2C_CLK_DRIVEN_SIM_VALUE 0x0
-#define I2C_CLK_EDGE_TYPE "NONE"
-#define I2C_CLK_FREQ 100000000u
-#define I2C_CLK_HAS_IN 1
-#define I2C_CLK_HAS_OUT 1
-#define I2C_CLK_HAS_TRI 0
-#define I2C_CLK_IRQ -1
-#define I2C_CLK_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define I2C_CLK_IRQ_TYPE "NONE"
-#define I2C_CLK_NAME "/dev/i2c_clk"
-#define I2C_CLK_RESET_VALUE 0x0
-#define I2C_CLK_SPAN 16
-#define I2C_CLK_TYPE "altera_avalon_pio"
+#define ALT_MODULE_CLASS_i2c_scl altera_avalon_pio
+#define I2C_SCL_BASE 0x4001890
+#define I2C_SCL_BIT_CLEARING_EDGE_REGISTER 0
+#define I2C_SCL_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define I2C_SCL_CAPTURE 0
+#define I2C_SCL_DATA_WIDTH 1
+#define I2C_SCL_DO_TEST_BENCH_WIRING 0
+#define I2C_SCL_DRIVEN_SIM_VALUE 0x0
+#define I2C_SCL_EDGE_TYPE "NONE"
+#define I2C_SCL_FREQ 100000000u
+#define I2C_SCL_HAS_IN 1
+#define I2C_SCL_HAS_OUT 1
+#define I2C_SCL_HAS_TRI 0
+#define I2C_SCL_IRQ -1
+#define I2C_SCL_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define I2C_SCL_IRQ_TYPE "NONE"
+#define I2C_SCL_NAME "/dev/i2c_scl"
+#define I2C_SCL_RESET_VALUE 0x0
+#define I2C_SCL_SPAN 16
+#define I2C_SCL_TYPE "altera_avalon_pio"
 
 
 /*
- * i2c_data configuration
+ * i2c_sda configuration
  *
  */
 
-#define ALT_MODULE_CLASS_i2c_data altera_avalon_pio
-#define I2C_DATA_BASE 0x4001880
-#define I2C_DATA_BIT_CLEARING_EDGE_REGISTER 0
-#define I2C_DATA_BIT_MODIFYING_OUTPUT_REGISTER 0
-#define I2C_DATA_CAPTURE 0
-#define I2C_DATA_DATA_WIDTH 1
-#define I2C_DATA_DO_TEST_BENCH_WIRING 0
-#define I2C_DATA_DRIVEN_SIM_VALUE 0x0
-#define I2C_DATA_EDGE_TYPE "NONE"
-#define I2C_DATA_FREQ 100000000u
-#define I2C_DATA_HAS_IN 1
-#define I2C_DATA_HAS_OUT 1
-#define I2C_DATA_HAS_TRI 0
-#define I2C_DATA_IRQ -1
-#define I2C_DATA_IRQ_INTERRUPT_CONTROLLER_ID -1
-#define I2C_DATA_IRQ_TYPE "NONE"
-#define I2C_DATA_NAME "/dev/i2c_data"
-#define I2C_DATA_RESET_VALUE 0x0
-#define I2C_DATA_SPAN 16
-#define I2C_DATA_TYPE "altera_avalon_pio"
+#define ALT_MODULE_CLASS_i2c_sda altera_avalon_pio
+#define I2C_SDA_BASE 0x4001880
+#define I2C_SDA_BIT_CLEARING_EDGE_REGISTER 0
+#define I2C_SDA_BIT_MODIFYING_OUTPUT_REGISTER 0
+#define I2C_SDA_CAPTURE 0
+#define I2C_SDA_DATA_WIDTH 1
+#define I2C_SDA_DO_TEST_BENCH_WIRING 0
+#define I2C_SDA_DRIVEN_SIM_VALUE 0x0
+#define I2C_SDA_EDGE_TYPE "NONE"
+#define I2C_SDA_FREQ 100000000u
+#define I2C_SDA_HAS_IN 1
+#define I2C_SDA_HAS_OUT 1
+#define I2C_SDA_HAS_TRI 0
+#define I2C_SDA_IRQ -1
+#define I2C_SDA_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define I2C_SDA_IRQ_TYPE "NONE"
+#define I2C_SDA_NAME "/dev/i2c_sda"
+#define I2C_SDA_RESET_VALUE 0x0
+#define I2C_SDA_SPAN 16
+#define I2C_SDA_TYPE "altera_avalon_pio"
 
 
 /*
@@ -388,7 +388,7 @@
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
-#define SYSID_TIMESTAMP 1395777053
+#define SYSID_TIMESTAMP 1395951159
 #define SYSID_TYPE "altera_avalon_sysid_qsys"
 
 
