@@ -17,8 +17,8 @@ extern "C" {
 }
 
 
-#define CHANNEL_0 0
-#define CHANNEL_1 1
+//#define CHANNEL_0 0
+//#define CHANNEL_1 1
 
 class EmgInterface {
 

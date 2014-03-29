@@ -59,7 +59,7 @@ uint16_t collectSampleChannel_0() {
 		}
 		//printf("emg: %d\n",emgData/WINDOW_SIZE);
 		emgData = emgData / WINDOW_SIZE_TURN;
-
+		//printf("emg0: %d\n",emgData);
 	return emgData;
 }
 
@@ -72,13 +72,18 @@ uint16_t collectSampleChannel_1() {
 		while (i != WINDOW_SIZE_TURN) {
 			i++;
 			//Read analogue data from EMG sensor
-			emgData += emg.readChannel_0() / 16;
+
+			emgData = emg.readChannel_1();
+			//emgData = emgData - 536870000
+
+			emgData += emgData/16;
+//			printf("emg1: %d\n",emgData);
 
 			OSTimeDlyHMSM(0, 0, 0, EMG_DELAY_MSEC_TURN);
 		}
 		//printf("emg: %d\n",emgData/WINDOW_SIZE);
 		emgData = emgData / WINDOW_SIZE_TURN;
-
+//		printf("emg1: %d\n",emgData);
 	return emgData;
 }
 //When a forward signal has been received send move forward to the transmitter
@@ -129,7 +134,7 @@ void leftCommand() {
 
 	uint16_t emgData = 0;
 
-	printf("Reverse\n");
+	printf("Left\n");
 	transmitter.turnLeft();
 
 	while (1) {
@@ -150,7 +155,7 @@ void rightCommand() {
 
 	uint16_t emgData = 0;
 
-	printf("Reverse\n");
+	printf("Right\n");
 	transmitter.turnRight();
 
 	while (1) {
@@ -260,12 +265,12 @@ void taskTurn(void* pdata) {
 
 int main(void) {
 
-	//Start EMG Task
-	OSTaskCreateExt(taskMove, NULL, &task_move_stk[TASK_STACKSIZE - 1],
-			TASK_MOVE_PRIORITY, TASK_MOVE_PRIORITY, task_move_stk, TASK_STACKSIZE,
-			NULL, 0);
+	//Start move Task
+//	OSTaskCreateExt(taskMove, NULL, &task_move_stk[TASK_STACKSIZE - 1],
+//			TASK_MOVE_PRIORITY, TASK_MOVE_PRIORITY, task_move_stk, TASK_STACKSIZE,
+//			NULL, 0);
 
-	//Start Gyro Task
+	//Start turn Task
 	OSTaskCreateExt(taskTurn, NULL, &task_turn_stk[TASK_STACKSIZE - 1],
 			TASK_TURN_PRIORITY, TASK_TURN_PRIORITY, task_turn_stk,
 			TASK_STACKSIZE, NULL, 0);

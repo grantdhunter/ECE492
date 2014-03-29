@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="system" kind="system" version="1.0" fabric="QSYS">
  <!-- Format version 12.1sp1 243 (Future versions may contain additional information.) -->
- <!-- 2014.03.27.15:30:53 -->
+ <!-- 2014.03.28.16:29:54 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1395955852</value>
+  <value>1396045794</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -530,7 +530,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.RESET_ADDR</name>
-   <value>0x04001000</value>
+   <value>0x02000000</value>
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.HDLSimCachesCleared</name>
@@ -562,7 +562,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.configuration.resetSlave</name>
-   <value>epcs_flash_controller.epcs_control_port</value>
+   <value>sdram.s1</value>
   </assignment>
   <parameter name="setting_showUnpublishedSettings">
    <type>boolean</type>
@@ -990,7 +990,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="resetSlave">
    <type>java.lang.String</type>
-   <value>epcs_flash_controller.epcs_control_port</value>
+   <value>sdram.s1</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -1238,7 +1238,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="resetAbsoluteAddr">
    <type>int</type>
-   <value>67112960</value>
+   <value>33554432</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -2920,7 +2920,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1395955852</value>
+   <value>1396045794</value>
   </assignment>
   <parameter name="id">
    <type>int</type>
@@ -2932,7 +2932,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1395955852</value>
+   <value>1396045794</value>
    <derived>false</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -6957,7 +6957,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="numch">
    <type>int</type>
-   <value>2</value>
+   <value>8</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>

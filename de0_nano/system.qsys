@@ -105,19 +105,11 @@
          type = "int";
       }
    }
-   element transmitter.s1
+   element sdram.s1
    {
       datum baseAddress
       {
-         value = "67117120";
-         type = "String";
-      }
-   }
-   element sys_clk_timer.s1
-   {
-      datum baseAddress
-      {
-         value = "67117152";
+         value = "33554432";
          type = "String";
       }
    }
@@ -129,11 +121,19 @@
          type = "String";
       }
    }
-   element sdram.s1
+   element sys_clk_timer.s1
    {
       datum baseAddress
       {
-         value = "33554432";
+         value = "67117152";
+         type = "String";
+      }
+   }
+   element transmitter.s1
+   {
+      datum baseAddress
+      {
+         value = "67117120";
          type = "String";
       }
    }
@@ -189,7 +189,7 @@
  <parameter name="projectName" value="de0_nano_system.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1395955525961" />
+ <parameter name="timeStamp" value="1396045703443" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk_sys.clk_in" type="clock" dir="end" />
@@ -275,7 +275,7 @@
   <parameter name="cpuID_stored" value="0" />
   <parameter name="breakOffset" value="32" />
   <parameter name="userDefinedSettings" value="" />
-  <parameter name="resetSlave">epcs_flash_controller.epcs_control_port</parameter>
+  <parameter name="resetSlave" value="sdram.s1" />
   <parameter name="mmu_TLBMissExcSlave" value="" />
   <parameter name="exceptionSlave" value="sdram.s1" />
   <parameter name="breakSlave">cpu.jtag_debug_module</parameter>
@@ -446,7 +446,7 @@
    enabled="1"
    name="de0_nano_adc_0">
   <parameter name="sclk_freq" value="3.2" />
-  <parameter name="numch" value="2" />
+  <parameter name="numch" value="8" />
   <parameter name="AUTO_CLK_CLOCK_RATE" value="100000000" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
  </module>

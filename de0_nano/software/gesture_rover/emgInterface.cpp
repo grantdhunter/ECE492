@@ -9,7 +9,7 @@
 #include "dataType.h"
 #include "system.h"
 #include "ucos_ii.h"
-
+#include <stdio.h>
 extern "C"{
 	#include "altera_up_avalon_de0_nano_adc.h"
 }
@@ -20,6 +20,8 @@ extern "C"{
  * pin that the EMG sensor is connected to.
  */
 EmgInterface::EmgInterface(char* emgName ) {
+
+	emg_lock =  OSSemCreate(1);
 
 	OSSemPend(emg_lock,0,&err);
 
@@ -44,7 +46,7 @@ uint16_t EmgInterface::readChannel_0() {
 	OSSemPend(emg_lock,0,&err);
 
 	alt_up_de0_nano_adc_update (adc);
-	rawData = alt_up_de0_nano_adc_read (adc, CHANNEL_0);
+	rawData = alt_up_de0_nano_adc_read (adc, 0);
 
 	OSSemPost(emg_lock);
 
@@ -54,15 +56,41 @@ uint16_t EmgInterface::readChannel_0() {
  * Read data from the EMG sensor.
  */
 uint16_t EmgInterface::readChannel_1() {
-	uint16_t rawData;
-
+	uint16_t rawData0 =0;
+	uint16_t rawData1 =0;
+	uint16_t rawData2 =0;
+	uint16_t rawData3 =0;
+	uint16_t rawData4 =0;
+	uint16_t rawData5 =0;
+	uint16_t rawData6 =0;
+	uint16_t rawData7 =0;
+	uint16_t rawData8 =0;
 	OSSemPend(emg_lock,0,&err);
 
 	alt_up_de0_nano_adc_update (adc);
-	rawData = alt_up_de0_nano_adc_read (adc, CHANNEL_1);
+
+	rawData0 = alt_up_de0_nano_adc_read (adc, 0);
+	rawData1 = alt_up_de0_nano_adc_read (adc, 1);
+	rawData2 = alt_up_de0_nano_adc_read (adc, 2);
+	rawData3 = alt_up_de0_nano_adc_read (adc, 3);
+	rawData4 = alt_up_de0_nano_adc_read (adc, 4);
+	rawData5 = alt_up_de0_nano_adc_read (adc, 5);
+	rawData6 = alt_up_de0_nano_adc_read (adc, 6);
+	rawData7 = alt_up_de0_nano_adc_read (adc, 7);
+
+	printf("channel 0: %d\n",rawData0 );
+	printf("channel 1: %d\n",rawData1);
+	printf("channel 2: %d\n",rawData2);
+	printf("channel 3: %d\n",rawData3);
+	printf("channel 4: %d\n",rawData4);
+	printf("channel 5: %d\n",rawData5);
+	printf("channel 6: %d\n",rawData6 );
+	printf("channel 7: %d\n",rawData7 );
+
+
 
 	OSSemPost(emg_lock);
-	return rawData;
+	return rawData0;
 }
 
 
