@@ -26,7 +26,7 @@ EmgInterface::EmgInterface(char* emgName ) {
 	OSSemPend(emg_lock,0,&err);
 
 	adc = alt_up_de0_nano_adc_open_dev(emgName);
-
+	//alt_up_de0_nano_adc_auto_enable(adc);
 	OSSemPost(emg_lock);
 }
 
@@ -56,41 +56,19 @@ uint16_t EmgInterface::readChannel_0() {
  * Read data from the EMG sensor.
  */
 uint16_t EmgInterface::readChannel_1() {
-	uint16_t rawData0 =0;
-	uint16_t rawData1 =0;
-	uint16_t rawData2 =0;
-	uint16_t rawData3 =0;
-	uint16_t rawData4 =0;
-	uint16_t rawData5 =0;
-	uint16_t rawData6 =0;
-	uint16_t rawData7 =0;
-	uint16_t rawData8 =0;
+
+	uint16_t rawData =0;
+
 	OSSemPend(emg_lock,0,&err);
 
+
+	//*((int*)DE0_NANO_ADC_0_BASE) = 0;
+	//rawData1 = *((int*)DE0_NANO_ADC_0_BASE+1);
 	alt_up_de0_nano_adc_update (adc);
-
-	rawData0 = alt_up_de0_nano_adc_read (adc, 0);
-	rawData1 = alt_up_de0_nano_adc_read (adc, 1);
-	rawData2 = alt_up_de0_nano_adc_read (adc, 2);
-	rawData3 = alt_up_de0_nano_adc_read (adc, 3);
-	rawData4 = alt_up_de0_nano_adc_read (adc, 4);
-	rawData5 = alt_up_de0_nano_adc_read (adc, 5);
-	rawData6 = alt_up_de0_nano_adc_read (adc, 6);
-	rawData7 = alt_up_de0_nano_adc_read (adc, 7);
-
-	printf("channel 0: %d\n",rawData0 );
-	printf("channel 1: %d\n",rawData1);
-	printf("channel 2: %d\n",rawData2);
-	printf("channel 3: %d\n",rawData3);
-	printf("channel 4: %d\n",rawData4);
-	printf("channel 5: %d\n",rawData5);
-	printf("channel 6: %d\n",rawData6 );
-	printf("channel 7: %d\n",rawData7 );
-
-
-
+	rawData = alt_up_de0_nano_adc_read (adc, 1);
+	rawData = rawData & 0xFFF;
 	OSSemPost(emg_lock);
-	return rawData0;
+	return rawData;
 }
 
 

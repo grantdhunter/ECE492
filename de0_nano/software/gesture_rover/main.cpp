@@ -33,7 +33,7 @@ OS_STK task_turn_stk[TASK_STACKSIZE];
 #define SAMPLE_ERROR_DRIVE 	5
 
 //emg threshold turn
-#define EMG_STOP_TURN_THRESHOLD 10
+#define EMG_STOP_TURN_THRESHOLD 20
 #define EMG_RIGHT_THRESHOLD		150
 #define EMG_LEFT_THRESHOLD		65
 
@@ -53,12 +53,13 @@ uint16_t collectSampleChannel_0() {
 		while (i != WINDOW_SIZE_TURN) {
 			i++;
 			//Read analogue data from EMG sensor
-			emgData += emg.readChannel_0() / 16;
+			emgData += emg.readChannel_0();
 
 			OSTimeDlyHMSM(0, 0, 0, EMG_DELAY_MSEC_TURN);
 		}
 		//printf("emg: %d\n",emgData/WINDOW_SIZE);
 		emgData = emgData / WINDOW_SIZE_TURN;
+		emgData = emgData /16;
 		//printf("emg0: %d\n",emgData);
 	return emgData;
 }
@@ -73,16 +74,17 @@ uint16_t collectSampleChannel_1() {
 			i++;
 			//Read analogue data from EMG sensor
 
-			emgData = emg.readChannel_1();
+			emgData += emg.readChannel_1();
 			//emgData = emgData - 536870000
 
-			emgData += emgData/16;
-//			printf("emg1: %d\n",emgData);
+			//			printf("emg1: %d\n",emgData);
 
 			OSTimeDlyHMSM(0, 0, 0, EMG_DELAY_MSEC_TURN);
 		}
 		//printf("emg: %d\n",emgData/WINDOW_SIZE);
 		emgData = emgData / WINDOW_SIZE_TURN;
+		emgData = emgData /16;
+
 //		printf("emg1: %d\n",emgData);
 	return emgData;
 }
@@ -183,8 +185,8 @@ void taskMove(void* pdata) {
 
 		emgData2 = collectSampleChannel_0();
 
-		//printf("emg: %d\n",emgData1);
-		//printf("emg: %d\n",emgData2);
+//		printf("emg sample1: %u\n",emgData1);
+//		printf("emg sample2: %u\n",emgData2);
 
 		if (emgData2 > emgData1 - SAMPLE_ERROR_DRIVE) {
 
@@ -207,7 +209,7 @@ void taskMove(void* pdata) {
 
 				backwardCommand();
 			} else {
-				//do nothing we are at rest
+				emgData1 = emgData2;
 			}
 		}
 
@@ -230,8 +232,8 @@ void taskTurn(void* pdata) {
 
 		emgData2 = collectSampleChannel_1();
 
-		//printf("emg: %d\n",emgData1);
-		//printf("emg: %d\n",emgData2);
+//		printf("emg sample1: %u\n",emgData1);
+//		printf("emg sample2: %u\n",emgData2);
 
 		if (emgData2 > emgData1 - SAMPLE_ERROR_TURN) {
 
@@ -254,7 +256,7 @@ void taskTurn(void* pdata) {
 
 				leftCommand();
 			} else {
-				//do nothing we are at rest
+				emgData1 = emgData2;
 			}
 		}
 
@@ -266,9 +268,9 @@ void taskTurn(void* pdata) {
 int main(void) {
 
 	//Start move Task
-//	OSTaskCreateExt(taskMove, NULL, &task_move_stk[TASK_STACKSIZE - 1],
-//			TASK_MOVE_PRIORITY, TASK_MOVE_PRIORITY, task_move_stk, TASK_STACKSIZE,
-//			NULL, 0);
+	OSTaskCreateExt(taskMove, NULL, &task_move_stk[TASK_STACKSIZE - 1],
+			TASK_MOVE_PRIORITY, TASK_MOVE_PRIORITY, task_move_stk, TASK_STACKSIZE,
+			NULL, 0);
 
 	//Start turn Task
 	OSTaskCreateExt(taskTurn, NULL, &task_turn_stk[TASK_STACKSIZE - 1],

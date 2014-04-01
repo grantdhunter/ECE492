@@ -121,19 +121,19 @@
          type = "String";
       }
    }
-   element sys_clk_timer.s1
-   {
-      datum baseAddress
-      {
-         value = "67117152";
-         type = "String";
-      }
-   }
    element transmitter.s1
    {
       datum baseAddress
       {
          value = "67117120";
+         type = "String";
+      }
+   }
+   element sys_clk_timer.s1
+   {
+      datum baseAddress
+      {
+         value = "67117152";
          type = "String";
       }
    }
@@ -189,7 +189,7 @@
  <parameter name="projectName" value="de0_nano_system.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="1" />
- <parameter name="timeStamp" value="1396045703443" />
+ <parameter name="timeStamp" value="1396302791928" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
  <interface name="clk" internal="clk_sys.clk_in" type="clock" dir="end" />
@@ -445,8 +445,8 @@
    version="12.0"
    enabled="1"
    name="de0_nano_adc_0">
-  <parameter name="sclk_freq" value="3.2" />
-  <parameter name="numch" value="8" />
+  <parameter name="sclk_freq" value="0.8" />
+  <parameter name="numch" value="3" />
   <parameter name="AUTO_CLK_CLOCK_RATE" value="100000000" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
  </module>
