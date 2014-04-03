@@ -11,18 +11,19 @@
 #include <stdlib.h>
 #include "TransmitterInterface.h"
 #include "EmgInterface.h"
+#include "StatusLED.h"
 #include "system.h"
-
 
 /*Definition of Task Stacks */
 #define TASK_STACKSIZE        2048
 OS_STK task_move_stk[TASK_STACKSIZE];
 OS_STK task_turn_stk[TASK_STACKSIZE];
+OS_STK task_startup_stk[TASK_STACKSIZE];
 
 /*Definition of Task priorities*/
 #define  TASK_MOVE_PRIORITY 1
 #define  TASK_TURN_PRIORITY 2
-
+#define  TASK_STARTUP_PRIORITY 3
 //emg thresholds move
 #define EMG_STOP_THRESHOLD 			10
 #define EMG_FORWARD_THRESHOLD	150
@@ -41,49 +42,48 @@ OS_STK task_turn_stk[TASK_STACKSIZE];
 #define WINDOW_SIZE_TURN 	50
 #define SAMPLE_ERROR_TURN 	5
 
-TransmitterInterface transmitter((char*) TRANSMITTER_BASE);
+TransmitterInterface transmitter((Addr) TRANSMITTER_BASE);
 EmgInterface emg(DE0_NANO_ADC_0_NAME);
-
+StatusLED led((Addr) PIO_LED_GREEN_BASE);
 
 uint16_t collectSampleChannel_0() {
 
 	uint16_t emgData = 0;
 	int i = 0;
 
-		while (i != WINDOW_SIZE_TURN) {
-			i++;
-			//Read analogue data from EMG sensor
-			emgData += emg.readChannel_0();
+	while (i != WINDOW_SIZE_TURN) {
+		i++;
+		//Read analogue data from EMG sensor
+		emgData += emg.readChannel_0();
 
-			OSTimeDlyHMSM(0, 0, 0, EMG_DELAY_MSEC_TURN);
-		}
-		//printf("emg: %d\n",emgData/WINDOW_SIZE);
-		emgData = emgData / WINDOW_SIZE_TURN;
-		emgData = emgData /16;
-		//printf("emg0: %d\n",emgData);
+		OSTimeDlyHMSM(0, 0, 0, EMG_DELAY_MSEC_TURN);
+	}
+	//printf("emg: %d\n",emgData/WINDOW_SIZE);
+	emgData = emgData / WINDOW_SIZE_TURN;
+	emgData = emgData / 16;
+	//printf("emg0: %d\n",emgData);
 	return emgData;
 }
-
 
 uint16_t collectSampleChannel_1() {
 
 	uint16_t emgData = 0;
 	int i = 0;
 
-		while (i != WINDOW_SIZE_TURN) {
-			i++;
-			//Read analogue data from EMG sensor
+	while (i != WINDOW_SIZE_TURN) {
+		i++;
+		//Read analogue data from EMG sensor
 
-			emgData += emg.readChannel_1();
-			//emgData = emgData - 536870000
+		emgData += emg.readChannel_1();
+		//emgData = emgData - 536870000
 
-			//			printf("emg1: %d\n",emgData);
+		//			printf("emg1: %d\n",emgData);
 
-			OSTimeDlyHMSM(0, 0, 0, EMG_DELAY_MSEC_TURN);
-		}
-		//printf("emg: %d\n",emgData/WINDOW_SIZE);
-		emgData = emgData / WINDOW_SIZE_TURN;
-		emgData = emgData /16;
+		OSTimeDlyHMSM(0, 0, 0, EMG_DELAY_MSEC_TURN);
+	}
+	//printf("emg: %d\n",emgData/WINDOW_SIZE);
+	emgData = emgData / WINDOW_SIZE_TURN;
+	emgData = emgData / 16;
 
 //		printf("emg1: %d\n",emgData);
 	return emgData;
@@ -96,7 +96,7 @@ void forwardCommand() {
 
 	printf("Forward\n");
 	transmitter.moveForward();
-
+	led.forward();
 	while (1) {
 		emgData = collectSampleChannel_0();
 
@@ -104,6 +104,7 @@ void forwardCommand() {
 
 			printf("Stop\n");
 			transmitter.moveOff();
+			led.turnOff();
 			break;
 		}
 	}
@@ -117,7 +118,7 @@ void backwardCommand() {
 
 	printf("Reverse\n");
 	transmitter.moveReverse();
-
+	led.backward();
 	while (1) {
 		emgData = collectSampleChannel_0();
 
@@ -125,6 +126,7 @@ void backwardCommand() {
 
 			printf("Stop\n");
 			transmitter.moveOff();
+			led.moveOff();
 			break;
 		}
 	}
@@ -138,7 +140,7 @@ void leftCommand() {
 
 	printf("Left\n");
 	transmitter.turnLeft();
-
+	led.left();
 	while (1) {
 		emgData = collectSampleChannel_1();
 
@@ -146,6 +148,7 @@ void leftCommand() {
 
 			printf("Stop\n");
 			transmitter.turnOff();
+			led.turnOff();
 			break;
 		}
 	}
@@ -159,7 +162,7 @@ void rightCommand() {
 
 	printf("Right\n");
 	transmitter.turnRight();
-
+	led.right();
 	while (1) {
 		emgData = collectSampleChannel_1();
 
@@ -167,6 +170,7 @@ void rightCommand() {
 
 			printf("Stop\n");
 			transmitter.turnOff();
+			led.turnOff();
 			break;
 		}
 	}
@@ -265,12 +269,23 @@ void taskTurn(void* pdata) {
 	}
 }
 
+void startupTask(void* pdata){
+	//Trallllaalalalala
+	led.startingUp();
+}
+
 int main(void) {
+
+
+	//Start move Task
+	OSTaskCreateExt(startupTask, NULL, &task_startup_stk[TASK_STACKSIZE - 1],
+			TASK_STARTUP_PRIORITY, TASK_STARTUP_PRIORITY, task_startup_stk,
+			TASK_STACKSIZE, NULL, 0);
 
 	//Start move Task
 	OSTaskCreateExt(taskMove, NULL, &task_move_stk[TASK_STACKSIZE - 1],
-			TASK_MOVE_PRIORITY, TASK_MOVE_PRIORITY, task_move_stk, TASK_STACKSIZE,
-			NULL, 0);
+			TASK_MOVE_PRIORITY, TASK_MOVE_PRIORITY, task_move_stk,
+			TASK_STACKSIZE, NULL, 0);
 
 	//Start turn Task
 	OSTaskCreateExt(taskTurn, NULL, &task_turn_stk[TASK_STACKSIZE - 1],

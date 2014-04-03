@@ -146,6 +146,7 @@ C_SRCS :=
 CXX_SRCS += emgInterface.cpp
 CXX_SRCS += main.cpp
 CXX_SRCS += transmitterInterface.cpp
+CXX_SRCS += StatusLED.cpp
 ASM_SRCS :=
 
 
