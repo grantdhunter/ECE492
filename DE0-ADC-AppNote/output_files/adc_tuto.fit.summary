@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Apr 06 17:07:27 2014
+Quartus II 32-bit Version : 12.1 Build 243 01/31/2013 SP 1.33 SJ Full Version
+Revision Name : adc_tuto
+Top-level Entity Name : adc_tuto
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 2,621 / 22,320 ( 12 % )
+    Total combinational functions : 2,296 / 22,320 ( 10 % )
+    Dedicated logic registers : 1,521 / 22,320 ( 7 % )
+Total registers : 1589
+Total pins : 45 / 154 ( 29 % )
+Total virtual pins : 0
+Total memory bits : 142,336 / 608,256 ( 23 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )
