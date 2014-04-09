@@ -39,6 +39,10 @@
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
  ===============================================
+
+This code was modified by Grant Hunter to be used on Altera DE0 nano using
+ i2c_opencores.c from http://opencores.org/project,i2c,overview
+
  */
 
 #include "I2Cdev.h"

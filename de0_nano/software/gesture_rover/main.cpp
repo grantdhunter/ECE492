@@ -24,6 +24,7 @@ OS_STK task_startup_stk[TASK_STACKSIZE];
 #define  TASK_MOVE_PRIORITY 1
 #define  TASK_TURN_PRIORITY 2
 #define  TASK_STARTUP_PRIORITY 3
+
 //emg thresholds move
 #define EMG_STOP_THRESHOLD 			10
 #define EMG_FORWARD_THRESHOLD	150
@@ -42,29 +43,34 @@ OS_STK task_startup_stk[TASK_STACKSIZE];
 #define WINDOW_SIZE_TURN 	50
 #define SAMPLE_ERROR_TURN 	5
 
+//global interface objects
 TransmitterInterface transmitter((Addr) TRANSMITTER_BASE);
 EmgInterface emg(DE0_NANO_ADC_0_NAME);
 StatusLED led((Addr) PIO_LED_GREEN_BASE);
 
+//Collect EMG data from channel 0
+//Return the average value over WINDOW_SIZE_DRIVE
 uint16_t collectSampleChannel_0() {
 
 	uint16_t emgData = 0;
 	int i = 0;
 
-	while (i != WINDOW_SIZE_TURN) {
+	while (i != WINDOW_SIZE_DRIVE) {
 		i++;
 		//Read analogue data from EMG sensor
 		emgData += emg.readChannel_0();
 
-		OSTimeDlyHMSM(0, 0, 0, EMG_DELAY_MSEC_TURN);
+		OSTimeDlyHMSM(0, 0, 0, EMG_DELAY_MSEC_DRIVE);
 	}
-	//printf("emg: %d\n",emgData/WINDOW_SIZE);
-	emgData = emgData / WINDOW_SIZE_TURN;
+	
+	emgData = emgData / WINDOW_SIZE_DRIVE;
 	emgData = emgData / 16;
-	//printf("emg0: %d\n",emgData);
+	
 	return emgData;
 }
 
+//Collect EMG data from channel 1
+//Return the average value over WINDOW_SIZE_TURN
 uint16_t collectSampleChannel_1() {
 
 	uint16_t emgData = 0;
@@ -75,19 +81,17 @@ uint16_t collectSampleChannel_1() {
 		//Read analogue data from EMG sensor
 
 		emgData += emg.readChannel_1();
-		//emgData = emgData - 536870000
-
-		//			printf("emg1: %d\n",emgData);
+		
 
 		OSTimeDlyHMSM(0, 0, 0, EMG_DELAY_MSEC_TURN);
 	}
-	//printf("emg: %d\n",emgData/WINDOW_SIZE);
+
 	emgData = emgData / WINDOW_SIZE_TURN;
 	emgData = emgData / 16;
 
-//		printf("emg1: %d\n",emgData);
 	return emgData;
 }
+
 //When a forward signal has been received send move forward to the transmitter
 //then poll the emg for the stop signal.
 void forwardCommand() {
@@ -97,6 +101,8 @@ void forwardCommand() {
 	printf("Forward\n");
 	transmitter.moveForward();
 	led.forward();
+    
+    //wait for signal to drop bellow stop threshold
 	while (1) {
 		emgData = collectSampleChannel_0();
 
@@ -119,6 +125,7 @@ void backwardCommand() {
 	printf("Reverse\n");
 	transmitter.moveReverse();
 	led.backward();
+    //wait for signal to drop bellow stop threshold
 	while (1) {
 		emgData = collectSampleChannel_0();
 
@@ -141,6 +148,8 @@ void leftCommand() {
 	printf("Left\n");
 	transmitter.turnLeft();
 	led.left();
+    
+    //wait for signal to drop bellow stop threshold
 	while (1) {
 		emgData = collectSampleChannel_1();
 
@@ -163,6 +172,8 @@ void rightCommand() {
 	printf("Right\n");
 	transmitter.turnRight();
 	led.right();
+    
+    //wait for signal to drop bellow stop threshold
 	while (1) {
 		emgData = collectSampleChannel_1();
 
@@ -187,13 +198,13 @@ void taskMove(void* pdata) {
 	emgData1 = collectSampleChannel_0();
 	while (1) {
 
+        //collect data
 		emgData2 = collectSampleChannel_0();
 
-//		printf("emg sample1: %u\n",emgData1);
-//		printf("emg sample2: %u\n",emgData2);
-
+        //check if data is increasing
 		if (emgData2 > emgData1 - SAMPLE_ERROR_DRIVE) {
 
+            //check if greater than threshold
 			if (emgData2 > EMG_FORWARD_THRESHOLD) {
 				forwardCommand();
 				emgData1 = collectSampleChannel_0();
@@ -236,11 +247,11 @@ void taskTurn(void* pdata) {
 
 		emgData2 = collectSampleChannel_1();
 
-//		printf("emg sample1: %u\n",emgData1);
-//		printf("emg sample2: %u\n",emgData2);
 
+        //check if data is increaseing
 		if (emgData2 > emgData1 - SAMPLE_ERROR_TURN) {
 
+            //check if right command
 			if (emgData2 > EMG_RIGHT_THRESHOLD) {
 				rightCommand();
 				emgData1 = collectSampleChannel_1();
@@ -269,15 +280,16 @@ void taskTurn(void* pdata) {
 	}
 }
 
+//super awesome led status!
 void startupTask(void* pdata){
-	//Trallllaalalalala
+	//Trollllaalalalala
 	led.startingUp();
 }
 
 int main(void) {
 
 
-	//Start move Task
+	//Start startup Task
 	OSTaskCreateExt(startupTask, NULL, &task_startup_stk[TASK_STACKSIZE - 1],
 			TASK_STARTUP_PRIORITY, TASK_STARTUP_PRIORITY, task_startup_stk,
 			TASK_STACKSIZE, NULL, 0);
@@ -298,7 +310,7 @@ int main(void) {
 }
 //The MIT License (MIT)
 //
-//Copyright (c) 2014 Grant Hunter
+//Copyright (c) 2014 Grant Hunter and Emil Jafarli
 //
 //Permission is hereby granted, free of charge, to any person obtaining a copy
 //of this software and associated documentation files (the "Software"), to deal
